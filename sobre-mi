@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Martín González | Periodista</title>
+    <title>Sobre mí</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -13,15 +13,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.">
+    <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Martín González | Periodista">
-    <meta name="twitter:description" content="Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.">
+    <meta name="twitter:title" content="Sobre mí">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Martín González | Periodista">
-    <meta property="og:description" content="Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.">
+    <meta property="og:title" content="Sobre mí">
+    <meta property="og:description" content="">
 
     
 <meta name="twitter:site" content="@yourblogtwitter">
@@ -48,9 +48,9 @@
 
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Martín González | Periodista" href="rss/index.html">
-<link rel="canonical" href="http://mgonzalez.org/" />
+<link rel="canonical" href="http://mgonzalez.org/sobre-mi/" />
   </head>
-  <body class="home-template">
+  <body class="post-template page">
 
     <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
 <nav tabindex="-1" class="drawer">
@@ -102,71 +102,67 @@
           <div data-pjax-container class="content">
             
 
-<aside role="banner" class="cover">
-  <div data-load-image="/content/images/2014/Mar/cosoblog-10.png" class="cover-image"></div>
-  <div class="cover-container">
-    
-      <a href="http://mgonzalez.org" class="cover-logo" data-pjax>
-        <img src="content/images/2014/Mar/foto_14-5.jpg" alt="Blog Logo">
-      </a>
-    
-    <h1 class="cover-title">Martín González | Periodista</h1>
-    <p class="cover-description">Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.</p>
-  </div>
-</aside>
-
-<section class="wrapper" tabindex="0">
+<section class="wrapper wrapper-post">
   <div class="wrapper-container">
-    
-
-
-    <section class="post-list">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post page">
       
-        <article itemscope itemtype="http://schema.org/BlogPosting"
-  role="article" class="post-item post tag-reportaje-2">
-  <header class="post-item-header">
-    <h2 itemprop="name" class="post-item-title">
-      <a href="linux-kde-y-blue-systems-el-laboratorio-del-codigo-abierto-en-barcelona/index.html" itemprop="url" data-pjax title="Linux, KDE y Blue Systems, el laboratorio del código abierto en Barcelona">
-        Linux, KDE y Blue Systems, el laboratorio del código abierto en Barcelona
-      </a>
-    </h2>
-  </header>
-  <section itemprop="description" class="post-item-excerpt">
-    <p>     Linus Torvalds leyendo código. Crédito: Athanasios Kasampalis    http://127.0.0.1:2368/sobre-mi   En 1991 Linus Torvalds, un joven estudiante de informática finlandés, dejó el siguiente mensaje en una lista de correo de Minix&hellip;</p>
-  </section>
-  <footer class="post-item-footer">
-    <ul class="post-item-meta-list">
-      <li class="post-item-meta-item">
-        <time datetime="2014-03-19" itemprop="datePublished">
-          4 hours ago
-        </time>
-      </li>
-      
-        <li class="post-item-meta-item">
-          
-            <span itemprop="articleSection">Reportaje</span>
-             
-          
-        </li>
-      
-      <li class="post-item-meta-item">
-        <a href="linux-kde-y-blue-systems-el-laboratorio-del-codigo-abierto-en-barcelona/index.html#disqus_thread" data-pjax data-disqus-identifier="2"></a>
-      </li>
-    </ul>
-  </footer>
-</article>
+        <section class="post-container">
+          <header class="post-header">
+            <h1 itemprop="name headline" class="post-title"><a href="sobre-mi" itemprop="url" data-pjax title="Sobre mí">Sobre mí</a></h1>
+            
+            <!--h2 itemprop="about" class="post-subtitle"></h2-->
+          </header>
+          <aside class="post-side">
+            <div class="post-author">
+              
+                <a href="http://127.0.0.1:2368/sobre-mi/mgonzalez.org" class="post-author-avatar">
+                  <img src="content/images/2014/Mar/foto_14-6.jpg" alt="Martín González">
+                </a>
+              
+              <div class="post-author-info">
+                <a href="http://127.0.0.1:2368/sobre-mi/mgonzalez.org" class="post-author-name">
+                  Martín González
+                </a>
+                <p class="post-author-bio">Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.</p>
+              </div>
+            </div>
+          </aside>
+          <div itemprop="articleBody" class="post-body">
+            <p>Estudio periodismo en la Universitat Pompeu Fabra, en Barcelona. Me interesa mucho el periodismo de datos y la visualización, además del software libre.</p>
 
+<p>Participo en la planificación de las sesiones de periodismo de datos en el <a href="http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397">CCCB</a>. También estoy en el grupo de comunicación de <a href="http://kde-espana.org">KDE España</a>.  </p>
+
+<h2 id="contacta">Contacta</h2>
+
+<p>Si quieres hablar conmigo puedes mandarme un correo a martin [at] mgonzalez.org</p>
+
+<p><a href="sobre-mi#" class="btn btn-primary">Descarga mi currículum</a> </p>
+          </div>
+          <footer class="post-footer">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              
+                <a href="http://127.0.0.1:2368/sobre-mi/mgonzalez.org" class="post-author-avatar">
+                  <img itemprop="image" src="content/images/2014/Mar/foto_14-6.jpg" alt="Martín González">
+                </a>
+              
+              <div class="post-author-info">
+                <h4 class="post-footer-heading">Written By</h4>
+                <a href="http://127.0.0.1:2368/sobre-mi/mgonzalez.org" itemprop="url" class="post-author-name">
+                  <span itemprop="name">Martín González</span>
+                </a>
+                <p itemprop="description" class="post-author-bio">Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.</p>
+              </div>
+            </div>
+            <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="sobre-mi#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="sobre-mi#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="sobre-mi#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+            </div>
+          </footer>
+        </section>
       
-    </section>
-
-    
-      <nav role="pagination" class="post-list-pagination">
-  
-  <span class="post-list-pagination-item post-list-pagination-item-current">Page 1 of 1</span>
-  
-</nav>
-
-    
+    </article>
 
     <footer role="contentinfo" class="footer">
   <p><small>© 2014. All Rights Reserved.</small></p>
