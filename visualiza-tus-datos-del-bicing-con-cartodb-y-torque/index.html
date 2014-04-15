@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Visualiza tus datos del Bicing con CartoDB y Torque</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta property="og:description" content="">
+
+    
+<meta name="twitter:site" content="@mgonzalezgmz">
+
+
+<meta name="twitter:creator" content="@mgonzalezgmz">
+
+
+<meta name="google-site-verification" content="">
+
+
+<meta property="fb:admins" content="">
+
+
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/b3a55bb9.main.min.css?v=be920532b1"/>
+
+    <script src="../assets/js/8fe6056b.head-scripts.min.js?v=be920532b1"></script>
+
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Martín González | Periodista" href="../rss/index.html">
+<link rel="canonical" href="http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/" />
+  </head>
+  <body class="post-template tag-visualizacion">
+
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+<nav tabindex="-1" class="drawer">
+  <div class="drawer-container">
+    <!--.drawer-search(role="search")-->
+    <ul role="navigation" class="drawer-list">
+      
+
+<li class="drawer-list-item">
+  <a href="http://mgonzalez.org" data-pjax>
+    <i class="fa fa-home"></i>Home
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://mgonzalez.org/sobre-mi/">
+    <i class="fa fa-male"></i>Sobre mí
+  </a>
+</li>
+<li class="drawer-list-divider"></li>
+<li class="drawer-list-item drawer-list-title">
+  Sígueme
+</li>
+<li class="drawer-list-item">
+  <a href="http://twitter.com/mgonzalezgmz" target="_blank">
+    <i class="fa fa-twitter"></i>Twitter
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://github.com/mgonzalezgmz" target="_blank">
+    <i class="fa fa-github"></i>Github
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://mgonzalez.org/rss/">
+    <i class="fa fa-rss"></i>RSS
+  </a>
+</li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post tag-visualizacion">
+      
+        <section class="post-container">
+          <header class="post-header">
+            <ul class="post-meta-list">
+              <li class="post-meta-item">
+                <time datetime="2014-04-15" itemprop="datePublished">
+                  4 hours ago
+                </time>
+              </li>
+              
+                <li class="post-meta-item">
+                  
+                    <span itemprop="articleSection">Visualización</span>
+                  
+                </li>
+              
+              <li class="post-meta-item">
+                <a href="index.html#disqus_thread" data-disqus-identifier="11"></a>
+              </li>
+            </ul>
+            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="Visualiza tus datos del Bicing con CartoDB y Torque">Visualiza tus datos del Bicing con CartoDB y Torque</a></h1>
+            
+            <!--h2 itemprop="about" class="post-subtitle"></h2-->
+          </header>
+          <aside class="post-side">
+            <div class="post-author">
+              
+                <a href="http://mgonzalez.org" class="post-author-avatar">
+                  <img src="../content/images/2014/Mar/foto_14-6.jpg" alt="Martín González">
+                </a>
+              
+              <div class="post-author-info">
+                <a href="http://mgonzalez.org" class="post-author-name">
+                  Martín González
+                </a>
+                <p class="post-author-bio">Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.</p>
+              </div>
+            </div>
+          </aside>
+          <div itemprop="articleBody" class="post-body">
+            <p><figure> <br />
+ <img src="https://dl.dropboxusercontent.com/u/55065502/bicingviz.gif" alt="Bicing">
+  <figcaption>Un loop de la visualización. Esto es solo un gif, no hagas click :)</figcaption>
+</figure></p>
+
+<p>Ya ha pasado un año desde que comencé a usar el <a href="http://bicing.cat">Bicing</a>, el exitoso servicio de bicis compartidas de Barcelona, y ahora que llega la hora de renovar la tarjeta quería trastear un poco con mis datos de uso. Este es un pequeño apunte para quien tenga ganas de generar un bonito mapa animado con <a href="http://cartodb.com">CartoDB</a> y <a href="https://cartodb.github.io/torque/">Torque</a> con sus propios datos de uso.</p>
+
+<p><img src="https://www.bicing.cat/sites/all/themes/bicing/images/branding-vodafone/logo-banner.jpg" alt="alt Nuevo logo Bicing" /></p>
+
+<p>La interfaz web de Bicing permite acceder al histórico uso del servicio y de allí es fácil extraerlos con un <a href="http://schoolofdata.org/handbook/recipes/scraper-extension-for-chrome/"><em>scraper</em></a>. Cuando los tienes en Google Drive es cuestión de exportarlos a CSV y adaptarlos con Excel o LibreOffice al formato de Torque, la herramienta de animación de mapas de CartoDB.</p>
+
+<p><figure> <br />
+ <img src="https://dl.dropboxusercontent.com/u/55065502/instant%C3%A1nea43.png" alt="Bicing">
+  <figcaption>De esto a un mapa hay un pequeño trecho...</figcaption>
+</figure></p>
+
+<p>Primero de todo hay que entender la tabla. Las dos primeras columnas tienen los datos de en qué estación coges la bici y a qué hora (<em>data inicial</em>), y dónde la dejas y en qué momento (<em>data final</em>). Esto es lo que nos interesa ahora. </p>
+
+<p>Una vez <em>scrapeada</em> de la web hay que iniciar un programa de hojas de cálculo para usar las funciones LEFT, MID y RIGHT, que nos permiten separar los datos de las horas y de las estaciones (puedes separarlo en cuatro columnas, estación de salida / hora de salida y estación de llegada / hora de llegada). Una vez hecho esto es importante pasar los datos por <a href="http://openrefine.org/">OpenRefine</a> para resolver las pequeñas incongruencias ortográficas. Luego hay que juntar todo en sólo dos columnas, estaciones y tiempo. Torque sólo se fija en las fechas y no le importa el orden de los datos en la hoja de cálculo, así que podemos crear una nueva columna de tiempo y copiar sucesivamente las horas de salida y llegada. Luego creamos la de estaciones y pegamos de nuevo (¡respetando el orden!). Para ser más exactos también se pueden sustituir las direcciones por coordenadas, pero lleva más tiempo (esto es lo que yo he hecho).</p>
+
+<p>El resultado final de la tabla debería ser algo parecido a este modelo (pero con muchas más celdas). Fijaos en las fechas, las últimas salidas van antes de las primeras llegadas porque he seleccionado justo la intersección. Un pequeño añadido es la columna de categoría, que permite diferenciar las salidas (1) y llegadas (2) y así poder pintar de diferente color cada uno de estos puntos más adelante.</p>
+
+<style type="text/css">  
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
+</style>  
+
+<table class="tg">  
+  <tr>
+    <th class="tg-031e">Latitude</th>
+    <th class="tg-031e">Longitude</th>
+    <th class="tg-031e">Time</th>
+    <th class="tg-031e">Category</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,403726</td>
+    <td class="tg-031e">2,172906</td>
+    <td class="tg-031e">2014-04-09 15:52:00+00</td>
+    <td class="tg-031e">1</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41.391877</td>
+    <td class="tg-031e">2,187282</td>
+    <td class="tg-031e">2014-04-09 21:31:00+00</td>
+    <td class="tg-031e">1</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,401752</td>
+    <td class="tg-031e">2,200797</td>
+    <td class="tg-031e">2013-04-29 01:26:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,403494</td>
+    <td class="tg-031e">2,193586</td>
+    <td class="tg-031e">2013-04-29 15:36:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,404125</td>
+    <td class="tg-031e">2,204129</td>
+    <td class="tg-031e">2013-04-29 21:18:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,39221</td>
+    <td class="tg-031e">2,190311</td>
+    <td class="tg-031e">2013-04-30 10:49:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+</table>
+
+<p>Cuando tenemos esto listo ya podemos subir la hoja de cálculo a CartoDB y seleccionar los tipos de columna adecuados (<em>date</em> para fechas y <em>number</em> para las categorías). También georeferenciamos las direcciones. <a href="https://gis.stackexchange.com/questions/83713/date-fails-in-string-date-in-cartodb">Si no os reconoce las fechas</a> hay que usar un poco de SQL. Se crea una nueva columna en la que incluiremos los datos de tiempo en el formato adecuado (nuevo<em>_</em>tiempo), a partir de la columna de tiempo ya existente (tiempo_antiguo). Este es el código que usé en mi propia tabla (acuérdate de sustituir los nombres de las columnas por los tuyos).</p>
+
+<pre><code>UPDATE nombre_tabla SET nuevo_tiempo = to_timestamp(tiempo_antiguo, 'DD-MM-YYYY HH24:MI:SS')
+</code></pre>
+
+<p>Una vez hecho esto ya podemos seleccionar Torque como visualización. Escogemos la columna tiempo para realizar el <em>timeline</em> y voilà!</p>
+
+<iframe src="http://player.vimeo.com/video/79115503" width="658" height="370" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>También se puede modificar el CSS para pintar de diferente color los puntos de salida y llegada (asignando a cada una de ellas una categoría distinta, como mencioné antes). El código que debemos incluir está muy bien explicado <a href="https://github.com/CartoDB/torque/wiki/How-spatial-aggregation-works#can-i-use-strings-with-torque">en la wiki de CartoDB</a>:</p>
+
+<pre><code class="css">Map {  
+ ...
+ -torque-aggregation-function: "round(avg(columna_categoría))";
+ ...
+}
+
+#layer {
+...
+  marker-fill: #FF0000;
+  // avg of 1 and 2
+  [value &gt; 1.5] { marker-fill: #0000FF; }
+...
+</code></pre>
+
+<p>He usado el bonito <em>basemap</em> <a href="http://maps.stamen.com/">Toner</a> para la visualización del mapa. Es posible utilizarlo en CartoDB añadiendo un mapa personalizado con esta URL: <code>http://tile.stamen.com/toner/{z}/{x}/{y}.jpg</code></p>
+
+<p>¡Si tenéis alguna duda no dudéis en enviarme un tuit a <a href="http://twitter.com/mgonzalezgmz">@mgonzalezgmz</a>!</p>
+          </div>
+          <footer class="post-footer">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              
+                <a href="http://mgonzalez.org" class="post-author-avatar">
+                  <img itemprop="image" src="../content/images/2014/Mar/foto_14-6.jpg" alt="Martín González">
+                </a>
+              
+              <div class="post-author-info">
+                <h4 class="post-footer-heading">Written By</h4>
+                <a href="http://mgonzalez.org" itemprop="url" class="post-author-name">
+                  <span itemprop="name">Martín González</span>
+                </a>
+                <p itemprop="description" class="post-author-bio">Estudiante de periodismo en la Universitat Pompeu Fabra. Blog personal.</p>
+                
+                  <p class="post-author-location">Barcelona</p>
+                
+                
+                  <p class="post-author-website">
+                    <a href="http://mgonzalez.org" rel="nofollow">http://mgonzalez.org</a>
+                  </p>
+                
+                <p class="post-info">
+                  <b class="post-info-title">Published on</b>
+                  <time class="post-date">April 15, 2014</time>
+                </p>
+              </div>
+            </div>
+            <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="index.html#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="index.html#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="index.html#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+            </div>
+          </footer>
+        </section>
+      
+      <section itemprop="comment" class="post-comments">
+        <div id="disqus_thread"></div>
+      </section>
+    </article>
+
+    <footer role="contentinfo" class="footer">
+  <p><small>© 2014. All Rights Reserved.</small></p>
+  <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+  <p><small>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a></small></p>
+</footer>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+  
+var ga_ua = 'UA-48124553-1';
+
+
+var disqus_shortname = 'mgonzalezz';
+
+
+  
+    var disqus_identifier = '11';
+  
+
+  if(typeof DISQUS !== 'object') {
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../shared/vendor/jquery/jquery.js?v=be920532b1"></script>
+
+    <script src="../assets/js/56c2364f.foot-scripts.min.js?v=be920532b1"></script>
+
+    <script type="text/javascript">
+      
+var ga_ua = 'UA-48124553-1';
+
+
+var disqus_shortname = 'mgonzalezz';
+
+
+      (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  </body>
+</html>
