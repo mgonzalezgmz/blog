@@ -42,9 +42,9 @@
     <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
     <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/b3a55bb9.main.min.css?v=be920532b1"/>
+    <link rel="stylesheet" href="../assets/css/b3a55bb9.main.min.css?v=21ea8d0e0c"/>
 
-    <script src="../assets/js/8fe6056b.head-scripts.min.js?v=be920532b1"></script>
+    <script src="../assets/js/8fe6056b.head-scripts.min.js?v=21ea8d0e0c"></script>
 
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Martín González | Periodista" href="../rss/index.html">
@@ -111,7 +111,7 @@
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="2014-04-15" itemprop="datePublished">
-                  4 hours ago
+                  15 hours ago
                 </time>
               </li>
               
@@ -145,10 +145,7 @@
             </div>
           </aside>
           <div itemprop="articleBody" class="post-body">
-            <p><figure> <br />
- <img src="https://dl.dropboxusercontent.com/u/55065502/bicingviz.gif" alt="Bicing">
-  <figcaption>Un gif de la visualización. La versión gratuita de CartoDB no permite tablas privadas y no quiero publicar todos los datos.</figcaption>
-</figure></p>
+            <iframe width='100%' height='520' frameborder='0' src='http://mgonzalezgmz.cartodb.com/viz/44dd1bde-c53e-11e3-9d87-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=&sw_lat=41.36018981924962&sw_lon=2.110748291015625&ne_lat=41.41569786556419&ne_lon=2.3060989379882812' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 <p>Ya ha pasado un año desde que comencé a usar el <a href="http://bicing.cat">Bicing</a>, el exitoso servicio de bicis compartidas de Barcelona, y ahora que llega la hora de renovar la tarjeta quería trastear un poco con mis datos de uso. Este es un pequeño apunte para quien tenga ganas de generar un bonito mapa animado con <a href="http://cartodb.com">CartoDB</a> y <a href="https://cartodb.github.io/torque/">Torque</a> con sus propios datos.</p>
 
@@ -165,7 +162,7 @@
 
 <p>Una vez <em>scrapeada</em> de la web hay que iniciar un programa de hojas de cálculo para usar las funciones LEFT, MID y RIGHT, que nos permiten separar los datos de las horas y de las estaciones (puedes separarlo en cuatro columnas, estación de salida / hora de salida y estación de llegada / hora de llegada). Una vez hecho esto es importante pasar los datos por <a href="http://openrefine.org/">OpenRefine</a> para resolver las pequeñas incongruencias ortográficas. Luego hay que juntar todo en sólo dos columnas, estaciones y tiempo. Torque sólo se fija en las fechas y no le importa el orden de los datos en la hoja de cálculo, así que podemos crear una nueva columna de tiempo y copiar sucesivamente las horas de salida y llegada. Luego creamos la de estaciones y pegamos de nuevo (¡respetando el orden!). Para ser más exactos también se pueden sustituir las direcciones por coordenadas, pero lleva más tiempo (esto es lo que yo he hecho).</p>
 
-<p>El resultado final de la tabla debería ser algo parecido a este modelo (pero con muchas más celdas). Fijaos en las fechas, las últimas salidas van antes de las primeras llegadas porque he seleccionado justo la intersección. Un pequeño añadido es la columna de categoría, que permite diferenciar las salidas (1) y llegadas (2) y así poder pintar de diferente color cada uno de estos puntos más adelante.</p>
+<p>El resultado final de la tabla debería ser algo parecido a este modelo (pero con muchas más celdas). Un pequeño añadido es la columna de categoría, que permite diferenciar las salidas (1) y llegadas (2) y así poder pintar de diferente color cada uno de estos puntos más adelante.</p>
 
 <style type="text/css">  
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
@@ -239,13 +236,13 @@
 ...
   marker-fill: #FF0000;
   // avg of 1 and 2
-  [value &gt; 1.5] { marker-fill: #0000FF; }
+  [value = 2] { marker-fill: #0000FF; }
 ...
 </code></pre>
 
-<p>Por último, he usado el bonito <em>basemap</em> <a href="http://maps.stamen.com/">Toner</a> para la visualización del mapa. Es posible utilizarlo en CartoDB añadiendo un mapa personalizado con esta URL: <code>http://tile.stamen.com/toner/{z}/{x}/{y}.jpg</code></p>
+<p>Por último, he usado el <em>basemap</em> <a href="http://maps.stamen.com/">Toner</a> para la visualización del mapa. Es posible utilizarlo en CartoDB añadiendo un mapa personalizado con esta URL: <code>http://tile.stamen.com/toner/{z}/{x}/{y}.jpg</code></p>
 
-<p>¡Si tenéis alguna duda no dudéis en enviar un tuit a <a href="http://twitter.com/mgonzalezgmz">@mgonzalezgmz</a>!</p>
+<p><em>¡Si tenéis alguna duda no dudéis en comentar o tuitearme a <a href="http://twitter.com/mgonzalezgmz">@mgonzalezgmz</a>!</em></p>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
@@ -324,9 +321,9 @@ var disqus_shortname = 'mgonzalezz';
       </div>
     </main>
 
-    <script src="../shared/vendor/jquery/jquery.js?v=be920532b1"></script>
+    <script src="../shared/vendor/jquery/jquery.js?v=21ea8d0e0c"></script>
 
-    <script src="../assets/js/56c2364f.foot-scripts.min.js?v=be920532b1"></script>
+    <script src="../assets/js/56c2364f.foot-scripts.min.js?v=21ea8d0e0c"></script>
 
     <script type="text/javascript">
       
