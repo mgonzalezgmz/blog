@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Visualiza tus datos del Bicing con CartoDB y Torque</title>
+    <title>International Journalism Festival 2014 en Perugia</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta name="twitter:title" content="International Journalism Festival 2014 en Perugia">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta property="og:title" content="International Journalism Festival 2014 en Perugia">
     <meta property="og:description" content="">
 
     
@@ -48,9 +48,9 @@
 
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Martín González | Periodista" href="../rss/index.html">
-<link rel="canonical" href="http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/" />
+<link rel="canonical" href="http://mgonzalez.org/international-journalism-festival-en-perugia/" />
   </head>
-  <body class="post-template tag-visualizacion">
+  <body class="post-template tag-periodismo">
 
     <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
 <nav tabindex="-1" class="drawer">
@@ -109,28 +109,28 @@
 
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
-    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post tag-visualizacion">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post tag-periodismo">
       
         <section class="post-container">
           <header class="post-header">
             <ul class="post-meta-list">
               <li class="post-meta-item">
-                <time datetime="2014-04-15" itemprop="datePublished">
-                  a month ago
+                <time datetime="2014-05-11" itemprop="datePublished">
+                  28 minutes ago
                 </time>
               </li>
               
                 <li class="post-meta-item">
                   
-                    <span itemprop="articleSection">Visualización</span>
+                    <span itemprop="articleSection">Periodismo</span>
                   
                 </li>
               
               <li class="post-meta-item">
-                <a href="index.html#disqus_thread" data-disqus-identifier="11"></a>
+                <a href="index.html#disqus_thread" data-disqus-identifier="13"></a>
               </li>
             </ul>
-            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="Visualiza tus datos del Bicing con CartoDB y Torque">Visualiza tus datos del Bicing con CartoDB y Torque</a></h1>
+            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="International Journalism Festival 2014 en Perugia">International Journalism Festival 2014 en Perugia</a></h1>
             
             <!--h2 itemprop="about" class="post-subtitle"></h2-->
           </header>
@@ -150,104 +150,29 @@
             </div>
           </aside>
           <div itemprop="articleBody" class="post-body">
-            <iframe width='100%' height='520' frameborder='0' src='http://mgonzalezgmz.cartodb.com/viz/44dd1bde-c53e-11e3-9d87-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=&sw_lat=41.36018981924962&sw_lon=2.110748291015625&ne_lat=41.41569786556419&ne_lon=2.3060989379882812' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-<p>Ya ha pasado un año desde que comencé a usar el <a href="http://bicing.cat">Bicing</a>, el exitoso servicio de bicis compartidas de Barcelona, y ahora que llega la hora de renovar la tarjeta quería trastear un poco con mis datos de uso. Este es un pequeño apunte para quien tenga ganas de generar un bonito mapa animado con <a href="http://cartodb.com">CartoDB</a> y <a href="https://cartodb.github.io/torque/">Torque</a> con sus propios datos.</p>
-
-<p><img src="https://www.bicing.cat/sites/all/themes/bicing/images/branding-vodafone/logo-banner.jpg" alt="alt Nuevo logo Bicing" /></p>
-
-<p>La interfaz web del Bicing permite acceder al histórico uso del servicio y de allí es fácil extraerlos con un <a href="http://schoolofdata.org/handbook/recipes/scraper-extension-for-chrome/"><em>scraper</em></a>. Cuando los tienes en Google Drive es cuestión de exportarlos a CSV y adaptarlos con Excel o LibreOffice al formato de Torque, la herramienta de animación de mapas de CartoDB.</p>
-
-<p><figure> <br />
- <img src="https://dl.dropboxusercontent.com/u/55065502/instant%C3%A1nea43.png" alt="Bicing">
-  <figcaption>De esto a un mapa hay un pequeño trecho...</figcaption>
+            <p><figure> <br />
+ <img src="https://dl.dropboxusercontent.com/u/55065502/volunteersijf14.jpg" alt="Voluntarios IJF14">
+  <figcaption>Con tantos voluntarios es complicado encontrarse... </figcaption>
 </figure></p>
 
-<p>Primero de todo hay que entender la tabla. Las dos primeras columnas tienen los datos de en qué estación coges la bici y a qué hora (<em>data inicial</em>), y dónde la dejas y en qué momento (<em>data final</em>). Esto es lo que nos interesa ahora. </p>
+<p><img src="https://dl.dropboxusercontent.com/u/55065502/logo_ijf_2014.png" style="width: 300px; float: right; margin-bottom: 15px; margin-right: 3px;"></p>
 
-<p>Una vez <em>scrapeada</em> de la web hay que iniciar un programa de hojas de cálculo para usar las funciones LEFT, MID y RIGHT, que nos permiten separar los datos de las horas y de las estaciones (puedes separarlo en cuatro columnas, estación de salida / hora de salida y estación de llegada / hora de llegada). Una vez hecho esto es importante pasar los datos por <a href="http://openrefine.org/">OpenRefine</a> para resolver las pequeñas incongruencias ortográficas. Luego hay que juntar todo en sólo dos columnas, estaciones y tiempo. Torque sólo se fija en las fechas y no le importa el orden de los datos en la hoja de cálculo, así que podemos crear una nueva columna de tiempo y copiar sucesivamente las horas de salida y llegada. Luego creamos la de estaciones y pegamos de nuevo (¡respetando el orden!). Para ser más exactos también se pueden sustituir las direcciones por coordenadas, pero lleva más tiempo (esto es lo que yo he hecho).</p>
+<p>La semana pasada estuve en Perugia (Italia) como voluntario en el <a href="http://journalismfestival">International Journalism Festival</a>. En tan sólo 5 días esta pequeña ciudad a 200 kilómetros de Roma se convirtió en el punto de encuentro para el periodismo mundial. La organización calcula 50.000 asistentes y un millar de periodistas acreditados, así que posiblemente sea el mayor evento sobre medios en Europa.</p>
 
-<p>El resultado final de la tabla debería ser algo parecido a este modelo (pero con muchas más celdas). Un pequeño añadido es la columna de categoría, que permite diferenciar las salidas (1) y llegadas (2) y así poder pintar de diferente color cada uno de estos puntos más adelante.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg" alt="alt Perugia piazza" /></p>
 
-<style type="text/css">  
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
-</style>  
+<p>La <a href="http://schoolofdata.org/school-of-data-journalism-international-journalism-festival-perugia/">School of Data Journalism</a> programó talleres tan interesantes como este de <a href="http://www.journalismfestival.com/programme/2014/get-your-own-data-through-aerial-photography-part-1-beginner">cartografía aérea DIY</a>, pero con tantos eventos a la vez y el trabajo por hacer era complicado ir a todo. ¡En realidad te llegas a sentir peor que con los solapamientos de los festivales de música!</p>
 
-<table class="tg">  
-  <tr>
-    <th class="tg-031e">Latitude</th>
-    <th class="tg-031e">Longitude</th>
-    <th class="tg-031e">Time</th>
-    <th class="tg-031e">Category</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">41,403726</td>
-    <td class="tg-031e">2,172906</td>
-    <td class="tg-031e">2014-04-09 15:52:00+00</td>
-    <td class="tg-031e">1</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">41.391877</td>
-    <td class="tg-031e">2,187282</td>
-    <td class="tg-031e">2014-04-09 21:31:00+00</td>
-    <td class="tg-031e">1</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">41,401752</td>
-    <td class="tg-031e">2,200797</td>
-    <td class="tg-031e">2013-04-29 01:26:00+00</td>
-    <td class="tg-031e">2</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">41,403494</td>
-    <td class="tg-031e">2,193586</td>
-    <td class="tg-031e">2013-04-29 15:36:00+00</td>
-    <td class="tg-031e">2</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">41,404125</td>
-    <td class="tg-031e">2,204129</td>
-    <td class="tg-031e">2013-04-29 21:18:00+00</td>
-    <td class="tg-031e">2</td>
-  </tr>
-  <tr>
-    <td class="tg-031e">41,39221</td>
-    <td class="tg-031e">2,190311</td>
-    <td class="tg-031e">2013-04-30 10:49:00+00</td>
-    <td class="tg-031e">2</td>
-  </tr>
-</table>
+<blockquote class="pullquote">  
+  <p><a href="http://www.journalismfestival.com/speaker/simon-rogers"> Simon Rogers</a>, <a href="http://www.journalismfestival.com/speaker/alan-rusbridger"> Alan Rusbridger</a>, <a href="http://www.journalismfestival.com/speaker/jillian-york"> Jillian York</a>, <a href="http://www.journalismfestival.com/speaker/emily-bell"> Emily Bell</a>, <a href="http://www.journalismfestival.com/speaker/aron-pilhofer"> Aron Pilhofer</a>, <a href="http://www.journalismfestival.com/speaker/james-ball"> James Ball</a>, <a href="http://www.journalismfestival.com/speaker/andy-carvin"> Andy Carvin</a>, <a href="http://www.journalismfestival.com/speaker/felix-salmon"> Felix Salmon</a>, <a href="http://www.journalismfestival.com/speaker/gillmor-dan"> Dan Gillmor</a>, <a href="http://www.journalismfestival.com/speaker/mar-cabra"> Mar Cabra</a>... y la lista sigue.</p>
+</blockquote>
 
-<p>Cuando tenemos esto listo ya podemos subir la hoja de cálculo a CartoDB y seleccionar los tipos de columna adecuados (<em>date</em> para fechas y <em>number</em> para las categorías). También georeferenciamos las direcciones. <a href="https://gis.stackexchange.com/questions/83713/date-fails-in-string-date-in-cartodb">Si no os reconoce las fechas</a> hay que usar un poco de SQL. Se crea una nueva columna en la que incluiremos los datos de tiempo en el formato adecuado (nuevo<em>_</em>tiempo), a partir de la columna de tiempo ya existente (tiempo_antiguo). Este es el código que usé en mi propia tabla (acuérdate de sustituir los nombres de las columnas por los tuyos).</p>
+<p>De allí me llevo cuatro entrevistas y artículos en inglés para el <a href="http://magazine.journalismfestival.com">magazine del festival</a>. La verdad es que llevo la semana transcribiendo a toda pastilla, con la dificultad añadida de volver a la rutina después de caminar por esas calles... <mark>Espero poder publicar algo <strong>muy pronto</strong><mark>.</p>
 
-<pre><code>UPDATE nombre_tabla SET nuevo_tiempo = to_timestamp(tiempo_antiguo, 'DD-MM-YYYY HH24:MI:SS')
-</code></pre>
-
-<p>Una vez hecho esto ya podemos seleccionar Torque como visualización. Escogemos la columna tiempo para realizar el <em>timeline</em> y voilà!</p>
-
-<iframe src="http://player.vimeo.com/video/79115503" width="658" height="370" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p>También se puede modificar el CSS para pintar de diferente color los puntos de salida y llegada (para ello debes de haber asignado a cada uno de ellos una categoría distinta). El código que debemos incluir está muy bien explicado <a href="https://github.com/CartoDB/torque/wiki/How-spatial-aggregation-works#can-i-use-strings-with-torque">en la wiki de CartoDB</a>:</p>
-
-<pre><code class="css">Map {  
- ...
- -torque-aggregation-function: "round(avg(columna_categoría))";
- ...
-}
-
-#layer {
-...
-  marker-fill: #FF0000;
-  // avg of 1 and 2
-  [value = 2] { marker-fill: #0000FF; }
-...
-</code></pre>
-
-<p>Por último, he usado el <em>basemap</em> <a href="http://maps.stamen.com/">Toner</a> para la visualización del mapa. Es posible utilizarlo en CartoDB añadiendo un mapa personalizado con esta URL: <code>http://tile.stamen.com/toner/{z}/{x}/{y}.jpg</code></p>
-
-<p><em>¡Si tenéis alguna duda no dudéis en comentar o tuitearme a <a href="http://twitter.com/mgonzalezgmz">@mgonzalezgmz</a>!</em></p>
+<p><figure> <br />
+ <img src="https://dl.dropboxusercontent.com/u/55065502/yoperugia.jpg" alt="Yo en Perugia">
+  <figcaption>Contactos nuevos, compañeros de todas partes del mundo y nuevas experiencias. Pero eso sí, ¡ni tiempo para dormir!</figcaption>
+</figure></p>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
@@ -272,7 +197,7 @@
                 
                 <p class="post-info">
                   <b class="post-info-title">Published on</b>
-                  <time class="post-date">April 15, 2014</time>
+                  <time class="post-date">May 11, 2014</time>
                 </p>
               </div>
             </div>
@@ -308,7 +233,7 @@ var disqus_shortname = 'mgonzalezz';
 
 
   
-    var disqus_identifier = '11';
+    var disqus_identifier = '13';
   
 
   if(typeof DISQUS !== 'object') {
