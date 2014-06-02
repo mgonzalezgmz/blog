@@ -41,7 +41,7 @@
 <link rel="alternate" type="application/rss+xml" title="Martín González" href="../rss/index.html">
 <link rel="canonical" href="http://mgonzalez.org/europa-o-la-idea-de-democracia/" />
 </head>
-<body class="post-template tag-cronica">
+<body class="post-template tag-cronica tag-articleimage">
 
     
     
@@ -50,25 +50,83 @@
 
 <main class="content" role="main">
 
-    <article class="post tag-cronica">
+    <article class="post tag-cronica tag-articleimage">
         
         
         
         
         
         
-        <div class="noarticleimage">
+        <div class="article-image">
+            <div class="post-image-image">
+                
+                Article Image
+                
+            </div>
             <div class="post-meta">
                 <h1 class="post-title">Europa o la idea de democracia</h1>
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url(../content/images/2014/May/me-1.jpg)">Blog Logo</div>
-                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Martín González</h4> en <a href="../tag/cronica/index.html">Crónica</a>, el <time datetime="2013-04-23">23 Apr 2013</time>
-                    
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Martín González</h4> el
+                    <time datetime="2013-04-23">23 Apr 2013</time>
+                    , en <a href="../tag/cronica/index.html">Crónica</a>, <a href="../tag/articleimage/index.html">articleImage</a>
                 </div>
+                <center><a href="index.html#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a></center>
             </div>
         </div>
-        <br>
-
+        
+        <script>
+            (function ($) {
+                "use strict";
+            
+                $(document).ready(function(){
+                                
+                    $('.post-content').each(function() {
+                        var $this = $(this),
+                            img = $this.find('img:first'),
+                            url = img.attr('src');
+            
+                        $(".post-image-image").css('background-image', 'url('+url+')');
+            
+                        img.remove();
+                    });
+            
+                    var $window = $(window),
+                        $image = $('.post-image-image');
+                    $window.on('scroll', function() {
+                        var top = $window.scrollTop();
+            
+                        if (top < 0 || top > 1500) { return; }
+                        $image
+                            .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                            .css('opacity', 1-Math.max(top/700, 0));
+                    });
+                    $window.trigger('scroll');
+                    
+                    var height = $('.article-image').height();
+                        $('.post-content').css('padding-top', height + 'px');
+                    
+                    $(function() {
+                      $('a[href*=#]:not([href=#])').click(function() {
+                        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                          var target = $(this.hash);
+                          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                          if (target.length) {
+                            $('html,body').animate({
+                              scrollTop: target.offset().top
+                            }, 500);
+                            return false;
+                          }
+                        }
+                      });
+                    });
+                    
+                });
+            
+            }(jQuery));
+        </script>
+        
+        
         
         
         
@@ -78,13 +136,13 @@
                     <span class="post-reading-time"></span>
                 </div>
                 <a name="topofpage"></a>
-                <p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso3.jpg"" alt="alt Fotomovimiento" /></p>
+                <p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso3.jpg"" alt="Fotomovimiento" /></p>
 
 <p>El hartazgo estudiantil estalló el pasado 17 de abril en el debate "El reto de construir una Europa más amplia" organizado por la Universidad Pompeu Fabra. Una treintena de estudiantes logró retrasar el acto más de una hora, hasta que el rector Joan Moreso autorizó la entrada de los Mossos d'Esquadra en la universidad para desalojar a los manifestantes. Al debate-conferencia estaban invitados el exministro de exteriores español, Miguel Ángel Moratinos, su homólogo ruso, Igor Ivanov, y el exprimer ministro francés Dominique de Villepin. Por último, contó con la asistencia del rector de la Universidad de San Petersburgo, Alexander Zapesotsky, y el antiguo embajador de España en Moscú, Juan Antonio March.</p>
 
 <p>Los estudiantes bloquearon la mesa de inscripciones y la entrada exterior al auditorio momentos antes del inicio del acto. La indignación era palpable en los lemas de las pancartas colgadas en la entrada del campus de Ciutadella: "Si alguien debe morir que sean los ministros, no la educación" y "Moreso ni te olvidamos ni te perdonamos". El rector ordenó cerrar con candado las puertas subterráneas de acceso al auditorio, que los manifestantes bloquearon con sillas. Sobre las 17.55 entre 60 y 70 estudiantes impedían la entrada al acto. En la mesa de inscripciones se vivieron momentos de tensión cuando había cerca de un centenar de personas esperando para entrar.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso2.jpg"" alt="alt Fotomovimiento" /></p>
+<p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso2.jpg"" alt="Los ánimos se iban caldeando a medida que se incrementaba la presencia policial / Fotomovimiento." /></p>
 
 <p>Cinco furgonetas blindadas de los Mossos d'Esquadra se habían desplazado hasta los alrededores de la universidad, junto con una unidad de la Guardia Urbana. <br />
 A las 18.00 comenzaron los cánticos de protesta. "Universidad pública y de calidad" clamaban los manifestantes, guiados por un megáfono bajo la mirada impertérrita de los organizadores y las fuerzas de seguridad.</p>
@@ -95,7 +153,7 @@ A las 18.00 comenzaron los cánticos de protesta. "Universidad pública y de cal
 
 <p>Emma Rodero, vicerrectora de estudiantes, sintetizó la posición de la organización, "O entran y leen un manifiesto o entran los Mossos". El sitio donde estaban  colocados los estudiantes era una ratonera. Todas las puertas laterales estaban cerradas a cal y canto y sólo había dos salidas posibles, ambas selladas por furgones blindados.</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso1.jpg"" alt="alt Fotomovimiento" /></p>
+<p><img src="https://dl.dropboxusercontent.com/u/55065502/mosso1.jpg"" alt="Los mossos tuvieron que desalojar a decenas de estudiantes de la protesta / Fotomovimiento." /></p>
 
 <p>A las 18.55 los Mossos entraron en la plaza del Campus de Ciutadella. Unos 50 efectivos de la unidad de intervención comenzaron a arrastrar a los estudiantes uno  por uno fuera de la mesa de inscripciones. "Esta es su democracia" entonaban los estudiantes acorralados, claramente en inferioridad de número. La policía formó una cadena humana aislando a los manifestantes de los que seguían esperando para asistir al acto.</p>
 
