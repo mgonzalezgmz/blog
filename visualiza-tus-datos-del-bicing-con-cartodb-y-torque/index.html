@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <title>Visualiza tus datos del Bicing con CartoDB y Torque</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="http://mgonzalez.org">
+    <meta name="twitter:creator" content="@mgonzalezgmz">
+    <meta name="google-site-verification" content="">
+    <meta property="fb:admins" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Visualiza tus datos del Bicing con CartoDB y Torque">
+    <meta property="og:description" content="">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../assets/js/styles/obsidian.css?v=a23963dbbe">
+    <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css?v=a23963dbbe" />
+    <link rel="stylesheet" type="text/css" media="print" href="../assets/css/print.css?v=a23963dbbe" />
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Martín González" href="../rss/index.html">
+<link rel="canonical" href="http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/" />
+</head>
+<body class="post-template tag-visualizacion">
+
+    
+    
+
+
+
+<main class="content" role="main">
+
+    <article class="post tag-visualizacion">
+        
+        
+        
+        
+        
+        
+        <div class="noarticleimage">
+            <div class="post-meta">
+                <h1 class="post-title">Visualiza tus datos del Bicing con CartoDB y Torque</h1>
+                <div class="cf post-meta-text">
+                    <div class="author-image" style="background-image: url(../content/images/2014/May/me-1.jpg)">Blog Logo</div>
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Martín González</h4> en <a href="../tag/visualizacion/index.html">Visualización</a>, el <time datetime="2014-04-15">15 Apr 2014</time>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+
+        
+        
+        
+
+            <section class="post-content">
+                <div class="post-reading">
+                    <span class="post-reading-time"></span>
+                </div>
+                <a name="topofpage"></a>
+                <iframe width='100%' height='520' frameborder='0' src='http://mgonzalezgmz.cartodb.com/viz/44dd1bde-c53e-11e3-9d87-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=&sw_lat=41.36018981924962&sw_lon=2.110748291015625&ne_lat=41.41569786556419&ne_lon=2.3060989379882812' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<p>Ya ha pasado un año desde que comencé a usar el <a href="http://bicing.cat">Bicing</a>, el exitoso servicio de bicis compartidas de Barcelona, y ahora que llega la hora de renovar la tarjeta quería trastear un poco con mis datos de uso. Este es un pequeño apunte para quien tenga ganas de generar un bonito mapa animado con <a href="http://cartodb.com">CartoDB</a> y <a href="https://cartodb.github.io/torque/">Torque</a> con sus propios datos.</p>
+
+<p><img src="https://www.bicing.cat/sites/all/themes/bicing/images/branding-vodafone/logo-banner.jpg" alt="alt Nuevo logo Bicing" /></p>
+
+<p>La interfaz web del Bicing permite acceder al histórico uso del servicio y de allí es fácil extraerlos con un <a href="http://schoolofdata.org/handbook/recipes/scraper-extension-for-chrome/"><em>scraper</em></a>. Cuando los tienes en Google Drive es cuestión de exportarlos a CSV y adaptarlos con Excel o LibreOffice al formato de Torque, la herramienta de animación de mapas de CartoDB.</p>
+
+<p><figure> <br />
+ <img src="https://dl.dropboxusercontent.com/u/55065502/instant%C3%A1nea43.png" alt="Bicing">
+  <figcaption>De esto a un mapa hay un pequeño trecho...</figcaption>
+</figure></p>
+
+<p>Primero de todo hay que entender la tabla. Las dos primeras columnas tienen los datos de en qué estación coges la bici y a qué hora (<em>data inicial</em>), y dónde la dejas y en qué momento (<em>data final</em>). Esto es lo que nos interesa ahora. </p>
+
+<p>Una vez <em>scrapeada</em> de la web hay que iniciar un programa de hojas de cálculo para usar las funciones LEFT, MID y RIGHT, que nos permiten separar los datos de las horas y de las estaciones (puedes separarlo en cuatro columnas, estación de salida / hora de salida y estación de llegada / hora de llegada). Una vez hecho esto es importante pasar los datos por <a href="http://openrefine.org/">OpenRefine</a> para resolver las pequeñas incongruencias ortográficas. Luego hay que juntar todo en sólo dos columnas, estaciones y tiempo. Torque sólo se fija en las fechas y no le importa el orden de los datos en la hoja de cálculo, así que podemos crear una nueva columna de tiempo y copiar sucesivamente las horas de salida y llegada. Luego creamos la de estaciones y pegamos de nuevo (¡respetando el orden!). Para ser más exactos también se pueden sustituir las direcciones por coordenadas, pero lleva más tiempo (esto es lo que yo he hecho).</p>
+
+<p>El resultado final de la tabla debería ser algo parecido a este modelo (pero con muchas más celdas). Un pequeño añadido es la columna de categoría, que permite diferenciar las salidas (1) y llegadas (2) y así poder pintar de diferente color cada uno de estos puntos más adelante.</p>
+
+<style type="text/css">  
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
+</style>  
+
+<table class="tg">  
+  <tr>
+    <th class="tg-031e">Latitude</th>
+    <th class="tg-031e">Longitude</th>
+    <th class="tg-031e">Time</th>
+    <th class="tg-031e">Category</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,403726</td>
+    <td class="tg-031e">2,172906</td>
+    <td class="tg-031e">2014-04-09 15:52:00+00</td>
+    <td class="tg-031e">1</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41.391877</td>
+    <td class="tg-031e">2,187282</td>
+    <td class="tg-031e">2014-04-09 21:31:00+00</td>
+    <td class="tg-031e">1</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,401752</td>
+    <td class="tg-031e">2,200797</td>
+    <td class="tg-031e">2013-04-29 01:26:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,403494</td>
+    <td class="tg-031e">2,193586</td>
+    <td class="tg-031e">2013-04-29 15:36:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,404125</td>
+    <td class="tg-031e">2,204129</td>
+    <td class="tg-031e">2013-04-29 21:18:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">41,39221</td>
+    <td class="tg-031e">2,190311</td>
+    <td class="tg-031e">2013-04-30 10:49:00+00</td>
+    <td class="tg-031e">2</td>
+  </tr>
+</table>
+
+<p>Cuando tenemos esto listo ya podemos subir la hoja de cálculo a CartoDB y seleccionar los tipos de columna adecuados (<em>date</em> para fechas y <em>number</em> para las categorías). También georeferenciamos las direcciones. <a href="https://gis.stackexchange.com/questions/83713/date-fails-in-string-date-in-cartodb">Si no os reconoce las fechas</a> hay que usar un poco de SQL. Se crea una nueva columna en la que incluiremos los datos de tiempo en el formato adecuado (nuevo<em>_</em>tiempo), a partir de la columna de tiempo ya existente (tiempo_antiguo). Este es el código que usé en mi propia tabla (acuérdate de sustituir los nombres de las columnas por los tuyos).</p>
+
+<pre><code>UPDATE nombre_tabla SET nuevo_tiempo = to_timestamp(tiempo_antiguo, 'DD-MM-YYYY HH24:MI:SS')
+</code></pre>
+
+<p>Una vez hecho esto ya podemos seleccionar Torque como visualización. Escogemos la columna tiempo para realizar el <em>timeline</em> y voilà!</p>
+
+<iframe src="http://player.vimeo.com/video/79115503" width="658" height="370" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>También se puede modificar el CSS para pintar de diferente color los puntos de salida y llegada (para ello debes de haber asignado a cada uno de ellos una categoría distinta). El código que debemos incluir está muy bien explicado <a href="https://github.com/CartoDB/torque/wiki/How-spatial-aggregation-works#can-i-use-strings-with-torque">en la wiki de CartoDB</a>:</p>
+
+<pre><code class="css">Map {  
+ ...
+ -torque-aggregation-function: "round(avg(columna_categoría))";
+ ...
+}
+
+#layer {
+...
+  marker-fill: #FF0000;
+  // avg of 1 and 2
+  [value = 2] { marker-fill: #0000FF; }
+...
+</code></pre>
+
+<p>Por último, he usado el <em>basemap</em> <a href="http://maps.stamen.com/">Toner</a> para la visualización del mapa. Es posible utilizarlo en CartoDB añadiendo un mapa personalizado con esta URL: <code>http://tile.stamen.com/toner/{z}/{x}/{y}.jpg</code></p>
+
+<p><em>¡Si tenéis alguna duda no dudéis en comentar o tuitearme a <a href="http://twitter.com/mgonzalezgmz">@mgonzalezgmz</a>!</em></p>
+            </section>
+<h5 class="index-headline normal"></h5>
+            <footer class="post-footer">
+
+                <section class="share">
+                    <a class="icon-twitter" href="http://twitter.com/share?text=Visualiza%20tus%20datos%20del%20Bicing%20con%20CartoDB%20y%20Torque&url=http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://mgonzalez.org/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+
+            </footer>
+            
+           
+                
+                
+                    </footer>
+                </div>
+            </div>
+
+    </article>
+
+</main>
+
+<div class="bottom-closer">
+    <div class="background-closer-image" style="background-image: url(../content/images/2014/May/DSC03020.JPG)">
+        Image
+    </div>
+    <div class="inner">
+        <h1 class="blog-title">Martín González</h1>
+        <h2 class="blog-description">Periodismo de datos y software libre (entre otras cosas). Estudio periodismo y derecho en la Universitat Pompeu Fabra.</h2>
+        <a href="../index.html" class="btn">Página principal</a>
+    </div>
+</div>
+
+
+    
+    <script src="../public/jquery.js?v=a23963dbbe"></script>
+
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=a23963dbbe"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=a23963dbbe"></script>
+    <script src="../assets/js/readingTime.min.js?v=a23963dbbe"></script>
+    <script src="../assets/js/highlight.pack.js?v=a23963dbbe"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script>
+        
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-48124553-1', 'mark-read.info');
+      ga('send', 'pageview');
+    
+    </script>
+
+</body>
+</html>
