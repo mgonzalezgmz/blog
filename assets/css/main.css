@@ -340,8 +340,7 @@ body {
     text-decoration: underline; }
 .post .noarticleimage .post-meta {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding-top: 60px;
-  margin:5%; }
+  padding-top: 60px; }
 .post .noarticleimage .post-title {
   font-weight: 700;
   font-style: normal;
@@ -350,8 +349,7 @@ body {
   line-height: 1.1;
   color: #333332;
   margin-bottom: 16px;
-  margin-top:-50px;
-  margin: 3%; }
+  margin-top:-50px; }
 .post .noarticleimage .author-image {
   display: inline-block;
   width: 30px;
@@ -407,7 +405,7 @@ body {
     font-style: normal;
     font-size: 17px;
     line-height: 1.8em;
-    margin: 5%;
+    margin: 2%;
     padding-bottom: 15px;
     color: #333333;
     -webkit-hyphens: auto;
