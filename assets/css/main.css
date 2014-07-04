@@ -340,7 +340,8 @@ body {
     text-decoration: underline; }
 .post .noarticleimage .post-meta {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding-top: 60px; }
+  padding-top: 60px;
+  margin:5%; }
 .post .noarticleimage .post-title {
   font-weight: 700;
   font-style: normal;
@@ -349,7 +350,8 @@ body {
   line-height: 1.1;
   color: #333332;
   margin-bottom: 16px;
-  margin-top:-50px; }
+  margin-top:-50px;
+  margin: 5%; }
 .post .noarticleimage .author-image {
   display: inline-block;
   width: 30px;
