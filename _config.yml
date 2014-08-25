@@ -1,0 +1,59 @@
+title:            Martín González
+tagline:          Periodismo y software libre.
+description:      Estudiante de periodismo en la Universitat Pompeu Fabra.
+#Comment out url when working locally to resolve base urls correctly
+# url: http://martingonzalez.net
+
+# Owner/author information
+owner:
+  name:           Martín González
+  bio:            "Estudiante de periodismo en la Universitat Pompeu Fabra, Barcelona"
+  email:          martin at mgonzalez.org
+  twitter:        martgnz        
+  github:         martgnz       
+  disqus:         martingonzalez
+  location:       "Madrid, ES"
+  # Plug in your disqus shortname!
+
+tools:
+  standards:      "HTML, SCSS, Jekyll and awesomeness"
+  software:       "git"
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Sobre mí
+    url: /sobre-mi
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Madrid
+future:      true
+highlighter:    pygments
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+sass:
+    style: :compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+
+# Cool pagination
+paginate: 5
+paginate_path: "/page/:num"

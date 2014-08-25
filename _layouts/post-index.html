@@ -1,0 +1,51 @@
+{% include head-dark.html %}
+  <div id='bump'>
+    <section class="article archive">
+        <article class="archive-wrap">
+        <ol class="post-list">
+        <lh><h2><span class="bb">{{ page.title }}</span></h2></lh>
+        
+        {% for post in paginator.posts %}
+        <li> <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Enero
+            {% when '2' %}Febrero
+            {% when '3' %}Marzo
+            {% when '4' %}Abril
+            {% when '5' %}Mayo
+            {% when '6' %}Junio
+            {% when '7' %}Julio
+            {% when '8' %}Agosto
+            {% when '9' %}Septiembre
+            {% when '10' %}Octubre
+            {% when '11' %}Noviembre
+            {% when '12' %}Diciembre
+          {% endcase %}
+        {{ post.date | date: "%Y" }}</time></p>
+
+        <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+        {% endfor %}
+
+       </ol>
+      <nav id="pagination">
+            {% if paginator.previous_page %}
+              {% if paginator.previous_page == 1 %}
+                <a href="/" title="Previous Page"><i class="fa fa-long-arrow-left">   más recientes</i></a>
+              {% else %}
+              <a href="/page/{{ paginator.previous_page }}/" title="Anterior"><i class="fa fa-long-arrow-left">   más recientes</i></a>
+                
+            {% endif %} /
+            {% endif %}
+
+            {% if paginator.next_page %} 
+              <a href="/page/{{ paginator.next_page }}/" title="Next Page">más antiguas   <i class="fa fa-long-arrow-right">  </i></a>
+            {% endif %} 
+      </nav>
+          </article>
+        </section>
+    </div>
+
+{% include footer.html %}

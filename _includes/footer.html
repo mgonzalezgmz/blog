@@ -1,0 +1,77 @@
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Entradas recientes</p>
+        {% for post in site.posts | limit:3 %} <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 30 }} </a></span>
+              <span class="date">{% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}Enero
+  {% when '2' %}Febrero
+  {% when '3' %}Marzo
+  {% when '4' %}Abril
+  {% when '5' %}Mayo
+  {% when '6' %}Junio
+  {% when '7' %}Julio
+  {% when '8' %}Agosto
+  {% when '9' %}Septiembre
+  {% when '10' %}Octubre
+  {% when '11' %}Noviembre
+  {% when '12' %}Diciembre
+{% endcase %}
+{{ post.date | date: "%Y" }}</span>
+            </li>
+        {% endfor %}
+      </ol>
+
+      <div class="social">
+
+     <br /> <br /> 
+            <a href="https://twitter.com/martgnz" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/martgnz" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/martgnz" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <script language=Javascript type=text/javascript>
+  <!--
+  document.write('<a href="mai');
+  document.write('lto');
+  document.write(':&#109;&#97;&#114;&#116;&#105;&#110;');
+  document.write('@');
+  document.write('&#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122;&#46;&#111;&#114;&#103;">');
+  document.write('&#109;&#97;&#114;&#116;&#105;&#110;');
+  document.write('@');
+  document.write('&#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122;&#46;&#111;&#114;&#103;<\/a>');
+  // -->
+  </script><noscript>&#109;&#97;&#114;&#116;&#105;&#110; at 
+  &#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122; dot &#111;&#114;&#103;</noscript>
+    </div>
+    </aside>
+    <small>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>. Mantenido con <a href="http://jekyllrb.com">Jekyll</a> y <a href="https://pages.github.com">Github Pages</a>.</small>
+  </footer>
+
+  <!-- Custom JS y jQuery -->
+  <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="{{ site.url }}/assets/js/retina.min.js"></script>
+  <script src="{{ site.url }}/assets/js/scripts.js"></script>
+  <script src="{{ site.url }}/assets/js/selection-sharer.js"></script>
+  <script>
+  $('p').selectionSharer();
+  </script>
+
+  <!-- Analytics-->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48124553-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
