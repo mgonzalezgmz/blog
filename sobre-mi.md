@@ -11,11 +11,12 @@ Uso herramientas como **Excel**, **Tableau**, **D3** u **Open Refine** para limp
 
 Creo en la **transparencia** y el **código abierto**. Participo en la planificación de las sesiones de periodismo de datos del [CCCB](http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397) y coorganizo el *meetup* [Barcelona Free Software Users & Hackers](http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/).
 
-Ahora estoy en Madrid, contando historias con datos en [eldiario.es](http://eldiario.es)
+El verano de 2014 lo pasé contando historias con datos en [eldiario.es](http://eldiario.es), en Madrid.
 
 ### Artículos
 **[eldiario.es](http://www.eldiario.es/autores/martin_gonzalez/)**
 
+- [MAPA: ¿Qué compra España a los países con las peores condiciones laborales? ](http://www.eldiario.es/economia/Espana-paises-respetan-derechos-laborales_0_296770922.html)
 - [Assange mueve ficha: anuncia problemas de salud y que saldrá pronto de su refugio diplomático](http://www.eldiario.es/politica/Assange-confirma-saldra-Embajada-ecuatoriana_0_293620737.html)
 - [El brote de ébola en África mata tres veces más personas que el anterior episodio más virulento](http://www.eldiario.es/sociedad/ebola-brote-motalidad-expansion_0_289421595.html) Martín González / Raúl Rejón 
 - [España multiplicó por 10 la venta de armas a Israel en 2013](http://www.eldiario.es/politica/exportacion-armas-espana-israel-gaza_0_289071667.html) - Martín González / Mario Pais Beiro
@@ -71,4 +72,4 @@ Ahora estoy en Madrid, contando historias con datos en [eldiario.es](http://eldi
 - Presentación de Vist al DOGC - Meetup Data+Moritz
 
 
-<i class="fa fa-file-pdf-o"></i> <a href="https://dl.dropboxusercontent.com/u/55065502/Mart%C3%ADnGonz%C3%A1lez_CV_June2014.pdf" target="blank">Descarga mi currículum</a>
+<!-- <i class="fa fa-file-pdf-o"></i> <a href="https://dl.dropboxusercontent.com/u/55065502/Mart%C3%ADnGonz%C3%A1lez_CV_June2014.pdf" target="blank">Descarga mi currículum</a> -->
