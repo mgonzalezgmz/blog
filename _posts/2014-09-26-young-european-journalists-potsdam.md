@@ -19,7 +19,7 @@ The topic was of this year was "Data And Journalism. Between Big Stories And Dir
 We were in Potsdam (40km from Berlin) from 8 to 13th of September, attending lectures at the [Potsdam University of Applied Sciences](http://www.fh-potsdam.de/) and the [Hasso Plattner Institut](http://hpi.de/). We also went to the [M100 Sansoucci Colloquium](http://www.m100potsdam.org/en/m100-en/sanssouci-colloquium.html), an international one-day round table that congregates every year 50 editors of the most important media organizations around the world. Representatives from ProPublica, El País or Der Spiegel, and executives of technology companies and organizations like Google or the German Pirate Party. The workshops were suited for begineers and intermediate data journalists covering a wide range of techniques: from data mining to visualization.
 
  <figure>
-  <img src="https://photos-6.dropbox.com/t/1/AADNG2kSbQl-1C_KhchaNlXrEgU1a37PNSfVoRIWvEPLFg/12/55065502/jpeg/1024x768/3/1411779600/0/2/IMG_1929.JPG/cmXmEvJoUOkmqmIKbFmzIsIAkKLL050cNjvjbM8eigY%2ClBNSRboG9H8-jqZmJtwXz9uvs7Nv4euFBHhWNW1RdmA">
+  <img src="https://dl-web.dropbox.com/get/m100yej2014%20%282%29/photos%20yej/Aline/IMG_1929.JPG?_subject_uid=55065502&w=AABeyooc0vXhRYoa1YKKrbSD8RRvMSNwHU4hot4BSuyzCA">
   <figcaption>Image credit: Aline Flor</figcaption>
 </figure> 
 
