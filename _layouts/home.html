@@ -11,18 +11,18 @@
         <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}
           {% case m %}
-            {% when '1' %}Enero
-            {% when '2' %}Febrero
-            {% when '3' %}Marzo
-            {% when '4' %}Abril
-            {% when '5' %}Mayo
-            {% when '6' %}Junio
-            {% when '7' %}Julio
-            {% when '8' %}Agosto
-            {% when '9' %}Septiembre
-            {% when '10' %}Octubre
-            {% when '11' %}Noviembre
-            {% when '12' %}Diciembre
+            {% when '1' %}January
+            {% when '2' %}February
+            {% when '3' %}March
+            {% when '4' %}April
+            {% when '5' %}May
+            {% when '6' %}June
+            {% when '7' %}July
+            {% when '8' %}August
+            {% when '9' %}September
+            {% when '10' %}October
+            {% when '11' %}November
+            {% when '12' %}December
           {% endcase %}
         {{ post.date | date: "%Y" }}</time></p>
 
@@ -33,12 +33,12 @@
             {% if paginator.previous_page %}
               {% if paginator.previous_page == 1 %}
               <nav id="pre">
-                <a href="/" role="button" title="Entradas más recientes">← más recientes</a>
+                <a href="/" role="button" title="Entradas más recientes">← newer</a>
               </nav>
               {% else %}
 
               <nav id="pre">
-              <a href="/page/{{ paginator.previous_page }}/" role="button" title="Entradas más recientes">← más recientes</a>
+              <a href="/page/{{ paginator.previous_page }}/" role="button" title="Entradas más recientes">← newer</a>
               </nav>
 
             {% endif %}
@@ -46,13 +46,13 @@
             {% if paginator.next_page %}
               {% if paginator.previous_page >= 1 %}
               <nav id="next">
-              <a href="/page/{{ paginator.next_page }}/" role="button" title="Entradas más antiguas">más antiguas →</a>
+              <a href="/page/{{ paginator.next_page }}/" role="button" title="Entradas más antiguas">older →</a>
               </nav>
             
             {% else %}
             {% if paginator.next_page %}
               <nav id="next2">
-              <a href="/page/{{ paginator.next_page }}/" role="button" title="Entradas más antiguas">más antiguas →</a>
+              <a href="/page/{{ paginator.next_page }}/" role="button" title="Entradas más antiguas">older →</a>
             {% endif %} 
 
             {% endif %} 

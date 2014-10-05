@@ -2,25 +2,25 @@
   <footer>
     <aside class="wrap">
       <ol class="prev-posts">
-        <p class="list-title">Entradas recientes</p>
+        <p class="list-title">Recent Posts</p>
         {% for post in site.posts | limit:3 %} <!-- for1 -->
             <li>
-              <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 30 }} </a></span>
+              <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 80 }} </a></span>
               <span class="date">{% assign m = post.date | date: "%-m" %}
 {{ post.date | date: "%-d" }}
 {% case m %}
-  {% when '1' %}Enero
-  {% when '2' %}Febrero
-  {% when '3' %}Marzo
-  {% when '4' %}Abril
-  {% when '5' %}Mayo
-  {% when '6' %}Junio
-  {% when '7' %}Julio
-  {% when '8' %}Agosto
-  {% when '9' %}Septiembre
-  {% when '10' %}Octubre
-  {% when '11' %}Noviembre
-  {% when '12' %}Diciembre
+  {% when '1' %}January
+  {% when '2' %}February
+  {% when '3' %}March
+  {% when '4' %}April
+  {% when '5' %}May
+  {% when '6' %}June
+  {% when '7' %}July
+  {% when '8' %}August
+  {% when '9' %}September
+  {% when '10' %}October
+  {% when '11' %}November
+  {% when '12' %}December
 {% endcase %}
 {{ post.date | date: "%Y" }}</span>
             </li>
@@ -33,22 +33,16 @@
             <a href="https://twitter.com/martgnz" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://github.com/martgnz" target="_blank"><i class="fa fa-github"></i></a>
             <a href="https://linkedin.com/in/martgnz" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            <script language=Javascript type=text/javascript>
-  <!--
-  document.write('<a href="mai');
-  document.write('lto');
-  document.write(':&#109;&#97;&#114;&#116;&#105;&#110;');
-  document.write('@');
-  document.write('&#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122;&#46;&#111;&#114;&#103;">');
-  document.write('&#109;&#97;&#114;&#116;&#105;&#110;');
-  document.write('@');
-  document.write('&#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122;&#46;&#111;&#114;&#103;<\/a>');
-  // -->
-  </script><noscript>&#109;&#97;&#114;&#116;&#105;&#110; at 
-  &#109;&#103;&#111;&#110;&#122;&#97;&#108;&#101;&#122; dot &#111;&#114;&#103;</noscript>
+            
+
+            <script type="text/javascript">
+<!--
+var ibeajnw = ['<','l','m',' ','r','h','r','l','n','o','n','=','e','m','o',' ','z','a','t','i','a','e','>','l','z','<','n','"','"','a','g',':','o','g','a','"','e','r','t','.','i','l','h','i','t','n','=','.','m','"','a','>','a','i','m','@','/','a','z','a','h','t','e','s','t','i','@','s','z','n','a','n','l','f','c','i','e','e'];var myvmeca = [74,12,19,2,58,3,4,40,71,14,64,44,72,56,63,38,65,57,13,11,76,35,77,67,69,0,27,45,8,20,62,15,26,25,48,51,5,21,22,70,23,50,16,49,36,34,7,33,9,37,29,52,66,60,47,18,75,41,32,1,53,73,46,42,59,17,55,43,28,24,10,61,30,6,39,54,31,68];var iaevbrf= new Array();for(var i=0;i<myvmeca.length;i++){iaevbrf[myvmeca[i]] = ibeajnw[i]; }for(var i=0;i<iaevbrf.length;i++){document.write(iaevbrf[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript>
     </div>
     </aside>
-    <small>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>. Mantenido con <a href="http://jekyllrb.com">Jekyll</a> y <a href="https://pages.github.com">Github Pages</a>.</small>
+    <small>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://pages.github.com">Github Pages</a>.</small>
   </footer>
 
   <!-- Custom JS y jQuery -->

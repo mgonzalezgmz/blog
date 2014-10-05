@@ -1,18 +1,18 @@
 title:            Martín González
-tagline:          Periodismo y software libre.
-description:      Estudiante de periodismo en la Universitat Pompeu Fabra.
+tagline:          Data journalism and free software
+description:      "Data journalist, Github Lurker, Journalism student"
 #Comment out url when working locally to resolve base urls correctly
 # url: http://martingonzalez.net
 
 # Owner/author information
 owner:
   name:           Martín González
-  bio:            "Estudiante de periodismo en la Universitat Pompeu Fabra, Barcelona"
-  email:          martin at mgonzalez.org
+  bio:            "Journalism student at Pompeu Fabra University"
+  email:          hi at martingonzalez.net
   twitter:        martgnz        
   github:         martgnz       
   disqus:         martingonzalez
-  location:       "Madrid, ES"
+  location:       "Barcelona, ES"
   # Plug in your disqus shortname!
 
 tools:
@@ -22,8 +22,8 @@ tools:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Sobre mí
-    url: /sobre-mi
+  - title: About me
+    url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Madrid
