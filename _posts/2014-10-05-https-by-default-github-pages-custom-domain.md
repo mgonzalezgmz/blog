@@ -19,6 +19,6 @@ You have to enable SSL on the Cloudflare settings and wait for the activation (I
 ## Why is this important?
 SSL is a security layer over HTTP that prevents anyone to see the content of the pages you access to.  It prevents wiretapping and people like the NSA to know where do you navigate over the interwebs ([or maybe not](http://www.zdnet.com/has-the-nsa-broken-ssl-tls-aes-7000020312/)). 
 
-Anyway, it's an encrypted barrier that is useful to prevent someone know your navigation habits and the requests you do on a certain site. This is even more relevant when you connect to public wifi networks, like the one in your airport. Google [has just announced](http://googlewebmastercentral.blogspot.com.es/2014/08/https-as-ranking-signal.html) that is going to improve the pagerank of the websites that have HTTPS, so that's another incentive.
+It's an encrypted barrier that is useful to prevent someone to know your navigation habits and the requests you do on a certain site. This is even more relevant when you connect to public wifi networks, like the one in an airport or a hotel. Google [has just announced](http://googlewebmastercentral.blogspot.com.es/2014/08/https-as-ranking-signal.html) that is going to improve the pagerank of the websites that have HTTPS, so that's another incentive.
 
 I also recommend you to install [HTTPS Everywhere](https://www.eff.org/https-everywhere), an addon done by the EFF that forces your browser to access the HTTPS version of the page you're visiting.
