@@ -3,6 +3,7 @@
 body {
   font-family: $serif;
   color: $black;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -moz-osx-font-smoothing: grayscale; /* Fix for Mozilla */
   text-size-adjust: 100%;
@@ -283,18 +284,17 @@ header.site-header nav {
         background: rgba(0,0,0,.55);
     }
     .overlay-lighter {
-        background: rgba(0,0,0,.55);
+        background: rgba(0,0,0,0.5);
     }
     
     .featured-image {
         vertical-align: middle;
         min-height: 360px;
-        height: 50vh;
+        height: 100%;
         width: 100%;
         max-height: 800px;
         background-position: center center;
         background-size: cover;
-        vertical-align: middle;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -302,8 +302,17 @@ header.site-header nav {
         top: 0;
         z-index: -1;
         img {
+
             max-height: 800px;
         }
+    }
+        .featured-image-cover {
+        height: 100%;
+        vertical-align: middle;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     
     // Header Stuff
@@ -733,7 +742,7 @@ footer {
     
     .social {
         position: absolute;
-        top: 109px;
+        top: 143px;
         @include column(2,12);
         right: 5vw;
         font-style: italic;
@@ -755,6 +764,103 @@ footer {
 
 .disqus {
     margin-top: $lh*2;
+}
+
+/* Portfolio
+   ========================================================================== */
+
+.portfolioParent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100px;
+  background-color: #2A3840;
+}
+
+.portfolioFilter {
+    font-family: $serif;
+    text-align: center;
+    position: relative;
+    top:30%;
+    transform: translateY(50%);
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.portfolioFilter a {
+    color: #FFF;
+    margin-left: 15px;
+    text-decoration:none;
+}
+ 
+.portfolioFilter a.current {
+    text-decoration:underline;
+}
+
+ 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* ---- isotope ---- */
+
+.isotope {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .item ---- */
+
+.item {
+    width: 310px;
+    margin: 10px;
+    height: 200px;
+    float: left;
+    box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,0);
+    background-size:cover;
+    overflow:hidden;
+}
+
+#overlay-box {  
+    background:rgba(0,0,0,.5);
+    text-align:center;
+    padding:150px 0 66px 0;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+
+.item:hover #overlay-box, .item:active #overlay-box{
+    opacity:1;
+}
+
+#description-box {  
+    font-family: $serif;
+    font-weight:700;
+    font-style: italic;
+    color:#FFF;
+    font-size:23px;
+}
+
+
+.item.width2 { width: 310px; }
+.item.height2 { height: 200px; }
+
+.portfolio-img {
+
 }
 
 
@@ -808,7 +914,11 @@ footer {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-    
+    section.article .portfolioFilter {
+    top: 30%;
+    line-height: 25px;
+    font-size: 20px;
+}
     .post {
 
     .share {
@@ -853,10 +963,14 @@ left: 70%;
     
     }
 }
+
 @media only screen and (max-width : 680px) {
  
  /* All Posts */
-      
+section.article .portfolioFilter {
+    line-height: 25px;
+    font-size: 20px;
+}
   section.article img.loading {
     top: 10px !important;
     right: 6%;
@@ -894,7 +1008,7 @@ left: 70%;
         font-size: 32px;
     }
   }
-  
+
   header.site-header a.menu img {
     width: 24px;
     height: auto;
@@ -965,7 +1079,15 @@ left: 70%;
 
 
 @media only screen and (max-width: $breakpoint-1-max-width) {
+section.article .portfolioFilter {
+    top: 10%;
+    line-height: 25px;
+    font-size: 20px;
+}
 
+.isotope {
+    width: 70%;
+}
 .post {
     @include column(9);
     max-width: 420px;

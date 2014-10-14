@@ -1,7 +1,6 @@
 ---
 layout: post-light-feature
 title: "Datos, infogr.am y mucho periodismo - #jpd14"
-categories: articles
 date: 2014-05-12
 image: 
         feature: Ha...-cover.jpg

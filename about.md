@@ -1,19 +1,19 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Sobre mí
-description: "Estudio periodismo en la Universitat Pompeu Fabra, Barcelona, y me apasiona el data-driven journalism."
+title: About me
+description: "I study Journalism at Pompeu Fabra University, Barcelona, and I'm passionate about data-driven storytelling"
 tags: [ddj, periodismo de datos, software libre, open source]
 image:
   feature: sobremi.jpg
 ---
-Uso herramientas como **Excel**, **Tableau**, **D3** u **Open Refine** para limpiar, estructurar y visualizar *datasets* [de](http://www.eldiario.es/sociedad/ebola-brote-motalidad-expansion_0_289421595.html) [lo](http://martingonzalez.net/visualiza-tus-datos-del-bicing-con-cartodb-y-torque/) [más](http://www.eldiario.es/politica/exportacion-armas-espana-israel-gaza_0_289071667.html) [variado](http://martingonzalez.net/mapa-de-manifestaciones-del-referendumya/). Me paso el día en Github navegando entre código, de hecho esta misma web [está alojada allí](https://github.com/mgonzalezgmz/mgonzalezgmz.github.io). Hice un [Google Code-In](https://developers.google.com/open-source/gci/) cuando estaba en el instituto y soy miembro de [KDE España](http://www.kde-espana.org/).
+I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even [this website](https://github.com/martgnz/martgnz.github.io) is hosted there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE España](http://www.kde-espana.org/).
 
-Creo en la **transparencia** y el **código abierto**. Participo en la planificación de las sesiones de periodismo de datos del [CCCB](http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397) y coorganizo el *meetup* [Barcelona Free Software Users & Hackers](http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/).
+I believe in **transparency** and **open source**. I collaborate in the [CCCB's Data Journalism sessions](http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397) and I'm one of the organizers of the [Barcelona Free Software Users & Hackers](http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/) meetup. 
 
-El verano de 2014 lo pasé contando historias con datos en [eldiario.es](http://eldiario.es), en Madrid.
+The summer of 2014 I did a Data Journalism internship at [eldiario.es](http://eldiario.es), in Madrid.
 
-### Artículos
+### Articles
 **[eldiario.es](http://www.eldiario.es/autores/martin_gonzalez/)**
 
 - [MAPA: ¿Qué compra España a los países con las peores condiciones laborales? ](http://www.eldiario.es/economia/Espana-paises-respetan-derechos-laborales_0_296770922.html)
@@ -57,12 +57,12 @@ El verano de 2014 lo pasé contando historias con datos en [eldiario.es](http://
 - [Interior recopilarà dades dels convocants de manifestacions](http://www.vistaldogc.cat/2014/02/interior-recopilara-dades-dels-convocants-de-manifestacions.html)
 - [Es duplica el preu de la prova per obtenir el nivell de suficiència i superior de català](http://www.vistaldogc.cat/2014/01/es-duplica-el-preu-de-la-prova-per-obtenir-el-nivell-de-suficiencia-i-superior-de-catala.html)
 
-### Desarrollo web
+### Web development
 **[eldiario.es](http://www.eldiario.es/autores/martin_gonzalez/)**
 
 - [Historias de la crisis](http://www.eldiario.es/multimedia/historias_de_la_crisis/index.html) - Martín González / Belén Picazo
 
-### Charlas
+### Speaking
 **[Akademy-es 2014 (Málaga)](http://www.kde-espana.org/akademy-es2014/index.php)**
 
 - [Linux en los medios de comunicación](http://slides.com/mgonzalezgmz/linux-en-los-medios#/)

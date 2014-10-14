@@ -1,7 +1,6 @@
 ---
 layout: post-light-feature
 title: Amor por la estadística
-categories: articles
 date: 2014-08-22
 image: 
         feature: Le...-cover.jpg

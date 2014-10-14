@@ -2,18 +2,17 @@ title:            Martín González
 tagline:          Data journalism and free software
 description:      "Data journalist, Github Lurker, Journalism student"
 #Comment out url when working locally to resolve base urls correctly
-# url: http://martingonzalez.net
+# url: https://martingonzalez.net
 
 # Owner/author information
 owner:
   name:           Martín González
-  bio:            "Journalism student at Pompeu Fabra University"
+  bio:            Journalism student at Pompeu Fabra University
   email:          hi at martingonzalez.net
   twitter:        martgnz        
   github:         martgnz       
   disqus:         martingonzalez
   location:       "Barcelona, ES"
-  # Plug in your disqus shortname!
 
 tools:
   standards:      "HTML, SCSS, Jekyll and awesomeness"
@@ -21,7 +20,12 @@ tools:
 
 # Links to include in top navigation
 # For external links add external: true
+
 links:
+  - title: Portfolio
+    url: "/#portfolio"
+  - title: Blog
+    url: /blog
   - title: About me
     url: /about
 
@@ -56,4 +60,4 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Cool pagination
 paginate: 5
-paginate_path: "/page/:num"
+paginate_path: "/blog/page/:num"

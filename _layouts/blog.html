@@ -4,8 +4,8 @@
         <article class="archive-wrap">
         <ol class="post-list">
         <lh><h2><span class="bb">{{ page.title }}</span></h2></lh>
-        
         {% for post in paginator.posts %}
+
         <li> <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{% assign m = post.date | date: "%-m" %}
@@ -30,22 +30,36 @@
         {% endfor %}
 
        </ol>
-      <nav id="pagination">
             {% if paginator.previous_page %}
               {% if paginator.previous_page == 1 %}
-                <a href="/" title="Previous Page"><i class="fa fa-long-arrow-left">   más recientes</i></a>
+              <nav id="pre">
+                <a href="/" role="button" title="Newer">← newer</a>
+              </nav>
               {% else %}
-              <a href="/page/{{ paginator.previous_page }}/" title="Anterior"><i class="fa fa-long-arrow-left">   más recientes</i></a>
-                
-            {% endif %} /
-            {% endif %}
 
-            {% if paginator.next_page %} 
-              <a href="/page/{{ paginator.next_page }}/" title="Next Page">más antiguas   <i class="fa fa-long-arrow-right">  </i></a>
+              <nav id="pre">
+              <a href="/blog/page/{{ paginator.previous_page }}/" role="button" title="Newer">← newer</a>
+              </nav>
+
+            {% endif %}
+            {% endif %}
+            {% if paginator.next_page %}
+              {% if paginator.previous_page >= 1 %}
+              <nav id="next">
+              <a href="/blog/page/{{ paginator.next_page }}/" role="button" title="Older">older →</a>
+              </nav>
+            
+            {% else %}
+            {% if paginator.next_page %}
+              <nav id="next2">
+              <a href="/blog/page/{{ paginator.next_page }}/" role="button" title="Older">older →</a>
             {% endif %} 
-      </nav>
+
+            {% endif %} 
+            {% endif %} 
+
           </article>
         </section>
     </div>
-
+<div class="push"></div>
 {% include footer.html %}

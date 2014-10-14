@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to enable HTTPS by default on Github Pages with a custom domain"
-categories: articles
 date: 2014-10-05
 permalink: https-by-default-github-pages-custom-domain
 ---

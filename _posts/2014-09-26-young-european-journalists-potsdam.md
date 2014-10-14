@@ -1,7 +1,6 @@
 ---
 layout: post-feature
 title: "Young European Journalists: Data journalism and Surveillance"
-categories: articles
 date: 2014-09-26
 image: 
         feature: yej-cover.jpg
