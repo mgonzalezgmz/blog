@@ -3,11 +3,11 @@ layout: page
 permalink: /about/index.html
 title: About me
 description: "I study Journalism at Pompeu Fabra University, Barcelona, and I'm passionate about data-driven storytelling"
-tags: [ddj, periodismo de datos, software libre, open source]
+tags: [ddj, data journalism, software libre, open source]
 image:
   feature: sobremi.jpg
 ---
-I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even [this website](https://github.com/martgnz/martgnz.github.io) is hosted there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE España](http://www.kde-espana.org/).
+I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even [this website](https://github.com/martgnz/martgnz.github.io) is hosted there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE Spain](http://www.kde-espana.org/).
 
 I believe in **transparency** and **open source**. I collaborate in the [CCCB's Data Journalism sessions](http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397) and I'm one of the organizers of the [Barcelona Free Software Users & Hackers](http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/) meetup. 
 
@@ -70,6 +70,3 @@ The summer of 2014 I did a Data Journalism internship at [eldiario.es](http://el
 **[II Jornadas de periodismo y Open Data (Barcelona)](http://periodismodatos.okfn.es/)**
 
 - Presentación de Vist al DOGC - Meetup Data+Moritz
-
-
-<!-- <i class="fa fa-file-pdf-o"></i> <a href="https://dl.dropboxusercontent.com/u/55065502/Mart%C3%ADnGonz%C3%A1lez_CV_June2014.pdf" target="blank">Descarga mi currículum</a> -->
