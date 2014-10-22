@@ -7,7 +7,7 @@ tags: [ddj, data journalism, software libre, open source]
 image:
   feature: sobremi.jpg
 ---
-I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even [this website](https://github.com/martgnz/martgnz.github.io) is hosted there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE Spain](http://www.kde-espana.org/).
+I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even this website is [hosted](https://github.com/martgnz/martgnz.github.io) there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE Spain](http://www.kde-espana.org/).
 
 I believe in **transparency** and **open source**. I collaborate in the [CCCB's Data Journalism sessions](http://www.cccb.org/es/marc-periodismo_de_datos_2014-45397) and I'm one of the organizers of the [Barcelona Free Software Users & Hackers](http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/) meetup. 
 
