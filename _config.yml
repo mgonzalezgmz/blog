@@ -1,5 +1,5 @@
 title:            Martín González
-tagline:          Data journalism and free software
+tagline:          Data journalist and free software
 description:      "Data journalist, Github Lurker, Journalism student"
 #Comment out url when working locally to resolve base urls correctly
 # url: https://martingonzalez.net
@@ -53,7 +53,7 @@ sass:
     style: :compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:title
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
@@ -62,6 +62,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 paginate: 5
 paginate_path: "/blog/page/:num"
 
-# emoji fun
+# gems fun
 gems:
   - jemoji
+  - jekyll-mentions
+  - jekyll-sitemap
+
+# twitter mentions
+jekyll-mentions: https://twitter.com
