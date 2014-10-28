@@ -285,6 +285,18 @@ header.site-header nav {
         -webkit-background-size: cover;
 
     }
+
+    .overlay-light {
+    vertical-align: middle;
+    min-height: 360px;
+    height: 50vh;
+    width: 100%;
+    max-height: 800px;
+    position: absolute;
+    z-index: 2;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.55);
+}
+
     .overlay-lighter {
         background: rgba(0,0,0,0.5);
     }
