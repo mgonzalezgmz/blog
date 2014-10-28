@@ -1,11 +1,12 @@
 {% include head-feature.html %}
 <div id='bump'>
 <section class="article" style="margin-bottom: 0px">
-<div style="background: url({{ site.url }}/images/cover.jpg) no-repeat center center fixed" class="featured-image-cover">
+<div id="frontpicture" style="background: url({{ site.url }}/images/cover.jpg) no-repeat center top fixed" class="featured-image-cover">
 
   	<p class="cover-text">Data Journalist</p>
   	<p class="cover-text-italics">“Have you tried turning it off and on again?”</p>
   </div>
+<div id="contentbody">
 <div class="portfolioParent" id="portfolio">
 <div id="filters" class="portfolioFilter">
     <a href="#" data-filter="*" class="current">All Categories</a>
@@ -117,7 +118,7 @@
 
 </div>
   </div>
-
+</div>
 <script type="text/javascript">
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -167,6 +168,15 @@ $(function() {
       $('html, body').animate({
         scrollTop: $('#portfolio').offset().top
         }, 'slow');
+    }
+    $(window).bind('scroll',function(e){
+      parallaxScroll();
+    });
+ 
+    function parallaxScroll(){
+      var scrolledY = $(window).scrollTop();
+    $('#frontpicture').css('background-position','center -'+((scrolledY*0.5))+'px');
+    $('#contentbody').css('top','-'+((scrolledY))+'px');
     }
 });
 </script>

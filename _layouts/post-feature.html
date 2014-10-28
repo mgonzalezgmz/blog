@@ -4,28 +4,11 @@
 
 <section class="article">
 
-  <div class="overlay overlay-lighter"></div>
-  <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
-{% else %}
-
-{% include head-dark.html %}
-
-<section class="article pad-top">
-
-{% endif %}
-
-{% if page.figure %}
-<div class="header-figure-box">
-  <p class="header-figure">{{ page.figure }}</p>
-</div>
-{% endif %}
-
-
-      <article class="wrap post">
-        <header class="post-header">
-          <hgroup>
-            <h1>{{page.title}}</h1>
-            <p class="date">{% assign m = page.date | date: "%-m" %}
+  <div class="featured-image-cover" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})">  
+  
+  <div class="overlay overlay-lighter">
+  <p class="cover-text-front">{{page.title}}</p>
+  <p class="cover-text-date">- {% assign m = page.date | date: "%-m" %}
 {{ page.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}January
@@ -41,7 +24,28 @@
             {% when '11' %}November
             {% when '12' %}December
 {% endcase %}
-{{ page.date | date: "%Y" }}</p>
+{{ page.date | date: "%Y" }} -</p>
+  </div>
+  </div>
+
+{% else %}
+
+{% include head-dark.html %}
+
+<section class="article pad-top">
+
+{% endif %}
+
+{% if page.figure %}
+<div class="header-figure-box">
+  <p class="header-figure">{{ page.figure }}</p>
+</div>
+{% endif %}
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            
             <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
           </hgroup>
         </header>
