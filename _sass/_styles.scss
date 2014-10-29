@@ -328,7 +328,65 @@ header.site-header nav {
         -o-background-size: cover;
         background-size: cover;
     }
-    
+
+
+/* Create a bouncing scroll-down arrow on homepage with cover image */
+.scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -16px;
+    width: 45px;
+    height: 45px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    animation: 4s ease 2s normal none infinite running bounce;
+}
+
+.scroll-down:visited {
+    color: #fff;
+}
+/* Stop it bouncing and increase contrast when hovered */
+.scroll-down:hover {
+    color: #fff;
+    -webkit-animation: none;
+    animation: none;
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    20% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+}
+
     // Header Stuff
     header {
         margin: (2*$lh) 0 $lh 0;
@@ -894,6 +952,7 @@ left: 65%;
 left: 80%;
 
 }
+
 footer {
     font-size: $fs5;
     
