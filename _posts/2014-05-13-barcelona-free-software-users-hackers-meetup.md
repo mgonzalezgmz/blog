@@ -3,7 +3,7 @@ layout: post-light-feature
 title: "Barcelona Free Software Users & Hackers Meetup"
 date: 2014-05-13
 image: 
-        feature: Im...-cover.png
+        feature: cover/bcnfloss.png
 permalink: barcelona-free-software-users-hackers-meetup
 ---
 Imagina quedar una vez al mes para charlar de software libre y conocer nuevos proyectos, ¡con cervezas gratis! Dicho y hecho. El grupo de <a href="http://www.meetup.com/Barcelona-Free-Software-Users-Hackers/">Barcelona Free Software Users &amp; Hackers</a> ya está en Meetup.
