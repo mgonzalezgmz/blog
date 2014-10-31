@@ -3,7 +3,7 @@ layout: post-light-feature
 title: "Lotta Ek: “There is no journalism crisis, you just have to find new ways to give reliable information”"
 date: 2013-12-01
 image: 
-        feature: Du...-cover.jpg
+        feature: cover/lotta.jpg
 permalink: lotta-ek-there-is-no-journalism-crisis
 figure: "Lotta Ek is the art director of the Dagens Nyheter, one of the World's Best-Designed Newspapers of 2012 and 2013, according to the Society for News Design."
 ---
