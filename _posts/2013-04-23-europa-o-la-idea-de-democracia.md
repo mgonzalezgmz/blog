@@ -3,7 +3,7 @@ layout: post-feature
 title: Europa o la idea de democracia
 date: 2013-04-23
 image: 
-        feature: El...-cover.jpg
+        feature: cover/europa.jpg
 permalink: europa-o-la-idea-de-democracia
 figure: Fotomovimiento
 ---
