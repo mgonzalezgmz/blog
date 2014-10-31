@@ -25,6 +25,18 @@ p.header-figure {
   margin-left: 5%;
 
 }
+
+.drop-cap {
+    font-family: $serif;
+    font-weight: 700;
+    font-size: 72px;
+    float: left;
+    height: 50px;
+    margin-right: 3px;  
+    line-height: 80px;
+    color: #2A3840;
+} 
+
 div.header-figure-box {
   position: absolute;
   right: 5px;
@@ -43,36 +55,35 @@ div.header-figure-box {
 }
 
 .cover-text {
-font-size: 100px;
-text-align: right;
-position: relative;
-top: 60%;
-right: 5%;
-color: white;
-margin-left: 1%;
-line-height:75px;
-letter-spacing: -3px;
-text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    font-size: 100px;
+    text-align: right;
+    position: relative;
+    top: 60%;
+    right: 5%;
+    color: white;
+    margin-left: 1%;
+    line-height:75px;
+    letter-spacing: -3px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
 
 }
 
 .cover-text-italics {
-font-size: 40px;
-font-style: italic;
-text-align: right;
-position: relative;
-top: 60%;
-right: 5%;
-color: white;
-margin-left: 1%;
-line-height:75px;
-letter-spacing: -3px;
-text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-
+    font-size: 40px;
+    font-style: italic;
+    text-align: right;
+    position: relative;
+    top: 60%;
+    right: 5%;
+    color: white;
+    margin-left: 1%;
+    line-height:75px;
+    letter-spacing: -3px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .cover-text-front {
