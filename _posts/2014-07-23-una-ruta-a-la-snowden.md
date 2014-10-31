@@ -3,7 +3,7 @@ layout: post-light-feature
 title: Una ruta a là Snowden
 date: 2014-07-23
 image: 
-        feature: D3...-cover.jpg
+        feature: cover/snowden.jpg
 figure: Edward Snowden and Bradley Manning / svennnevenn
 permalink: una-ruta-a-la-snowden
 ---

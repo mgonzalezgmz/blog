@@ -3,7 +3,7 @@ layout: post-feature
 title: "Ruido, improvisación y caos"
 date: 2014-06-12
 image: 
-        feature: Pa...-cover.jpg
+        feature: cover/ruido.jpg
 figure: El arte sonoro también tiene su hueco en Barcelona / Miguel Castejón
 permalink: ruido-improvisacion-y-caos
 ---
