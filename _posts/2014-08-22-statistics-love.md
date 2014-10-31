@@ -3,7 +3,7 @@ layout: post-light-feature
 title: Amor por la estadística
 date: 2014-08-22
 image: 
-        feature: Le...-cover.jpg
+        feature: cover/minard.jpg
 permalink: statistics-love
 figure: "Charles Joseph Minard, la marcha de Napoleón sobre Rusia."
 ---
