@@ -3,7 +3,7 @@ layout: post-feature
 title: "Scrollytelling: Crónica del Akademy-es 2013"
 date: 2014-04-20
 image: 
-        feature: De...-cover.jpg
+        feature: cover/akademy.jpg
 permalink: scrollytelling-cronica-del-akademy-es-2013
 ---
 Desde hace un tiempo han ido apareciendo reportajes y textos largos adaptados a la web, páginas web separadas del ritmo diario del CMS. Son aplicaciones desarrolladas desde las redacciones para una pieza periodística en concreto, que a veces rayan en los reportajes interactivos. Normalmente tienen diseño responsivo y hacen un gran uso de las imágenes. Algunos ejemplos <a href="http://3anys.ara.cat/">aquí</a>, <a href="http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded">aquí</a> y <a href="http://elpais.com/especiales/2013/desahucios/">aquí</a>.

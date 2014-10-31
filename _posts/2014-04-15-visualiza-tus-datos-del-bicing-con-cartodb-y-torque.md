@@ -3,7 +3,7 @@ layout: post-light-feature
 title: "Visualiza tus datos del Bicing con CartoDB y Torque"
 date: 2014-04-15
 image: 
-        feature: Ya...-cover.jpg
+        feature: cover/bicing.jpg
 permalink: visualiza-tus-datos-del-bicing-con-cartodb-y-torque
 ---
 Ya ha pasado un año desde que comencé a usar el [Bicing](http://bicing.cat), el exitoso servicio de bicis compartidas de Barcelona, y ahora que llega la hora de renovar la tarjeta quería trastear un poco con mis datos de uso. Este es un pequeño apunte para quien tenga ganas de generar un bonito mapa animado con <a href="http://cartodb.com">CartoDB</a> y <a href="https://cartodb.github.io/torque/">Torque</a> con sus propios datos.
