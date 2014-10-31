@@ -3,7 +3,7 @@ layout: post-feature
 title: "Linux, KDE y Blue Systems, el laboratorio del código abierto en Barcelona"
 date: 2013-03-13
 image: 
-        feature: En...-cover.jpg
+        feature: cover/linus.jpg
 permalink: linux-kde-y-blue-systems-el-laboratorio-del-codigo-abierto-en-barcelona
 figure: Linus Torvalds leyendo código / Athanasios Kasampalis
 ---
