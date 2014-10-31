@@ -3,7 +3,7 @@ layout: post-light-feature
 title: "Datos, infogr.am y mucho periodismo - #jpd14"
 date: 2014-05-12
 image: 
-        feature: Ha...-cover.jpg
+        feature: cover/jpd14.jpg
 permalink: datos-infogram-y-mucho-periodismo-jpd14
 figure: Más de cincuenta periodistas se dieron cita en la sala Mirador del CCCB / CCCB
 ---
