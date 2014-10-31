@@ -2,8 +2,6 @@
 layout: post
 title: "Aleix Pol: “El software libre no se rebaja a comprometer la seguridad del usuario”"
 date: 2014-04-05
-image: 
-        feature: Al...-cover.jpg
 permalink: aleix-pol-el-software-libre-no-se-rebaja-a-comprometer-la-seguridad-del-usuario
 ---
 Aleix Pol trabaja en Blue Systems desarrollando la nueva generación del escritorio Plasma. Es conocido por haber creado [KAlgebra](http://userbase.kde.org/KAlgebra), una pequeña maravilla que permite plasmar gráficas y complejas funciones matématicas con facilidad. También ha trabajado en KDevelop, un completo IDE con soporte para C y C++, entre otros.
