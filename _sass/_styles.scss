@@ -871,12 +871,9 @@ footer {
 
 
 /* ---- isotope ---- */
-
 .isotope {
     max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin: 0 auto;
 }
 
 /* clear fix */
@@ -923,10 +920,6 @@ footer {
 .item.width2 { width: 310px; }
 .item.height2 { height: 200px; }
 
-.portfolio-img {
-
-}
-
 
 /* Tablet
    ========================================================================== */
@@ -941,6 +934,11 @@ h1 {
 
 blockquote, blockquote p {
     font-size: $fs3;
+}
+
+section.article .portfolioFilter {
+    line-height: 25px;
+    font-size: 20px;
 }
 
 #next {

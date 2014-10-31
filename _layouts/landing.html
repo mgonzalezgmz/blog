@@ -120,6 +120,7 @@
 </div>
   </div>
 </div>
+
 <script type="text/javascript">
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -138,17 +139,19 @@ $(function() {
 </script>
 
 <script type="text/javascript">
+	$(document).ready(function () {
+	  var $container = $('#isotope');
+		$( function() {
+		  $('.isotope').isotope({
+		    itemSelector: '.item',
+		    masonry: {
+		      columnWidth: 50,
+		      isFitWidth: true
+		    }
+		});
+	});
+
  $(window).load(function(){
-    var $container = $('#isotope');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
- 
     $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
         $(this).addClass('current');
@@ -178,7 +181,8 @@ $(function() {
       var scrolledY = $(window).scrollTop();
     $('#frontpicture').css('background-position','center -'+((scrolledY*0.5))+'px');
     $('#contentbody').css('top','-'+((scrolledY))+'px');
-    }
+    	} 
+	});
 });
 </script>
 
