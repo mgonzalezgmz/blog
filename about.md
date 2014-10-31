@@ -5,7 +5,7 @@ title: About me
 description: "I study Journalism at Pompeu Fabra University, Barcelona, and I'm passionate about data-driven storytelling"
 tags: [ddj, data journalism, software libre, open source]
 image:
-  feature: sobremi.jpg
+  feature: resources/about.jpg
 ---
 I make use of tools like **Excel**, **Tableau** or **Open Refine** for cleaning, designing and visualizing datasets. I'm a self-recognized GitHub addict, even this website is [hosted](https://github.com/martgnz/martgnz.github.io) there. I did a [Google Code-In](https://developers.google.com/open-source/gci/) when I was on high school and I'm a proud member of [KDE Spain](http://www.kde-espana.org/).
 
