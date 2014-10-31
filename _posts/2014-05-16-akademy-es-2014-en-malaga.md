@@ -3,7 +3,7 @@ layout: post-light-feature
 title: Akademy-es en Málaga
 date: 2014-05-16
 image: 
-        feature: Ah...-cover.png
+        feature: cover/malaga.png
 ---
 Ahora mismo estoy en El Prat a punto de coger un vuelo a Málaga para asistir al <a href="http://www.kde-espana.org/akademy-es2014/anuncio.php">Akademy-es 2014</a>, la reunión anual de usuarios y desarrolladores del entorno de escritorio <a href="http://kde.org">KDE</a> en España. Esta edición será del 16 al 18 de mayo en la ETSI Telecomunicaciones de la Universidad de Málaga.
 
