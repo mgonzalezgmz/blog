@@ -3,7 +3,7 @@ layout: post-feature
 title: "Young European Journalists: Data journalism and Surveillance"
 date: 2014-09-26
 image: 
-        feature: yej-cover.jpg
+        feature: cover/potsdam.jpg
 permalink: young-european-journalists-potsdam
 figure: '"Our group after introductions to data mining and machine learning at Hasso-Plattner-Institut in Potsdam." / Jim van Nunen'
 ---
