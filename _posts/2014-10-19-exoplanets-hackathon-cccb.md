@@ -3,7 +3,7 @@ layout: post-light-feature
 title: "Stars, exoplanets and data"
 permalink: exoplanets-hackathon-cccb
 image: 
-        feature: exoplanets.jpg
+        feature: cover/exoplanets.jpg
 ---
 Last week a bunch of astronomy aficionados and data geeks gathered at [Estació Beta](http://bigbangdata.cccb.org/en/sec-beta-station/), in order to participate in an hackathon organized by the CCCB.
 
