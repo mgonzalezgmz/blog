@@ -17,10 +17,7 @@ The topic was of this year was "Data And Journalism. Between Big Stories And Dir
 
 We were in Potsdam (40km from Berlin) from 8 to 13th of September, attending lectures at the [Potsdam University of Applied Sciences](http://www.fh-potsdam.de/) and the [Hasso Plattner Institut](http://hpi.de/). We also went to the [M100 Sansoucci Colloquium](http://www.m100potsdam.org/en/m100-en/sanssouci-colloquium.html), an international one-day round table that congregates every year 50 editors of the most important media organizations around the world. Representatives from ProPublica, El País or Der Spiegel, and executives of technology companies and organizations like Google or the German Pirate Party. The workshops were suited for begineers and intermediate data journalists covering a wide range of techniques: from data mining to visualization.
 
- <figure>
-  <img src="https://dl-web.dropbox.com/get/m100yej2014%20%282%29/photos%20yej/Aline/IMG_1929.JPG?_subject_uid=55065502&w=AABeyooc0vXhRYoa1YKKrbSD8RRvMSNwHU4hot4BSuyzCA">
-  <figcaption>Image credit: Aline Flor</figcaption>
-</figure> 
+![](https://dl.dropboxusercontent.com/u/55065502/potsdam.jpg)
 
 We visited the Google Berlin office and the Bild and Zeit Online newsrooms. Luckily, [Hacks/Hackers Berlin](http://www.meetup.com/Hacks-Hackers-Berlin/) had a meetup that week. A lot of pizzas and interesting conversations, this time about data security and privacy.
 
