@@ -3,7 +3,7 @@ layout: about
 permalink: /about/index.html
 title: About me
 description: "I study Journalism at Pompeu Fabra University, Barcelona, and I'm passionate about data-driven storytelling"
-tags: [ddj, data journalism, software libre, open source]
+tags: [ddj, data journalism, open source]
 image:
   feature: resources/about.jpg
 ---
