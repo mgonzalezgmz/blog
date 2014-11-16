@@ -1,4 +1,5 @@
 {% include head-feature.html %}
+<link rel="stylesheet" href="../assets/css/patternbolt.css" />
 <div id='bump'>
 <section class="article" style="margin-bottom: 0px">
 <div id="frontpicture" style="background: url({{ site.url }}/images/resources/cover.jpg) no-repeat center top fixed" class="featured-image-cover">
@@ -20,6 +21,23 @@
 </div>
 
 <div id="isotope" class="isotope">
+
+ <div class="item width2 viz" style="background:url({{ site.url }}/images/portfolio/mapa-9n.png);
+    background-size:cover;
+    overflow:hidden;"> <a href="http://www.eldiario.es/catalunya/politica/MAPA-resultados-municipio-9n_0_324418285.html" target="_blank">
+    <div id="overlay-box">
+     <span id="description-box">Maps of the 9-N</span>
+    </div></a>
+  </div>
+
+ <div class="item width2 interviews" style="background:url({{ site.url }}/images/portfolio/franklin-interview.png);
+    background-size:cover;
+    overflow:hidden;"> <a href="https://dot.kde.org/2014/11/10/franklin-weng-strength-behind-open-source" target="_blank">
+    <div id="overlay-box">
+     <span id="description-box">Franklin Weng: Open Source in Taiwan</span>
+    </div></a>
+  </div>
+
  <div class="item width2 projects" style="background:url({{ site.url }}/images/portfolio/concertados.png);
     background-size:cover;
     overflow:hidden;"> <a href="http://comunidad.medialab-prado.es/en/node/865" target="_blank">
@@ -117,6 +135,14 @@
     </div></a>
   </div>
 
+   <div class="item width2 interviews" style="background:url({{ site.url }}/images/portfolio/aristaran-interview.png);
+    background-size:cover;
+    overflow:hidden;"> <a href="http://periodismodatos.okfn.es/manuel-aristaran-todo-el-periodismo-es-de-datos-si-no-que-es-el-periodismo/" target="_blank">
+    <div id="overlay-box">
+     <span id="description-box">Manuel Aristarán: Mozilla OpenNews Fellow</span>
+    </div></a>
+  </div>
+
 </div>
   </div>
 </div>
@@ -136,9 +162,6 @@ $(function() {
     }
   });
 });
-</script>
-
-<script type="text/javascript">
 	$(document).ready(function () {
 	  var $container = $('#isotope');
 		$( function() {
@@ -173,15 +196,7 @@ $(function() {
         scrollTop: $('#portfolio').offset().top
         }, 'slow');
     }
-    $(window).bind('scroll',function(e){
-      parallaxScroll();
-    });
- 
-    function parallaxScroll(){
-      var scrolledY = $(window).scrollTop();
-    $('#frontpicture').css('background-position','center -'+((scrolledY*0.5))+'px');
-    $('#contentbody').css('top','-'+((scrolledY))+'px');
-    	} 
+    
 	});
 });
 </script>
