@@ -7,4 +7,4 @@ I like to have all my content over [Creative Commons BY-SA](https://creativecomm
 Have fun.
 
 ## Template
-I use a highly customized version of the [Balzac for Jekyll](https://github.com/ColeTownsend/Balzac-for-Jekyll) template, MIT licensed. :clap: for him!
+I use a highly customized version of the [Balzac for Jekyll](https://github.com/ColeTownsend/Balzac-for-Jekyll) template, MIT licensed.
