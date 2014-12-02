@@ -16,7 +16,8 @@ The summer of 2014 I did a Data Journalism internship at [eldiario.es](http://el
 ### Articles
 **[eldiario.es](http://www.eldiario.es/autores/martin_gonzalez/)**
 
-- [MAPA: ¿Qué compra España a los países con las peores condiciones laborales? ](http://www.eldiario.es/economia/Espana-paises-respetan-derechos-laborales_0_296770922.html)
+- [ MAPA: Los resultados del 9-N, municipio a municipio](http://www.eldiario.es/catalunya/politica/MAPA-resultados-municipio-9n_0_324418285.html)
+- [MAPA: ¿Qué compra España a los países con las peores condiciones laborales?](http://www.eldiario.es/economia/Espana-paises-respetan-derechos-laborales_0_296770922.html)
 - [Assange mueve ficha: anuncia problemas de salud y que saldrá pronto de su refugio diplomático](http://www.eldiario.es/politica/Assange-confirma-saldra-Embajada-ecuatoriana_0_293620737.html)
 - [El brote de ébola en África mata tres veces más personas que el anterior episodio más virulento](http://www.eldiario.es/sociedad/ebola-brote-motalidad-expansion_0_289421595.html) Martín González / Raúl Rejón 
 - [España multiplicó por 10 la venta de armas a Israel en 2013](http://www.eldiario.es/politica/exportacion-armas-espana-israel-gaza_0_289071667.html) - Martín González / Mario Pais Beiro
