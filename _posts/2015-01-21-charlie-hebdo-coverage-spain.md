@@ -14,7 +14,7 @@ Sin embargo, ¿cómo fue la cobertura de los medios españoles y catalanes despu
 <a href="http://pageonex.com/martgnz/charlie-hebdo-coverage-in-spain/"><img src="https://i.imgur.com/td8L0aT.jpg" /></a>
 Todos los diarios analizados (El Mundo, 20 Minutos, ABC, Ara, El País, El Periódico, Punt/Avui y La Vanguardia) abrieron con el atentado. El Ara y el ABC, habituales de las portadas póster, dedicaron todo su espacio al semanario, sin embargo, es curiosa la diferencia entre los dos. Mientras que el Ara titula "Tots som Charlie", con una ilustración que simboliza el ataque a la libertad de expresión (junto a una decena de artículos de opinión), el ABC propone "Ataque a la libertad", con las polémicas imágenes del asesinato del gendarme francés que dieron la vuelta al mundo.
 
-En general, durante el período analizado, la mayoría del espacio en las portadas fue dedicado al atentado (una media del 52,3%), aunque el día del anuncio de las elecciones catalanas la cobertura descendió hasta tan sólo el 13%, un hecho que analizaremos más tarde.
+En general, durante el período analizado, la mayoría del espacio en las portadas fue dedicado al atentado (una media del 52%), aunque el día del anuncio de las elecciones catalanas la cobertura descendió hasta tan sólo el 13%, un hecho que analizaremos más tarde.
 
 <img style="width: 1350px; margin-bottom: -350px;" src="https://dl.dropboxusercontent.com/u/55065502/chart-hebdo.svg" />
 La mayoría de los diarios, salvo el Punt/Avui, destaca su editorial en portada. Esto es un hecho clave, que demuestra la importancia que le dan los periódicos al suceso. En el caso de El Mundo, en vez de un editorial cuenta con una firma destacada, la de Zapatero, expresidente del Gobierno.
@@ -34,3 +34,6 @@ El Ara después de las elecciones, le dio menos espacio a las novedades sobre el
 El caso del ABC es interesante (y quizás extremo), porque no cambia la temática de su portada hasta la convocatoria de elecciones en Catalunya, es decir, se pasa casi una semana tratando el mismo tema en portada, con una foto a toda página en todo momento.
 
 ![](https://i.imgur.com/hLU9IfQ.png)
+
+### Donde aparecen los periodistas
+En la entrega de premios de la SND española de hace dos años, Javier Errea pronunció un discurso que se me quedó grabado en la retina. Uno de los diarios que más premios se llevó a casa esa noche fue el Diario de Navarra, y quizás no tenía el mejor diseño, o la innovación más radical, sin embargo, sí tenía una plantilla capaz de sacar a la calle un diario tras [unas terribles inundaciones](http://www.diariodenavarra.es/multimedia/galerias-imagenes/navarra/pamplona_comarca/pamplona/2013/06/10/el_dia_despues_inundacion_pamplona.html) que azotaron Pamplona. Es en los momentos más extremos cuando una redacción demuestra su valía. En un caso como el del Charlie Hebdo, se ve enseguida de qué pasta está hecho cada medio. La denuncia, la reflexión y la resistencia al sensacionalismo más feroz se demuestran en estos momentos, justo cuando aparecen los periodistas.
