@@ -16,7 +16,7 @@ Todos los diarios analizados (El Mundo, 20 Minutos, ABC, Ara, El País, El Peri�
 
 La mayoría de los diarios, salvo el Punt/Avui, destaca su editorial en portada. Esto es un hecho clave, que demuestra la importancia que le dan los periódicos al suceso. En el caso de El Mundo, en vez de un editorial cuenta con una firma destacada, la de Zapatero, expresidente del Gobierno.
 
-![](http://i.imgur.com/sdH3zeI.jpg)
+![](http://i.imgur.com/awqlhAy.jpg)
 
 Durante toda la semana, hasta el 15, los periódicos estuvieron monopolizados por el Charlie Hebdo. Ese día, el anuncio de Artur Mas de la convocatoria de elecciones anticipadas en Catalunya para el próximo 27 de septiembre, centró la atención de los medios (salvo, curiosamente, El Mundo y el 20 Minutos). Al día siguiente, todos los diarios menos el Ara y el Punt Avui (de marcada tendencia independentista) volvieron al Charlie Hebdo.
 
