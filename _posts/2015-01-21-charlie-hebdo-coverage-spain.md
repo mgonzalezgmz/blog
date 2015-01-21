@@ -22,7 +22,9 @@ Durante toda la semana, hasta el 15, los periódicos estuvieron monopolizados po
 
 ![](https://i.imgur.com/NiNJtTX.jpg)
 
-En esta imagen podemos ver la cobertura sobre Charlie Hebdo en El País (en color rojo) durante el día 15 y el 16. El cambio tiene que ver con las declaraciones del Papa sobre la libertad de expresión. Obviamente el espacio en las portadas va acorde con la importancia periodística de cada hecho en concreto (y todos los diarios salvo quizás el Ara y el Punt Avui se comportaron de una manera similar).
+En esta imagen podemos ver la cobertura sobre Charlie Hebdo en El País (en color rojo) durante el día 15 y el 16. El cambio tiene que ver con las declaraciones del Papa sobre la libertad de expresión. Obviamente el espacio en las portadas va acorde con la importancia periodística de cada hecho en concreto (y todos los diarios salvo quizás el Ara y el Punt Avui, que apostaron más por las elecciones, se comportaron de una manera similar).
+
+![](https://i.imgur.com/v3aaYwO.png)
 
 El caso del ABC es interesante (y quizás extremo), porque no cambia la temática de su portada hasta la convocatoria de elecciones en Catalunya, es decir, se pasa casi una semana tratando el mismo tema en portada, con una foto a toda página en todo momento.
 
