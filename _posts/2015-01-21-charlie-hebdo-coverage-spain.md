@@ -20,4 +20,8 @@ La mayoría de los diarios, salvo el Punt/Avui, destaca su editorial en portada.
 
 Durante toda la semana, hasta el 15, los periódicos estuvieron monopolizados por el Charlie Hebdo. Ese día, el anuncio de Artur Mas de la convocatoria de elecciones anticipadas en Catalunya para el próximo 27 de septiembre, centró la atención de los medios (salvo, curiosamente, El Mundo y el 20 Minutos). Al día siguiente, todos los diarios menos el Ara y el Punt Avui (de marcada tendencia independentista) volvieron al Charlie Hebdo.
 
+![](https://i.imgur.com/NiNJtTX.jpg)
+
+En esta imagen podemos ver la cobertura sobre Charlie Hebdo en El País (en color rojo) durante el día 15 y el 16. El cambio tiene que ver con las declaraciones del Papa sobre la libertad de expresión.
+
 El caso del ABC es interesante, porque su modelo de portadas monotemáticas no cambia hasta el 15, es decir, se pasa casi una semana tratando el mismo tema en portada, con una foto a toda página.
