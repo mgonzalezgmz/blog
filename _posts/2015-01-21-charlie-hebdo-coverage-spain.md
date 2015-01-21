@@ -29,7 +29,7 @@ En esta imagen podemos ver la cobertura sobre Charlie Hebdo en El País (en colo
 
 ![](https://i.imgur.com/v3aaYwO.png)
 
-El Ara después de las elecciones 
+El Ara después de las elecciones, le dio menos espacio a las novedades sobre el atentado que el resto de diarios generalistas.
 
 El caso del ABC es interesante (y quizás extremo), porque no cambia la temática de su portada hasta la convocatoria de elecciones en Catalunya, es decir, se pasa casi una semana tratando el mismo tema en portada, con una foto a toda página en todo momento.
 
