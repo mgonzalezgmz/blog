@@ -1,6 +1,6 @@
 ---
 layout: post-feature
-published: false
+published: true
 title: "Cobertura del Charlie Hebdo en España "
 permalink: charlie-hebdo-cobertura
 image: 
