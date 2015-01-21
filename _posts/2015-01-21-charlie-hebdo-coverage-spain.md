@@ -16,8 +16,7 @@ Todos los diarios analizados (El Mundo, 20 Minutos, ABC, Ara, El País, El Peri�
 
 En general, durante el período analizado, la mayoría del espacio en las portadas fue dedicado al atentado (una media del 52,3%), aunque el día del anuncio de las elecciones catalanas la cobertura descendió hasta tan sólo el 13%, un hecho que analizaremos más tarde.
 
-<img src="https://raw.githubusercontent.com/martgnz/martgnz.github.io/master/images/chart-hebdo.svg">
-
+<img src="https://dl-web.dropbox.com/get/Public/chart-hebdo.svg?_subject_uid=55065502&w=AAAgRFsVFtwzTt2wYVbWRDu1IBPAaTqhqocHGspwWVgMhg"></img>
 La mayoría de los diarios, salvo el Punt/Avui, destaca su editorial en portada. Esto es un hecho clave, que demuestra la importancia que le dan los periódicos al suceso. En el caso de El Mundo, en vez de un editorial cuenta con una firma destacada, la de Zapatero, expresidente del Gobierno.
 
 ![](https://i.imgur.com/awqlhAy.jpg)
