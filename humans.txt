@@ -14,5 +14,5 @@ Twitter: @martgnz
 Location: Barcelona, Spain
 
 /* SITE */
-Last update: Thursday, August 06, 2015, 20:42:00
+Last update: Wednesday, August 12, 2015, 22:27:06
 Tools: atom, gulp, basscsss
