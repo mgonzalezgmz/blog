@@ -1,0 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "skeleton/skeleton",
+        "colors",
+        "posts",
+        "variables",
+        "footer",
+        "articles",
+        "gallery",
+        "about",
+        "utilities",
+        "header"
+;
+
+body {
+    font-family: $serif;
+}
+html {
+    font-size: 10px;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+a {
+    color: $black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover {
+    color: $black;
+}
+img {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}

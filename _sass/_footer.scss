@@ -1,0 +1,14 @@
+@import "colors";
+@import "variables";
+
+.footer {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.footerText {
+    margin-bottom: 0.5rem;
+    line-height: 1.6rem;
+}
+.copy a:hover {
+    background-color: $yellow-t;
+}

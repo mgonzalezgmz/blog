@@ -1,0 +1,68 @@
+@import "variables";
+@import "colors";
+
+article p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+p > a:hover {
+    background-color: $yellow-t;
+}
+.articleHeadline {
+    text-align: center;
+    line-height: 1;
+}
+.projectHeadline {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+.articleMeta {
+    text-align: center;
+}
+.articleImg {
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.feedback {
+    text-align: center;
+}
+.btn-primary {
+    font-family: $sans;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    display: block;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.btn-primary:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    transform: translateY(2px);
+    color: $white;
+}
+
+/*
+* Special for zooming projects
+* AKA satellite imagery project
+*/
+.zoom {
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 2px;
+    cursor: zoom-in;
+}
+.zoom-container {
+    display: block;
+}
+
+@media (min-width: $mobile) {
+    .btn-primary {
+        display: inline-block;
+    }
+    .articleHeadline {
+        text-align: left;
+    }
+    .articleMeta {
+        text-align: left;
+    }
+}
