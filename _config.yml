@@ -8,7 +8,7 @@ url: "https://martingonzalez.net" # the base hostname & protocol for your site
 repo: https://github.com/martgnz/martgnz.github.io
 twitter: https://twitter.com/martgnz
 github:  https://github.com/martgnz
-img: https://martingonzalez.net/images/me.jpeg
+img: https://martingonzalez.net/images/share.png
 
 # Build settings
 markdown: kramdown
