@@ -20,10 +20,17 @@ layout: default
             <h4 class="postHeader">Notes</h4>
             {% for post in site.posts %}
                 {% if post.categories contains 'notes' %}
-                <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">
-                    <span class="postMeta">– {{ post.date | date: "%b %-d, %Y" }}</span>
-                    <h4 class="postHeadline balance-text">{{ post.title }}</h4>
-                </a>
+                    {% if post.external-url %}
+                    <a class="postLink" href="{{ post.external-url }}">
+                        <span class="postMeta">– {{ post.date | date: "%b %-d, %Y" }}</span>
+                        <h4 class="postHeadline balance-text">{{ post.title }}</h4>
+                    </a>
+                    {% else %}
+                    <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">
+                        <span class="postMeta">– {{ post.date | date: "%b %-d, %Y" }}</span>
+                        <h4 class="postHeadline balance-text">{{ post.title }}</h4>
+                    </a>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </div>
