@@ -49,6 +49,6 @@ permalink: blender-globe
         <img class="img-responsive m-b-2" data-src="/images/projects/blender_2.png" />
         <p class="p-centered balance-text">I have started to think about Blender after testing <a href="https://en.wikipedia.org/wiki/Orthographic_projection">orthographic projections</a> on QGIS. They are complicated to setup, requiring Python scripting and long steps every time you rotate or tilt the globe.</p>
         <img class="img-responsive m-t-3 m-b-3" data-src="/images/projects/blender_4.png" />
-        <p class="p-centered balance-text m-b-0">Doing this with Blender is easy: move or rotate the camera and then render the result!</p>
+        <p class="p-centered balance-text m-b-0"><a href="http://www.blenderguru.com/tutorials/create-a-realistic-earth/">Doing this</a> with Blender is easy: move or rotate the camera and then render the result!</p>
     </div>
 </div>
