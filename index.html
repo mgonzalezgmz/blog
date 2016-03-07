@@ -6,7 +6,7 @@ layout: default
         <ul class="galleryList">
             {% for project in site.data.projects %}
                 <li class="galleryArticle">
-                    <a class="galleryLink" href="{{article.link}}">
+                    <a class="galleryLink" href="{{project.link}}">
                         <span class="galleryImg" style="background-image: url('{{project.img}}')"></span>
                         <p class="galleryHeadline balance-text">{{project.title}}</p>
                         <span class="galleryDate">– {{project.date}}</span>
