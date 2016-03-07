@@ -4,12 +4,12 @@ layout: default
 <div class="main row m-b-3">
     <div class="gallery">
         <ul class="galleryList">
-            {% for article in site.data.articles %}
+            {% for project in site.data.projects %}
                 <li class="galleryArticle">
                     <a class="galleryLink" href="{{article.link}}">
-                        <span class="galleryImg" style="background-image: url('{{article.img}}')"></span>
-                        <p class="galleryHeadline balance-text">{{article.title}}</p>
-                        <span class="galleryDate">– {{article.date}}</span>
+                        <span class="galleryImg" style="background-image: url('{{project.img}}')"></span>
+                        <p class="galleryHeadline balance-text">{{project.title}}</p>
+                        <span class="galleryDate">– {{project.date}}</span>
                     </a>
                 </li>
             {% endfor %}
