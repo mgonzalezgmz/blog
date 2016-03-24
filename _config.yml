@@ -8,6 +8,7 @@ url: "https://martingonzalez.net" # the base hostname & protocol for your site
 repo: https://github.com/martgnz/martgnz.github.io
 twitter: https://twitter.com/martgnz
 github:  https://github.com/martgnz
+pgp: https://pgp.mit.edu/pks/lookup?op=get&search=0x8F3D0577FFF761FA
 img: https://martingonzalez.net/images/share.png
 
 # Build settings
