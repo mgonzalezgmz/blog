@@ -1,5 +1,14 @@
 @import "variables";
 
+
+.column:first-child,
+.columns:first-child {
+    margin: 0 auto
+}
+.col-center {
+    float: none;
+    margin: 0 auto;
+}
 .center-block {
     margin: 0 auto;
     text-align: center;
@@ -46,4 +55,34 @@
 }
 .m-t-4 {
     margin-top: 4rem;
+}
+.p-b-0 {
+    padding-bottom: 0;
+}
+.p-b-1 {
+    padding-bottom: 1rem;
+}
+.p-b-2 {
+    padding-bottom: 2rem;
+}
+.p-b-3 {
+    padding-bottom: 4rem;
+}
+.p-b-4 {
+    padding-bottom: 4rem;
+}
+.p-t-0 {
+    padding-top: 0;
+}
+.p-t-1 {
+    padding-top: 1rem;
+}
+.p-t-2 {
+    padding-top: 2rem;
+}
+.p-t-3 {
+    padding-top: 4rem;
+}
+.p-t-4 {
+    padding-top: 4rem;
 }

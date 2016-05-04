@@ -9,15 +9,12 @@ layout: default
 
     <article>
         <div class="row">
-            {% if page.type == "html" %}
-                <div class="twelve columns">
-                    {{ content }}
-                </div>
-            {% else %}
+            <div class="twelve columns">
+                <div id="vis" class="p-b-2"></div>
                 <div class="eight columns col-center">
                     {{ content }}
                 </div>
-            {% endif %}
+            </div>
         </div>
     </article>
     <div class="feedback m-b-4 m-t-4">

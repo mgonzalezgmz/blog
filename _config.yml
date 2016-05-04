@@ -13,3 +13,4 @@ img: https://martingonzalez.net/images/share.png
 
 # Build settings
 markdown: kramdown
+highlighter: rouge

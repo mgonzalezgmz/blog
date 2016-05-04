@@ -1,6 +1,22 @@
 @import "variables";
 @import "colors";
 
+pre {
+    background: #f1f1f1;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px
+}
+pre > code {
+    padding: 1rem;
+}
+figure {
+    margin: 0;
+}
+code {
+    font-family: "Monaco", "Courier", monospace;
+    border: 0;
+    border-radius: 0;
+}
 .postHeader {
     font-weight: 400;
     border-bottom: 1px solid rgba(0,0,0,0.1)
@@ -26,4 +42,15 @@
 }
 .postImgQuote {
     text-align: right;
+}
+.postLead {
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.idLink {
+    font-size: 90%;
+    color: #ccc;
 }
