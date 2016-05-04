@@ -1,12 +1,17 @@
-- title: Spain's Data Journalism Conference Website
+- title: Diagnosis
+  img: /images/gallery/diagnosis.png
+  date: April 2016
+  link: /diagnosis
+
+- title: Spain’s Data Journalism Conference Website
   img: /images/gallery/jpd16.png
   date: March 2016
-  link: http://jpd16.okfn.es
+  link: /jpd16
 
 - title: Barcelona Temperatures
   img: /images/gallery/bcn-temperatures.png
   date: March 2016
-  link: http://www.lavanguardia.com/vangdata/20160317/40498318244/grafico-invierno-aumento-temperatura-cambio-climatico.html
+  link: /barcelona-temperatures
 
 - title: Rendering the Earth with Blender
   img: /images/gallery/blender.png

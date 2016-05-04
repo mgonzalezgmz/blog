@@ -30,7 +30,7 @@ Neat! First, go to the [dataset website](http://www.bcn.cat/estadistica/castella
 
 In this case it seems that the `Dto.` and `SC`columns contain the unique id that we need. A code that also appears in the official shapefiles of the city (`Dto.` is the abbreviation of district and `SC` of the census tracts).
 
-Let's get this data in an usable form (CSV). In this case we are lucky and copying and pasting to Excel works fine. Make sure that you clear the format (Edit > Clear > Formats). We don't want anything weird happening in our spreadsheet.
+Let's get this data in a usable form (CSV). In this case we are lucky and copying and pasting to Excel works fine. Make sure that you clear the format (Edit > Clear > Formats). We don't want anything weird happening in our spreadsheet.
 
 <div class="postImgQuote m-t-2 m-b-2">
     <img class="img-responsive" data-src="/images/posts/choropleth/excel1.png">
@@ -110,7 +110,7 @@ After doing that you will have a new layer in the main window. Right click on th
     <img class="img-responsive" data-src="/images/posts/choropleth/qgis-join.png">
 </div>
 
-This looks scary but it isn't. If you have arrived here it should be easy! Select the CSV layer in `Join layer`, `id` in the `Join field` and `id` in the `Target field`. You can also choose the fields you want to join. In this case I just want the university column. If you want to create a choropleth with different data feel free to choose other column.
+This looks scary but it isn't. If you have arrived here it should be easy! Select the CSV layer in `Join layer`, `id` in the `Join field` and `id` in the `Target field`. You can also choose the fields you want to join. In this case I just want the university column. If you want to create a choropleth with different data feel free to choose another column.
 
 <div class="postImgQuote m-t-2 m-b-2">
     <img class="img-responsive" data-src="/images/posts/choropleth/save-shp.png">
@@ -264,14 +264,14 @@ d3.select(".legend")
     .call(legend)
 {% endhighlight %}
 
-After creating the legend I have to do some adjustments in the map projection. If you look at any map of Barcelona you'll notice that [is not oriented to the north](https://www.google.es/search?q=barcelona+map&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjPxrb6lcHMAhUF2xoKHcqwBrEQ_AUIBygB&biw=1280&bih=702#imgrc=_). Instead, and probably to leave the [beautiful street grid](https://en.wikipedia.org/wiki/Eixample) horizontal, the city is rotated.
+After creating the legend I need to do some adjustments on the map projection. Hey, look at any map of Barcelona. You'll notice that [is not oriented to the north](https://www.google.es/search?q=barcelona+map&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjPxrb6lcHMAhUF2xoKHcqwBrEQ_AUIBygB&biw=1280&bih=702#imgrc=_). Instead, and probably to leave the [beautiful street grid](https://en.wikipedia.org/wiki/Eixample) horizontal, the city is rotated.
 
 <div class="row m-t-2 m-b-2">
     <div class="six columns"><img class="img-responsive" data-src="/images/posts/choropleth/mapa-google.png"></div>
     <div class="six columns"><img class="img-responsive" data-src="/images/posts/choropleth/mapa-bus.jpg"></div>
 </div>
 
-Customizing the projection is very easy in Spam (the same as in D3). Just create a new property inside `StaticCanvasMap` called `projection`, and use these values that I've adjusted.
+Customizing the projection is very easy in Spam (the same as in D3). Just create a new property inside `StaticCanvasMap` called `projection`, and use these cool values.
 
 {% highlight javascript %}
 projection: d3.geo.mercator()
@@ -280,7 +280,7 @@ projection: d3.geo.mercator()
     .rotate([0,0,-37.6])
 {% endhighlight %}
 
-If you use a customised projection with Spam you'll have to manually center and scale the map, so be careful! You can learn about this [here](https://github.com/mbostock/d3/wiki/Geo-Projections#standard-abstract-projection).
+If you use a customized projection you'll have to manually center and scale the map, so be careful! You can learn about this [here](https://github.com/mbostock/d3/wiki/Geo-Projections#standard-abstract-projection).
 
 I'm also using a bit of css to center the element and set a fixed width and height.
 

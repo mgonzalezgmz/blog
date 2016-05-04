@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New Year! New Website! New Portfolio!"
+title: "New Year"
 date: 2016-01-29
 permalink: new-website
 categories: notes
