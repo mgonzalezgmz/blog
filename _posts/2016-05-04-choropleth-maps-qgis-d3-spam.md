@@ -11,26 +11,26 @@ See this map? It represents the [rate of people with university studies](http://
 
 Now, let's get to work.
 
-Here I'm going to explain my choropleth map workflow, from beginning to end. These kind of maps are one of the most popular data visualization techniques, and for a reason. They are everywhere, and if you have ever wondered how to make one, this is your tutorial.
+Here I'm going to explain my choropleth map workflow, from start to finish. These kind of maps are one of the most popular data visualization techniques, they are everywhere. If you have ever wondered how to make one, this is your tutorial.
 
 I'm going to use [D3](https://d3js.org) and [Spam](https://github.com/newsappsio/spam), a library to create maps with Canvas. You'll also need a working installation of [QGIS](http://www.qgis.org/en/site/) to work with the geodata.
 
-At the end you'll be able to create a choropleth map, the one of the beginning of the article. Everything that I'll explain is applied to that dataset, but you can understand what the workflow is, and apply it to your own maps.
+At the end you'll be able to create a choropleth map, the one of the beginning of the article. Everything that I'll explain is applied to that dataset but you can understand the principles and apply it to your own data.
 
 <h3 id="data" class="postLead"><a href="#data" class="idLink">#</a> Getting the data</h3>
 
-To find this dataset I had to look on the [local statistics department](http://www.bcn.cat/estadistica/angles/index.htm) website. If you live in a medium-sized city you should have something similar. This is the most important part: first, you should have data [that makes sense to map](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/). 
+To find this dataset I had to look on the [website](http://www.bcn.cat/estadistica/angles/index.htm) of the local statistics department. If you live in a medium-sized city you should have something similar. This is the most important part: first, you should have data [that makes sense to map](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/). 
 
 <div class="postImgQuote m-t-2 m-b-2">
     <img class="img-responsive" data-src="/images/posts/choropleth/bcn-estadistica.png">
     <small>Urgh, this looks horrible.</small>
 </div>
 
-Neat! First, go to the [dataset website](http://www.bcn.cat/estadistica/castella/dades/tpob/pad/padro/a2015/nivi/nivi11.htm). You should try to find an identifier that matches with your geographic data (more on that later).
+Neat! First, go to the [dataset website](http://www.bcn.cat/estadistica/castella/dades/tpob/pad/padro/a2015/nivi/nivi11.htm). You should try to find an ID that matches with your geographic data. This ID is the unique key of a row, a number that is not repeated elsewhere in the data and belongs to a certain figure. This number should correspond to a map geometry (for example, a country, a city, a district), so we can join them later and visualize the map.
 
-In this case it seems that the `Dto.` and `SC`columns contain the unique id that we need. A code that also appears in the official shapefiles of the city (`Dto.` is the abbreviation of district and `SC` of the census tracts).
+In this case it seems that the `Dto.` and `SC`columns contain the unique ID that we need. A code that also appears in the official shapefiles of the city (`Dto.` is the abbreviation of district and `SC` of the census tracts).
 
-Let's get this data in a usable form (CSV). In this case we are lucky and copying and pasting to Excel works fine. Make sure that you clear the format (Edit > Clear > Formats). We don't want anything weird happening in our spreadsheet.
+Let's get this data in a usable form (CSV). In this case we are lucky and copying and pasting to Excel works fine. Make sure that you clear the format (Edit > Clear > Formats). This removes the formatting of the source (font, colors) and the automatic transformation that Excel sometimes applies to numbers or dates. We don't want anything weird happening in our spreadsheet.
 
 <div class="postImgQuote m-t-2 m-b-2">
     <img class="img-responsive" data-src="/images/posts/choropleth/excel1.png">
@@ -46,7 +46,7 @@ This is not ideal, you should use [OpenRefine](http://openrefine.org/) or [R](ht
     <small>After two sets of find & replace the <code>id</code> column is clean.</small>
 </div>
 
-It seems that same is happening with each column. Replace the space at the end of each number with this technique and that's it.
+ It seems that the same problem also exists at the end of the other columns. Replace the space with this technique and that’s it.
 
 Now that the data is cleaned ([this is mine](https://gist.github.com/martgnz/3ecb4b9f7728d09d7cecc03e1df18e50)) save it as a CSV and you're done.
 
@@ -86,7 +86,7 @@ Open the tool (near the Attribute Table icon) and create a new field typing `C_D
 
 We need to transform the columns to numbers because both contain leading zeros. If we merge them without transforming them to integers the result would be something like `01001`, while our id in the CSV for the same census area is just `11`.
 
-After creating two new columns with each id we can merge them with the Field Calculator typing `CONCAT(id_distri, id_seccens)` in the expression box. `id_distri` and `id_seccens` refers to the column names I gave to them, replace with your own.
+After creating two new columns with each id we can merge them with the Field Calculator typing `CONCAT(id_distri, id_seccens)` in the expression box. `id_distri` and `id_seccens refer to the column names I just created, replace them with your own.
 
 Give a name to the new column like `id`, and voilà, we are done.
 
@@ -94,11 +94,17 @@ Sorry, jk 😂. We need to create the column with the actual data we will use in
 
 Remember: [A map with raw people is not correct](https://xkcd.com/1138/).
 
-But we are lucky! This same shapefile contains the number of men and women in each area, so is just a matter of summing them with the Field Calculator to get a new column with the population.
+But we are lucky! This same shapefile contains the number of men and women in each area, so is just a matter of summing them with the QGIS Field Calculator to get a new column with the population.
 
-Go there and create a new column called `population` inserting in the expression box `HOMES + DONES`. That will sum the columns!
+Go inside QGIS and create a new column called `population` inserting in the expression box `HOMES + DONES`. That will sum the columns!
 
-Now we can import the CSV into QGIS and divide the numbers to get the percentage. For doing that you need to go to `Layer > Add Layer` and then click on `Delimited Text Layer`. You can browse and select the CSV file here. Make sure to mark the box `No geometry` as we are only importing non-geographic data.
+<div class="postImgQuote m-t-2 m-b-2">
+    <img class="img-responsive" data-src="/images/posts/choropleth/population.gif">
+</div>
+
+Now we can import the CSV into QGIS and divide the numbers to get the percentage. We could do this in Excel, or even with TopoJSON! But if you merge it inside QGIS we can play later with its built-in scale calculator and data clustering methods.
+
+For doing that you need to go to `Layer > Add Layer` and then click on `Delimited Text Layer`. You can browse and select the CSV file here. Make sure to mark the box `No geometry` as we are only importing non-geographic data.
 
 <div class="postImgQuote m-t-2 m-b-2">
     <img class="img-responsive" data-src="/images/posts/choropleth/importing-CSV-qgis.png">
@@ -148,7 +154,7 @@ If you just need an image you can probably stop here. QGIS lets you export the m
 
 <h3 id="topojson" class="postLead"><a class="idLink" href="#topojson">#</a> Creating the TopoJSON</h3>
 
-D3 supports [TopoJSON](https://github.com/mbostock/topojson), a flavour of GeoJSON which reduces the size of the maps. We will create a ‘baked’ TopoJSON with our data, so it becomes faster and we get to load one file on the client.
+D3 supports [TopoJSON](https://github.com/mbostock/topojson), a flavour of GeoJSON which reduces the size of the maps. We will create a TopoJSON that already contains the data we want to visualize. This saves us from downloading an additional file in each client.
 
 If you are following with the Barcelona shapefiles make sure that the `100800401.gsb` file is there as well. It's a graduated grid to improve the accuracy of the conversion.
 
@@ -162,7 +168,7 @@ bcn.geojson \
 bcn-studies.shp
 {% endhighlight %}
 
-Awesome! Now the final step, the TopoJSON conversion. You can install on the command line doing `$ npm install -g topojson`. If you don't have [node](https://nodejs.org/en/) installed, do it now!
+Awesome! Now the final step, the TopoJSON conversion. In order to install the command line client, you need to have a working installation of [node](https://nodejs.org/en/). Then you can simply run `$ npm install -g topojson`.
 
 Ready? Run this command in your terminal:
 
@@ -181,7 +187,7 @@ And yeah, trying to visualize a TopoJSON that wasn't set up previously in `EPSG:
 
 Regarding the TopoJSON command line, `-o bcn.json` declares the file output, `--id-property=+id` [promotes the polygon ids](https://github.com/mbostock/topojson/wiki/Command-Line-Reference#ids) (instead of having them as simple properties in the JSON). We coerce them to a number with the `+` operator. Finally, the `-p` operator preserves our desired properties (TopoJSON deletes everything by default!).
 
-We want to keep the rate and the names of the district and the neighbourhood. With the `=` operator we rename them to shorter, more meaningful names.
+We want to keep the rate, the name of the district and the neighbourhood. With the `=` operator we rename them to shorter, more meaningful names.
 
 That's it! You can now preview your map with [mapshaper](http://mapshaper.org/) and we can finally move on to the rendering stage.
 
@@ -201,19 +207,21 @@ If you want to know how Spam works, you should check the [API docs](https://gith
 
 Here's a [live demo](http://bl.ocks.org/martgnz/497c69e35fd28b16b29168735bc11d6d).
 
-This simple map only has the stroke of each feature. But is so cool, Canvas instead of SVG! If you have no idea about it, [you'll have to look](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) how to use it (but don't worry it's very easy).
+This simple map only has the stroke of each feature, but it uses Canvas instead of SVG! If you have no idea about it, [you'll have to check](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) how to use it (but don’t worry it’s very easy).
+
+---
 
 A choropleth needs a color scale and a set of classes. Think of them as a set of ‘buckets’ which divide our data.
 
-To create our color scale declare a variable named `color` before `d3.json`. We are going to use a [linear scale](https://github.com/mbostock/d3/wiki/Quantitative-Scales#linear-scales) for simplicity (but is not the best!). Every scale accepts two parameters, `domain` (the classes) and `range` (in this case the colors for each class). Now it's time to return to your QGIS and look at Style tab. You can use similar thresholds and colors for each class!
+To create our color scale declare a variable named `color` before `d3.json`. We are going to use a [linear scale](https://github.com/mbostock/d3/wiki/Quantitative-Scales#linear-scales) for simplicity. Every scale accepts two parameters, `domain` (the classes) and `range` (in this case the colors for each class). Now it's time to return to your QGIS and look at Style tab. You can use similar thresholds and colors for each class!
 
-A (probably better) alternative is using [`d3.extent`](https://github.com/mbostock/d3/wiki/Arrays#d3_extent) to get the domain, and other scales (as quantiles). [Here's an example](http://bl.ocks.org/martgnz/a61c2da0e45a108c857e).
+A (probably better) alternative is using [`d3.extent`](https://github.com/mbostock/d3/wiki/Arrays#d3_extent) to get the domain, and a different scale (as quantiles). [Here's an example](http://bl.ocks.org/martgnz/a61c2da0e45a108c857e).
 
 There's a lot to learn about scales. For reference you can check the official [D3 docs](https://github.com/mbostock/d3/wiki/Quantitative-Scales). [Adam Pearce](https://twitter.com/adamrpearce) from Bloomberg Graphics and the NYTimes has a great essay on that. [You should check it out](http://roadtolarissa.com/blog/2015/01/04/coloring-maps-with-d3/)!
 
 For choosing the final colors I use [ColorBrewer](http://colorbrewer2.org/). It's much more intuitive and you can create colorblind-friendly maps.
 
-To finally paint the color scale, write inside `paintfeature`:
+To finally color each polygon, write inside `paintfeature`:
 
 {% highlight javascript %}
 parameters.context.fillStyle = color(d.properties.rate)
@@ -231,7 +239,6 @@ Last but not least, the legend.
 You should definitely take care of it, as it's one of the most important parts of the map. I'm going to use [d3-legend](http://d3-legend.susielu.com/), a little library which makes very easy to create and customize your own legends with D3.
 
 Grab d3-legend from its website and add it to your HTML. You need to configure the orientation (horizontal), formatting (percentage), the label alignment and then pass your color scale.
-
 
 First, we create the SVG element which will contain the legend:
 
@@ -264,7 +271,7 @@ d3.select(".legend")
     .call(legend)
 {% endhighlight %}
 
-After creating the legend I need to do some adjustments on the map projection. Hey, look at any map of Barcelona. You'll notice that [is not oriented to the north](https://www.google.es/search?q=barcelona+map&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjPxrb6lcHMAhUF2xoKHcqwBrEQ_AUIBygB&biw=1280&bih=702#imgrc=_). Instead, and probably to leave the [beautiful street grid](https://en.wikipedia.org/wiki/Eixample) horizontal, the city is rotated.
+After creating the legend I need to do some adjustments on the map projection. Hey, look at any map of Barcelona. You'll notice that [it's not oriented to the north](https://www.google.es/search?q=barcelona+map&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjPxrb6lcHMAhUF2xoKHcqwBrEQ_AUIBygB&biw=1280&bih=702#imgrc=_). Instead, and probably to leave the [beautiful street grid](https://en.wikipedia.org/wiki/Eixample) horizontal, the city is rotated.
 
 <div class="row m-t-2 m-b-2">
     <div class="six columns"><img class="img-responsive" data-src="/images/posts/choropleth/mapa-google.png"></div>
@@ -295,10 +302,15 @@ I'm also using a bit of css to center the element and set a fixed width and heig
 }
 {% endhighlight %}
 
-So that's it, we already finished. If you have any question, spotted an error, etc, just ask me on [Twitter](https://twitter.com/martgnz). I'll post another tutorial on the following days about interactive maps. Zoom, tooltips, everything!
+So that's it, we already finished. If you have any question, spotted an error, etc, just ask me on [Twitter](https://twitter.com/martgnz).
+
+I'll post another tutorial in the following days about interactive maps. Zoom, tooltips, everything!
 
 Here's the final code for the map at the top ([live demo](http://bl.ocks.org/martgnz/56664c7ea8efef56f93ca948ef855d06)).
 <script src="https://gist.github.com/martgnz/98828050b66e0314e566282bc5362e9a.js"></script>
+
+---
+<p class="u-italic">Thanks to <a href="https://twitter.com/lukas_appelhans">Lukas Appelhans</a> for proofreading the article and suggesting a lot of improvements.</p>
 
 <script src="/js/d3.min.js"></script>
 <script src="/js/topojson.min.js"></script>
