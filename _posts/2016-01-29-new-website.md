@@ -4,6 +4,7 @@ title: "New Year"
 date: 2016-01-29
 permalink: new-website
 categories: notes
+image: /images/posts/new-website/elespanol-esquire.png
 ---
 One of my 2016 proposals was to create a proper site with a portfolio. And here it is.
 

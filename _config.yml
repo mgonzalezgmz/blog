@@ -2,15 +2,22 @@
 title: Martín González
 author: Martín González
 email: m@martingonzalez.net
-description: Martín González is a data journalist specialized in interactive visualizations, frontend development and maps. Based in Barcelona, Spain.
+description: Martín González is a data journalist specialized in interactive graphics, maps and frontend development. Based in Barcelona, Spain.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://martingonzalez.net" # the base hostname & protocol for your site
-repo: https://github.com/martgnz/martgnz.github.io
-twitter: https://twitter.com/martgnz
-github:  https://github.com/martgnz
+repo_url: https://github.com/martgnz/martgnz.github.io
+twitter_url: https://twitter.com/martgnz
+github_url:  https://github.com/martgnz
 pgp: https://pgp.mit.edu/pks/lookup?op=get&search=0x8F3D0577FFF761FA
-img: https://martingonzalez.net/images/share.png
+logo: https://martingonzalez.net/images/share.png
+twitter:
+  username: martgnz
+author:
+  twitter: martgnz
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+gems:
+  - jekyll-seo-tag

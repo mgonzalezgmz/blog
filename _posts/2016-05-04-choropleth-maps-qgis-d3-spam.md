@@ -4,6 +4,7 @@ title: "Choropleth maps with QGIS, D3 and Spam"
 date: 2016-05-04
 permalink: choropleth-maps-qgis-d3-spam
 categories: notes
+image: /images/posts/choropleth/map.png
 ---
 See this map? It represents the [rate of people with university studies](http://www.bcn.cat/estadistica/castella/dades/tpob/pad/padro/a2015/nivi/nivi11.htm) across the census areas of Barcelona. It's striking to see how well educated areas in the center and the northwest (like L'Eixample or Sarrià) [are rich](http://bl.ocks.org/martgnz/c6ef23788c61fac40b44817d1bf19870), while poor neighbourhoods of Nou Barris and La Mina have much lower values.
 
