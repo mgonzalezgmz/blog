@@ -22,7 +22,9 @@ code {
     border-bottom: 1px solid rgba(0,0,0,0.1)
 }
 .postMeta {
+    font-family: $sans;
     font-weight: 400;
+    color: $darkgray;
 }
 .postLink {
     padding: 1rem;

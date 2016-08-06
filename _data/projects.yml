@@ -1,19 +1,64 @@
-- title: Diagnosis
+- title: The Spanish General Election, city by city
+  img: /images/gallery/mapa-26j.png
+  date: August 2016
+  link: https://politibot.es/interactivo/elecciones-26j-analisis-mapas-graficos-i/
+
+- title: Spanish polls average chart
+  img: /images/gallery/polls-average.png
+  date: June 2016
+  link: http://www.lavanguardia.com/vangdata/20160622/402685155925/encuestas-elecciones-26j.html
+
+- title: How unemployment rose in Spain during the last decade
+  img: /images/gallery/unemployment-spain.png
+  date: June 2016
+  link: https://politibot.es/interactivo/decada-paro-espana
+
+- title: All the parties that got into Congress since 1977
+  img: /images/gallery/parties-congress.png
+  date: June 2016
+  link: https://politibot.es/interactivo/partidos-por-provincia
+
+- title: Politibot, a Telegram bot to follow the Spanish Election
+  img: /images/gallery/politibot.png
+  date: May 2016
+  link: https://nohacefaltapapel.com/how-we-created-politibot-the-bot-who-reports-on-telegram-messenger-about-the-spanish-election-bb21242f6b4f
+
+- title: Spain's population density map
+  img: /images/gallery/population-density.png
+  date: May 2016
+  link: http://bl.ocks.org/martgnz/77d30f5adf890ef7465c
+
+- title: Barcelona by university graduates
+  img: /images/gallery/canvas-choropleth.png
+  date: May 2016
+  link: /choropleth-maps-qgis-d3-spam
+
+- title: Wikipedia Globe
+  img: /images/gallery/wikipedia-globe.png
+  date: May 2016
+  link: http://bl.ocks.org/martgnz/75519cc603f0254ec753d02a5175ad93
+
+- title: Barcelona's Voronoi metro map
+  img: /images/gallery/bcn-voronoi.png
+  date: May 2016
+  link: http://bl.ocks.org/martgnz/91490886b483995e5b9f69dc7c9a72a2
+
+- title: "Diagnosis: longform design"
   img: /images/gallery/diagnosis.png
   date: April 2016
   link: /diagnosis
 
-- title: Spain’s Data Journalism Conference Website
+- title: Spanish data journalism conference website
   img: /images/gallery/jpd16.png
   date: March 2016
   link: /jpd16-conference
 
-- title: Barcelona Temperatures
+- title: Barcelona's temperature chart
   img: /images/gallery/bcn-temperatures.png
   date: March 2016
   link: /barcelona-temperatures
 
-- title: Rendering the Earth with Blender
+- title: Rendering the earth with Blender
   img: /images/gallery/blender.png
   date: Feb 2016
   link: /blender-globe
@@ -23,22 +68,22 @@
   date: Jan 2016
   link: https://newsapps.io
 
-- title: Cumplimos un año, éstas son nuestras historias más leídas
+- title: This year's most read stories
   img: /images/gallery/mas-leidas.png
   date: Dec 2015
   link: /las-mas-leidas
 
-- title: Consulte las cuentas en Andorra de los Pujol
+- title: Pujol's bank account movements
   img: /images/gallery/cuentas-pujol.png
   date: Dec 2015
   link: /cuentas-pujol
 
-- title: Spain General Election
+- title: Spain General Election graphics
   img: /images/gallery/touchdown.png
   date: Dec 2015
   link: /general-election
 
-- title: Voronoi scatterplot
+- title: Voronoi scatterplot with D3
   img: /images/gallery/voronoi-scatterplot.png
   date: Dec 2015
   link: http://bl.ocks.org/martgnz/33a92675c1d79b8babb1
@@ -48,47 +93,32 @@
   date: Nov 2015
   link: /interactive-boilerplate
 
-- title: "Dormir en el limbo: radiografía de Airbnb"
+- title: "Airbnb flats analysis"
   img: /images/gallery/airbnb.png
   date: Nov 2015
   link: /airbnb
-
-- title: ¿Qué se preguntan los españoles sobre los candidatos a La Moncloa?
-  img: /images/gallery/google-trends.png
-  date: Nov 2015
-  link: /google-trends
-
-- title: Así crea terror el EI
-  img: /images/gallery/terror-ei.png
-  date: Nov 2015
-  link: /terror-ei
 
 - title: Chart design & Datawrapper
   img: /images/gallery/datawrapper.png
   date: Oct 2015
   link: /datawrapper
 
-- title: Catalan Election
+- title: Catalan Election graphics
   img: /images/gallery/lolcat.png
   date: Sep 2015
   link: /catalan-election
 
-- title: El libro negro
+- title: Catalan newspapers corruption coverage chart
   img: /images/gallery/libro-negro.png
   date: Sep 2015
   link: /libro-negro
 
-- title: D3 Yeoman generator
-  img: /images/gallery/yeoman.png
-  date: Sep 2015
-  link: /yeoman
-
-- title: TV show calendar
+- title: TV Shows chart
   img: /images/gallery/calendario-series.png
   date: Sep 2015
   link: /calendario-series
 
-- title: Memes
+- title: NPR's Lunchbox & Vox Memes
   img: /images/gallery/memes.png
   date: Sep 2015
   link: /memes
@@ -118,7 +148,7 @@
   date: June 2015
   link: /canal-infanta
 
-- title: Bitcoin, what you need to know
+- title: Bitcoin price chart
   img: /images/gallery/bitcoin.png
   date: May 2015
   link: /bitcoin
@@ -128,7 +158,7 @@
   date: May 2015
   link: local-regional-elections
 
-- title: Catalan Referendum result
+- title: Catalan Referendum interactive map
   img: /images/gallery/catalan-referendum.png
   date: November 2014
   link: /catalan-referendum

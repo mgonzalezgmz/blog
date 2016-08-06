@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="row">
     <header class="articleHeader m-b-2">
-        <h1 class="articleHeadline balance-text m-b-0 center-block">{{ page.title }}</h1>
+        <h1 class="articleHeadline balance-text center-block">{{ page.title }}</h1>
         <p class="articleMeta center-block">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </header>
 
@@ -21,6 +21,6 @@ layout: default
         </div>
     </article>
     <div class="feedback m-b-4 m-t-4">
-        <p class="balance-text">Have a comment? <a href="{{site.repo_url}}/issues/new">Open an issue</a> or bug me on <a href="{{site.twitter_url}}">Twitter</a>.</p>
+        <p class="balance-text u-italic">Have a comment? <a href="{{site.repo_url}}/issues/new">Open an issue</a> or bug me on <a href="{{site.twitter_url}}">Twitter</a>.</p>
     </div>
 </div>
