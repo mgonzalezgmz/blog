@@ -2,7 +2,7 @@
 layout: project
 category: project
 title:  "Catalan Referendum Result"
-date:   2015-11-14 13:43:21
+date:   2014-11-14
 client: <a href="http://www.eldiario.es">eldiario.es</a>
 permalink: catalan-referendum
 ---
