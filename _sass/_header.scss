@@ -1,14 +1,19 @@
 @import "variables";
 @import "colors";
 
-.siteTitle {
+.header,
+.headerPages {
+    padding-left: 2rem;
+}
+.siteTitle,
+.siteTitle-center {
     text-align: center;
     font-family: $serif;
     line-height: 0.8;
-    margin-bottom: 1.5rem;
-}
-.headerPages .siteTitle {
     margin-bottom: 1rem;
+}
+.siteTitle-center {
+    margin-bottom: 0.8rem;
 }
 .siteTitle--link {
     color: $black;
@@ -17,7 +22,8 @@
     font-size: 3.5rem;
     position: relative; // needed for the underline animation
 }
-.intro {
+.intro,
+.intro-center {
     text-align: center;
 }
 .introText {
@@ -42,7 +48,7 @@
     width: 100%;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: 1188px) {
     .siteTitle {
         text-align: left;
     }
