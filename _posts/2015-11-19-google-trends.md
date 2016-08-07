@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "¿Qué se preguntan los españoles sobre los candidatos a La Moncloa?"
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
 date:   2015-11-19 13:43:21

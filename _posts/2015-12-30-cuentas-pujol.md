@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Consulte las cuentas en Andorra de los Pujol"
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
 date:   2015-12-30 13:43:21

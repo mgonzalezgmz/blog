@@ -1,8 +1,9 @@
 ---
 layout: project
+category: project
 title:  "Diagnosis"
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
-date:   2015-04-25
+date:   2016-04-25
 permalink: diagnosis
 ---
 <div class="row">
@@ -11,7 +12,7 @@ permalink: diagnosis
         <p>The series has four articles and three international media partners: <a href="http://qz.com">Quartz</a>, <a href="https://krautreporter.de">Krautreporter</a> and <a href="http://efectococuyo.com/">Efecto Cocuyo</a>.</p>
         <p>There’s a landing page that serves as an intro of every story, and then each article. Thanks to <a href="https://jekyllrb.com/">Jekyll</a> I was able to generate static pages while still using shared components (as headers, footers, etc).</p>
         <p>The main objective was to design something easy to read and fast, but still beautiful.</p>
-        
+
         <p class="u-italic">Tools: Sketch, Jekyll, HTML, SASS.</p>
         <a class="button btn-primary" href="http://reportajes.elespanol.com/diagnosis/en/">Go to the project</a>
     </div>

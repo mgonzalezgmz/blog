@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Satellite Imagery Processing"
 date:   2015-07-27 13:43:21
 permalink: landsat-maps

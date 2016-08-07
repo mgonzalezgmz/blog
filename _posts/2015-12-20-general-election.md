@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Spain General Election"
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
 date:   2015-12-20 13:43:21

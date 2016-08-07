@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Chart Design & Datawrapper"
 date:   2015-10-15 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>

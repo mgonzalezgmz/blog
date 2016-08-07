@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title: "EL ESPAÑOL's Interactive Boilerplate"
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
 date: 2015-11-25 13:43:21

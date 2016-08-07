@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Local & Regional Spain Election Results"
 date:   2015-05-24 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>

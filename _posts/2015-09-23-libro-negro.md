@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "El Libro Negro – Data"
 date:   2015-09-19 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>

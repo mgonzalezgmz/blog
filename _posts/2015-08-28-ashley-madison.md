@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Ashley Madison's Fake Profiles"
 date:   2015-08-28 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>

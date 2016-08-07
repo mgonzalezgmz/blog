@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title: "Rendering the Earth with Blender"
 date: 2016-02-26 13:43:21
 permalink: blender-globe

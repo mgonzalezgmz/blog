@@ -1,8 +1,9 @@
 ---
 layout: project
+category: project
 title:  "Barcelona temperatures"
 client: <a href="http://www.lavanguardia.com">La Vanguardia</a>
-date:   2015-03-17
+date:   2016-03-17
 permalink: barcelona-temperatures
 ---
 <div class="row">

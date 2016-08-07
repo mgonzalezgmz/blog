@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "Leoncio, the Slack Bot"
 date:   2015-09-02 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>

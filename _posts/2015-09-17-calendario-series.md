@@ -1,5 +1,6 @@
 ---
 layout: project
+category: project
 title:  "TV Show Calendar"
 date:   2015-09-17 13:43:21
 client: <a href="http://www.elespanol.com">EL ESPAÑOL</a>
