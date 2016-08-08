@@ -4,13 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }} – {{site.title}} {% else %}{{ site.title }}{% endif %}</title>
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#23a630">
+    <link rel="apple-touch-icon" href="https://martingonzalez.net/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://martingonzalez.net/favicon-96x96.png">
+    <link rel="mask-icon" href="https://martingonzalez.net/safari-pinned-tab.svg" color="#23a630">
+    <meta itemprop="description" content="{{site.description}}">
+    <meta name="twitter:description" content="{{site.description}}">
+    <meta property="og:description" content="{{site.description}}" />
+    <meta property="og:site_name" content="{{site.title}}" />
+    <meta itemprop="image" content="https://martingonzalez.net/images/share.png">
+    <meta property="og:image" content="https://martingonzalez.net/images/share.png" />
+    <meta name="twitter:image" content="https://martingonzalez.net/images/share.png">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website"/>
 
     <script src="https://use.typekit.net/kud5yal.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% seo %}
+    <meta name="twitter:card" content="summary_large_image">
 </head>
