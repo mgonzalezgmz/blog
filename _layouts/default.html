@@ -8,7 +8,11 @@
         {% include footer.html %}
         </div>
         <script src="/js/vendor.js"></script>
+        {% for src in page.scripts %}
+        <script src="{{ src }}" type="text/javascript"></script>
+        {% endfor %}
         <script src="/js/main.js"></script>
+
         <script type="text/javascript">
         var _paq = _paq || [];
             _paq.push(['trackPageView']);

@@ -16,9 +16,9 @@ permalink: google-trends
         <a class="button btn-primary" href="http://www.elespanol.com/elecciones/elecciones-generales/20151119/80491983_0.html">Read the article</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/google-trends_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/google-trends_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive articleImg" data-src="/images/projects/google-trends_2.jpg" />
+    <img class="img-responsive b-lazy articleImg"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/google-trends_2.jpg" />
 </div>

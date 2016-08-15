@@ -16,10 +16,10 @@ permalink: libro-negro
         <a class="button btn-primary" href="http://blog.elespanol.com/elecciones-catalanas/el-libro-negro-del-periodismo-en-cataluna-un-epilogo-con-datos/">Read the article</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/libro-negro_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/libro-negro_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/libro-negro_2.png" />
-    <img class="img-responsive" data-src="/images/projects/libro-negro_3.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/libro-negro_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/libro-negro_3.png" />
 </div>

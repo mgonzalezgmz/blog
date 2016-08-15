@@ -1,4 +1,4 @@
----
+ src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" ---
 layout: project
 category: project
 title:  "Ashley Madison's Fake Profiles"
@@ -16,9 +16,9 @@ permalink: ashley-madison
         <a class="button btn-primary" href="http://blog.elespanol.com/actualidad/ashley-madison-created-thousands-of-fake-profiles-to-get-more-money-from-its-users/">Read the article</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/ashley-madison_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/ashley-madison_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/ashley-madison_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/ashley-madison_2.png" />
 </div>

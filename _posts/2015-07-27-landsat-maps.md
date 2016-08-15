@@ -12,15 +12,15 @@ permalink: landsat-maps
         <p class="u-italic">Tools: Photoshop, GDAL, Landsat-util.</p>
     </div>
     <div class="zoom js-zoom-1 six columns m-b-4">
-        <img class="img-responsive articleImg" data-src="/images/projects/landsat_1.jpg" />
+        <img class="img-responsive b-lazy articleImg"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/landsat_1.jpg" />
     </div>
 </div>
 <div class="row">
     <span class="zoom zoom-container js-zoom-2 m-b-4">
-        <img class="img-responsive articleImg" data-src="/images/projects/landsat_2.jpg" />
+        <img class="img-responsive b-lazy articleImg"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/landsat_2.jpg" />
     </span>
     <span class="zoom zoom-container js-zoom-3 m-b-4">
-        <img class="img-responsive articleImg" data-src="/images/projects/landsat_3.jpg" />
+        <img class="img-responsive b-lazy articleImg"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/landsat_3.jpg" />
     </span>
 </div>
 

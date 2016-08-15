@@ -20,10 +20,10 @@ At the end you'll be able to create a choropleth map, the one of the beginning o
 
 <h3 id="data" class="postLead"><a href="#data" class="idLink">#</a> Getting the data</h3>
 
-To find this dataset I had to look on the [website](http://www.bcn.cat/estadistica/angles/index.htm) of the local statistics department. If you live in a medium-sized city you should have something similar. This is the most important part: first, you should have data [that makes sense to map](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/). 
+To find this dataset I had to look on the [website](http://www.bcn.cat/estadistica/angles/index.htm) of the local statistics department. If you live in a medium-sized city you should have something similar. This is the most important part: first, you should have data [that makes sense to map](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/).
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/bcn-estadistica.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/bcn-estadistica.png">
     <small>Urgh, this looks horrible.</small>
 </div>
 
@@ -34,7 +34,7 @@ In this case it seems that the `Dto.` and `SC`columns contain the unique ID that
 Let's get this data in a usable form (CSV). In this case we are lucky and copying and pasting to Excel works fine. Make sure that you clear the format (Edit > Clear > Formats). This removes the formatting of the source (font, colors) and the automatic transformation that Excel sometimes applies to numbers or dates. We don't want anything weird happening in our spreadsheet.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/excel1.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/excel1.png">
     <small>Much better, don't you think so?</small>
 </div>
 
@@ -43,7 +43,7 @@ But something strange is indeed happening. In the `id` column the two identifier
 This is not ideal, you should use [OpenRefine](http://openrefine.org/) or [R](https://www.r-project.org/) to have a reproducible workflow. But this is just a small example.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/find-replace.gif">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/find-replace.gif">
     <small>After two sets of find & replace the <code>id</code> column is clean.</small>
 </div>
 
@@ -64,7 +64,7 @@ I have a repo, [bcn-geodata](https://github.com/martgnz/bcn-geodata/), with the 
 Go to the `src` folder. Locate the `BCN_Secció_Censal_ED50_SHP` files.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/qgis.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/qgis.png">
 </div>
 
 Time to open QGIS. Go to the Attribute table (`Layer > Attribute Table`) and you'll see the data.
@@ -72,7 +72,7 @@ Time to open QGIS. Go to the Attribute table (`Layer > Attribute Table`) and you
 But hey, the census area code (`C_SecCens`) is not the same as in our CSV. It seems that our CSV id is splitted between the district and census area codes (`C_Distri` and `C_SecCens`).
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/excel1.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/excel1.png">
 </div>
 
 Look at this spreadsheet again and then at the shapefile attribute table. In the first row of the CSV the id is `11`. If we look at the shapefile, we should merge two columns to get the same number, `C_Distri` and `C_SecCens`.
@@ -82,7 +82,7 @@ How to fix that? QGIS has a very powerful tool, the Field Calculator, which runs
 Open the tool (near the Attribute Table icon) and create a new field typing `C_Distri` in the expression box. Give it a meaningful name in the `Output field` box, as `id_distri` or similar. By default QGIS will transform the field to an integer, a number. You need to do the same with the `C_SecCens` column.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/field-calculator.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/field-calculator.png">
 </div>
 
 We need to transform the columns to numbers because both contain leading zeros. If we merge them without transforming them to integers the result would be something like `01001`, while our id in the CSV for the same census area is just `11`.
@@ -100,7 +100,7 @@ But we are lucky! This same shapefile contains the number of men and women in ea
 Go inside QGIS and create a new column called `population` inserting in the expression box `HOMES + DONES`. That will sum the columns!
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/population.gif">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/population.gif">
 </div>
 
 Now we can import the CSV into QGIS and divide the numbers to get the percentage. We could do this in Excel, or even with TopoJSON! But if you merge it inside QGIS we can play later with its built-in scale calculator and data clustering methods.
@@ -108,19 +108,19 @@ Now we can import the CSV into QGIS and divide the numbers to get the percentage
 For doing that you need to go to `Layer > Add Layer` and then click on `Delimited Text Layer`. You can browse and select the CSV file here. Make sure to mark the box `No geometry` as we are only importing non-geographic data.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/importing-CSV-qgis.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/importing-CSV-qgis.png">
 </div>
 
 After doing that you will have a new layer in the main window. Right click on the map layer and open the properties. In the sidebar, select `Joins` and add a new join.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/qgis-join.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/qgis-join.png">
 </div>
 
 This looks scary but it isn't. If you have arrived here it should be easy! Select the CSV layer in `Join layer`, `id` in the `Join field` and `id` in the `Target field`. You can also choose the fields you want to join. In this case I just want the university column. If you want to create a choropleth with different data feel free to choose another column.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/save-shp.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/save-shp.png">
 </div>
 
 Open the Attribute table of the map layer and heh, you will find our CSV column at the end. Unfortunately QGIS doesn't let you perform calculations with joined layers, so you'll need to save the map before. Right click on the map layer, select `Save as...` and don't touch the defaults. You can save it in the same folder with a different name, for example `bcn-studies.shp`.
@@ -128,7 +128,7 @@ Open the Attribute table of the map layer and heh, you will find our CSV column 
 Open the new map and yes, everything we need is here. But ouch, we hit another QGIS bug. The Field calculator still doesn't recognize our data. If that happens to you you can install the Table Manager plugin (`Plugins > Install Plugins` and then search for it), go to `Vector > Table Manager` and rename the conflicting column.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/rate.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/rate.png">
 </div>
 
 To calculate the percentage of people with studies, open the Field Calculator and divide the people with university studies with the population column we calculated before. It should look something like this:
@@ -140,14 +140,14 @@ Make sure to select a decimal number as a Output field type, and a precision of 
 After this step you can preview the resulting map. Finally! Open the map properties, go to `Style` and create a graduated view. After selecting our column and hitting `Classify`, we can explore gradients, number of classes and data clustering methods.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/classes.gif">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/classes.gif">
     <small>The classes and the histogram view lets you visualize the different buckets of your data.</small>
 </div>
 
 This is a very cool step because it lets you tinker with colors and classes. A good choropleth map doesn't have a lot of classes (five is enough most of the time) and has a good classification. QGIS implements methods for this, as [Quantiles](http://pro.arcgis.com/en/pro-app/help/mapping/symbols-and-styles/data-classification-methods.htm#ESRI_SECTION1_1BDD383C17164B948BF546CEADDA70E9), [Jenkins](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization), [Equal Interval](http://www.ncgia.ucsb.edu/cctp/units/unit47/html/comp_class.html) or [Standard Deviation](http://pro.arcgis.com/en/pro-app/help/mapping/symbols-and-styles/data-classification-methods.htm#ESRI_SECTION1_39CD67FEF4D54B568814E9621591FA89). You can explore which one suits the data better.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/choropleth/qgis-map.png">
+    <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/qgis-map.png">
     <small>This one has a divergent color scale. Nice.</small>
 </div>
 
@@ -275,8 +275,8 @@ d3.select(".legend")
 After creating the legend I need to do some adjustments on the map projection. Hey, look at any map of Barcelona. You'll notice that [it's not oriented to the north](https://www.google.es/search?q=barcelona+map&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjPxrb6lcHMAhUF2xoKHcqwBrEQ_AUIBygB&biw=1280&bih=702#imgrc=_). Instead, and probably to leave the [beautiful street grid](https://en.wikipedia.org/wiki/Eixample) horizontal, the city is rotated.
 
 <div class="row m-t-2 m-b-2">
-    <div class="six columns"><img class="img-responsive" data-src="/images/posts/choropleth/mapa-google.png"></div>
-    <div class="six columns"><img class="img-responsive" data-src="/images/posts/choropleth/mapa-bus.jpg"></div>
+    <div class="six columns"><img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/mapa-google.png"></div>
+    <div class="six columns"><img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/choropleth/mapa-bus.jpg"></div>
 </div>
 
 Customizing the projection is very easy in Spam (the same as in D3). Just create a new property inside `StaticCanvasMap` called `projection`, and use these cool values.
@@ -393,7 +393,7 @@ d3.json("/files/bcn.json", function(error, d) {
                         parameters.context.lineWidth = 0.5 / parameters.scale
                         parameters.context.strokeStyle = 'rgba(0,0,0,0.2)'
                         parameters.context.stroke()
-                    } 
+                    }
                 }
             }
         ]

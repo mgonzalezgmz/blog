@@ -1,5 +1,13 @@
 @import "variables";
 
+// Lazyload
+.b-lazy {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.b-loaded {
+    opacity: 1;
+}
 .column:first-child,
 .columns:first-child {
     margin: 0 auto

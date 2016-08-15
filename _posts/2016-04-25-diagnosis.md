@@ -18,16 +18,16 @@ permalink: diagnosis
     </div>
 
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/diagnosis_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/diagnosis_2.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_3.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_4.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_5.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_6.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_7.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_8.png" />
-    <img class="img-responsive" data-src="/images/projects/diagnosis_9.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_3.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_4.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_5.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_6.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_7.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_8.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/diagnosis_9.png" />
 </div>

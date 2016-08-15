@@ -24,7 +24,7 @@ permalink: general-election
         <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/resultados/congreso">Go to the interactive</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_1.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_1.png" />
     </div>
 </div>
 
@@ -36,14 +36,14 @@ permalink: general-election
         <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/resultados/analisis/">Go to the interactive</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_2.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_2.png" />
     </div>
 </div>
 <div class="row">
     <div class="twelve columns">
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_3.png" />
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_4.png" />
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_5.png" />
-        <img class="img-responsive m-b-1" data-src="/images/projects/touchdown_6.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_3.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_4.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_5.png" />
+        <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_6.png" />
     </div>
 </div>

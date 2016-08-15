@@ -39,14 +39,14 @@ permalink: blender-globe
 
 <div class="row m-t-2">
     <div class="twelve columns center-block">
-        <img class="img-responsive" data-src="/images/projects/blender_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/blender_1.png" />
         <h4 class="projectHeadline m-t-2">Hello, world</h4>
         <p class="p-centered balance-text">Beautiful, isn't it? This is a 3D model of our planet, using NASA imagery.</p>
 
-        <img class="img-responsive m-b-2" data-src="/images/projects/blender_2.png" />
+        <img class="img-responsive b-lazy m-b-2"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/blender_2.png" />
         <p class="p-centered balance-text">I have started to think about Blender after testing <a href="https://en.wikipedia.org/wiki/Orthographic_projection">orthographic projections</a> on QGIS. They are complicated to setup, requiring Python scripting and long steps every time you rotate or tilt the globe.</p>
 
-        <img class="img-responsive m-t-3 m-b-3" data-src="/images/projects/blender_4.png" />
+        <img class="img-responsive b-lazy m-t-3 m-b-3"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/blender_4.png" />
         <p class="p-centered balance-text m-b-0"><a href="http://www.blenderguru.com/tutorials/create-a-realistic-earth/">Doing this</a> with Blender is easy: move or rotate the camera and then render the result!</p>
     </div>
 </div>

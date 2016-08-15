@@ -36,10 +36,6 @@ a {
 a:hover {
     color: $black;
 }
-img {
-  opacity: 0;
-  transition: opacity .3s ease-in;
-}
 .col-center {
     float: none;
     margin: 0 auto;

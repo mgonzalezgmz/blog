@@ -17,7 +17,7 @@ For those of you that don't know, EL ESPAÑOL is a new newspaper based in Madrid
 I started an internship there on July. We were ten and didn't even have a proper newsroom. Now there are 70 journalists and the company has 100 employees.
 
 <div class="postImgQuote m-t-2 m-b-2">
-    <img class="img-responsive" data-src="/images/posts/new-website/elespanol-esquire.png">
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/posts/new-website/elespanol-esquire.png">
     <small>Esquire made a portrait of everyone for their November issue / Esquire.</small>
 </div>
 

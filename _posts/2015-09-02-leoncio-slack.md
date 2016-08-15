@@ -14,9 +14,9 @@ permalink: leoncio-slack-bot
         <p class="u-italic">Tools: Hubot, Javascript, Heroku.</p>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/leoncio_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/leoncio_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/leoncio_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/leoncio_2.png" />
 </div>

@@ -23,14 +23,14 @@ permalink: catalan-election
         <a class="button btn-primary m-t-1 m-b-2" href="http://datos.elespanol.com/elecciones-catalanas/">Go to the interactive</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/lolcat_1.png" />
-        <img class="img-responsive" data-src="/images/projects/lolcat_2.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_2.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/lolcat_3.png" />
-    <img class="img-responsive" data-src="/images/projects/lolcat_4.png" />
-    <img class="img-responsive" data-src="/images/projects/lolcat_5.png" />
-    <img class="img-responsive" data-src="/images/projects/lolcat_6.png" />
-    <img class="img-responsive" data-src="/images/projects/lolcat_7.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_3.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_4.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_5.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_6.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/lolcat_7.png" />
 </div>

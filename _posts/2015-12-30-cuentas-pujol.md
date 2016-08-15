@@ -15,10 +15,10 @@ permalink: cuentas-pujol
         <a class="button btn-primary" href="http://datos.elespanol.com/proyectos/cuentas-andorra-pujol/">Go to the interactive</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/cuentas-pujol_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/cuentas-pujol_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/cuentas-pujol_2.png" />
-    <img class="img-responsive" data-src="/images/projects/cuentas-pujol_3.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/cuentas-pujol_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/cuentas-pujol_3.png" />
 </div>

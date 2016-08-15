@@ -15,11 +15,11 @@ permalink: las-mas-leidas
     </div>
 
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/mas-leidas_1.png" />
+        <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/mas-leidas_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/mas-leidas_2.png" />
-    <img class="img-responsive" data-src="/images/projects/mas-leidas_3.png" />
-    <img class="img-responsive" data-src="/images/projects/mas-leidas_4.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/mas-leidas_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/mas-leidas_3.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/mas-leidas_4.png" />
 </div>

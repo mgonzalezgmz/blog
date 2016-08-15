@@ -15,9 +15,9 @@ permalink: catalan-referendum
         <a class="button btn-primary" href="http://www.eldiario.es/catalunya/politica/MAPA-resultados-municipio-9n_0_324418285.html">Go to the interactive</a>
     </div>
     <div class="six columns">
-        <img class="img-responsive" data-src="/images/projects/catalan-referendum_1.png" />
+        <img class="img-responsive b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/catalan-referendum_1.png" />
     </div>
 </div>
 <div class="row">
-    <img class="img-responsive" data-src="/images/projects/catalan-referendum_2.png" />
+    <img class="img-responsive b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/catalan-referendum_2.png" />
 </div>
