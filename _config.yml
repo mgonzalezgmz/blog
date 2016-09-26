@@ -21,3 +21,4 @@ highlighter: rouge
 
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
