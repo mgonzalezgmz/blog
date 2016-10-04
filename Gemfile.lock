@@ -17,7 +17,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
-    jekyll-seo (0.0.2)
+    jekyll-seo-tag (2.0.0)
+      jekyll (~> 3.1)
     jekyll-sitemap (0.11.0)
       addressable (~> 2.4.0)
     jekyll-watch (1.5.0)
@@ -42,7 +43,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-seo
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH
