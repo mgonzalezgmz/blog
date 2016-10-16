@@ -21,7 +21,7 @@ permalink: general-election
         <p>It was featured on <a href="http://www.theguardian.com/world/live/2015/dec/20/spain-election-results-live-updates-podemos-ciudadanos?page=with:block-56770b52e4b0c713d00aaeec#block-56770b52e4b0c713d00aaeec">The Guardian</a>.</p>
         <p class="u-italic">Tools: Bash scripting, GDAL, TopoJSON, Mapshaper, QGIS, Bootstrap and SASS.</p>
         <p class="u-italic">With <a href="https://twitter.com/lukas_appelhans">Lukas Appelhans</a>.</p>
-        <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/resultados/congreso">Go to the interactive</a>
+        <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/2015-20D/resultados/congreso/">Go to the interactive</a>
     </div>
     <div class="six columns">
         <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_1.png" />
@@ -33,7 +33,7 @@ permalink: general-election
         <h4 class="projectHeadline m-t-4">The summary</h4>
         <p>Using the <a href="/interactive-boilerplate">interactive boilerplate</a>, I designed and developed the layout for the special page we ran the day after the elections.</p>
         <p class="u-italic">Tools: Bootstrap and SASS.</p>
-        <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/resultados/analisis/">Go to the interactive</a>
+        <a class="button btn-primary" href="http://datos.elespanol.com/elecciones-generales/2015-20D/resultados/analisis/">Go to the interactive</a>
     </div>
     <div class="six columns">
         <img class="img-responsive b-lazy m-b-1"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/touchdown_2.png" />
