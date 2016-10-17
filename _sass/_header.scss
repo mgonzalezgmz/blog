@@ -8,7 +8,7 @@
 .siteTitle,
 .siteTitle-center {
     text-align: center;
-    font-family: $serif;
+    font-family: $sans;
     line-height: 0.8;
     margin-bottom: 1rem;
 }
@@ -17,10 +17,10 @@
 }
 .siteTitle--link {
     color: $black;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     font-size: 3.5rem;
-    position: relative; // needed for the underline animation
+    transition: 0.2s;
 }
 .intro,
 .intro-center {
@@ -30,22 +30,6 @@
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
-}
-
-// Underline header animation
-.siteTitle--link:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    bottom: 2px;
-    height: 4px;
-    background-color: $orange;
-    content: "";
-    transition: width 0.2s;
-}
-.siteTitle--link:hover:after {
-    width: 100%;
 }
 
 @media (min-width: 1188px) {
