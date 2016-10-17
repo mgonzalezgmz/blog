@@ -61,7 +61,7 @@ permalink: pse-basque-election
         <img class="img-responsive img-shadow b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/projects/pse_6.png" />
 
         <h4 class="projectHeadline m-t-4">The map</h4>
-        <p>The map opens the piece and it’s crucial to understand the spatial angle of the story: the socialists lost most of the vote in the cities with more population. It has a heavy annotation layer.</p>
+        <p>The map opens the piece and is crucial to understand the spatial angle of the story: the Socialists lost most of the vote in the biggest cities. It has a heavy annotation layer.</p>
     </div>
 </div>
 
