@@ -7,7 +7,7 @@
     font-size: 3.5rem;
 }
 article p {
-    font-size: 2rem;
+    font-size: 1.85rem;
     line-height: 2.8rem;
     margin-bottom: 1.5rem;
 }
@@ -22,7 +22,9 @@ p > a:hover {
     margin-bottom: 0.2rem;
 }
 .projectHeadline {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-weight: 500;
+    font-size: 2.3rem;
+    font-family: $sans;
     margin-bottom: 1rem;
 }
 .articleMeta {
@@ -37,7 +39,10 @@ p > a:hover {
 .feedback {
     text-align: center;
 }
-.btn-primary {
+.btn-primary,
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
     font-family: $sans;
     background-color: $blue;
     color: $white;
@@ -59,6 +64,11 @@ p > a:hover {
 .next {
     float: right;
 }
+.img-shadow {
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 -2px 8px rgba(0,0,0,0.1)
+}
+
 /*
 * Special for zooming projects
 * AKA satellite imagery project
