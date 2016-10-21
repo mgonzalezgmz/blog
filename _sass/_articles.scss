@@ -40,13 +40,13 @@ p > a:hover {
     text-align: center;
 }
 .btn-primary,
-.btn-primary,
 .btn-primary:active,
 .btn-primary:visited {
     font-family: $sans;
     background-color: $blue;
     color: $white;
     border: none;
+    width: 250px;
     display: block;
     letter-spacing: 0.2rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -54,7 +54,7 @@ p > a:hover {
 .btn-primary:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     transform: translateY(2px);
-    color: $white;
+    color: $white !important;
 }
 .previous,
 .next {
