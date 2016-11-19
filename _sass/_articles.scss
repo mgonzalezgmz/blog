@@ -68,6 +68,13 @@ p > a:hover {
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 -2px 8px rgba(0,0,0,0.1)
 }
+.highlight {
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-family: $sans;
+    background: $yellow-t;
+}
 
 /*
 * Special for zooming projects

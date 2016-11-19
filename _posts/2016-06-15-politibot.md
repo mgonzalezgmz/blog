@@ -7,6 +7,7 @@ permalink: politibot
 ---
 <div class="row">
     <div class="eight columns projectIntro mb1">
+        <div class="highlight">Update Nov 19: We got funding from <a href="https://www.digitalnewsinitiative.com/fund/">Google’s DNI</a> to help us pursue the project.</div>
         <p>Politibot is a news startup that builds messaging bots. I design and produce interactive stories for our political coverage.</p>
         <p class="u-italic">With a lot of people.</p>
         <a class="button btn-primary" href="https://politibot.es">Go to the website</a>
