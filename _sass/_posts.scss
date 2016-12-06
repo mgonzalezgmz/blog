@@ -13,7 +13,8 @@ figure {
     margin: 0;
 }
 code {
-    font-family: "Monaco", "Courier", monospace;
+    font-family: $mono;
+    font-size: 75%;
     border: 0;
     border-radius: 0;
 }
@@ -36,6 +37,7 @@ code {
     border-radius: 0.2rem;
 }
 .postHeadline {
+    font-family: $serif;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }

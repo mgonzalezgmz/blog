@@ -23,7 +23,7 @@ html {
     font-size: 10px;
 }
 h1, h2, h3,
-h4, h5, h6 {
+h4, h5, h6 {
     line-height: 1.1;
     letter-spacing: 0;
 }
@@ -39,4 +39,8 @@ a:hover {
 .col-center {
     float: none;
     margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $sans;
 }
