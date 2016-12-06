@@ -4,7 +4,7 @@ title: "Spanish maps, D3 ready"
 date: 2016-12-06
 permalink: es-atlas-spain-topojson
 categories: draft
-image: /images/posts/choropleth/map.png
+image: /images/posts/es-atlas/es-atlas.png
 ---
 One of the biggest pain points while making maps is obtaining the underlying data. Normally this involves outdated government websites and a long, obscure transformation process from Shapefiles to [TopoJSON](https://github.com/topojson/topojson).
 
