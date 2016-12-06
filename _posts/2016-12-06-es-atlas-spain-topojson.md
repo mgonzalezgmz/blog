@@ -23,9 +23,9 @@ This plays well with Roger Veciana's [Conic Conformal projection](https://github
 
 After that long download the script will generate two files, one with all the municipalities and one with the provinces.
 
-Remember that this is only a starting point. The script provides decent defaults but depending on your needs you should adapt the code. For example, to make it less simplified or to maintain the polygon properties (city and regions names).
+Remember that this is only a starting point. The script provides decent defaults but depending on your needs you should adapt the code. For example, to generate less simplified geometry or to maintain the polygon properties (city and region names).
 
-The script is written using the latest TopoJSON, which is a bit confusing. To understand how it works you can read [this tutorial](https://medium.com/@aendrew/creating-topojson-using-d3-v4-10838d1a9538#.41v8a1j94), written by [Ændrew Rininsland](https://twitter.com/aendrew).
+The script is written with the latest TopoJSON, which is a bit confusing. To understand how it works you can read [this tutorial](https://medium.com/@aendrew/creating-topojson-using-d3-v4-10838d1a9538#.41v8a1j94), by [Ændrew Rininsland](https://twitter.com/aendrew).
 
 ---
 
