@@ -10,7 +10,7 @@ One of the biggest pain points while making maps with D3 is obtaining the underl
 
 To make this easier for everyone who needs to make maps of Spain I spent the last week working on [es-atlas](https://github.com/martgnz/es-atlas), a project heavily based in Mike Bostocks' [world-atlas](https://github.com/topojson/world-atlas) and [us-atlas](https://github.com/topojson/us-atlas).
 
-It's a bash script that downloads and transforms the geometry of the country's administrative boundaries: municipalities, provinces and autonomous regions. In the end you get a ready to use TopoJSON with the right IDs from the [National Statistics Institute](http://www.ine.es/en/welcome.shtml).
+In a nutshell it's a bash script that downloads and transforms the geometry of the country's administrative boundaries: municipalities, provinces and autonomous regions. In the end you get a ready to use TopoJSON with the right IDs from the [National Statistics Institute](http://www.ine.es/en/welcome.shtml).
 
 <a href="https://github.com/martgnz/es-atlas"><img class="img-responsive b-lazy m-t-2"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cloud.githubusercontent.com/assets/1236790/20868824/69a60934-ba65-11e6-8591-ddcc1e93b157.png" /></a>
 
