@@ -6,7 +6,7 @@ permalink: es-atlas-spain-topojson
 categories: draft
 image: /images/posts/es-atlas/es-atlas.png
 ---
-One of the biggest pain points while making maps is obtaining the underlying data. Normally this involves outdated government websites and a long, obscure transformation process from Shapefiles to [TopoJSON](https://github.com/topojson/topojson).
+One of the biggest pain points while making maps with D3 is obtaining the underlying data. Normally this involves outdated government websites and a long, obscure transformation process from Shapefiles to [TopoJSON](https://github.com/topojson/topojson).
 
 To make this easier for everyone who needs to make maps of Spain I spent the last week working on [es-atlas](https://github.com/martgnz/es-atlas), a project heavily based in Mike Bostocks' [world-atlas](https://github.com/topojson/world-atlas) and [us-atlas](https://github.com/topojson/us-atlas).
 
