@@ -12,6 +12,13 @@ pre > code {
 figure {
     margin: 0;
 }
+ul {
+    font-family: $sans;
+    list-style: disc inside;
+}
+ul a {
+    font-weight: 400;
+}
 code {
     font-family: $mono;
     font-size: 75%;

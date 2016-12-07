@@ -31,5 +31,5 @@ The script is written with the latest TopoJSON, which is a bit confusing. To und
 
 Bonus: I am also maintaining two URLs with the files:
 
-- https://martingonzalez.net/es-municipalities.v1.json
-- https://martingonzalez.net/es-provinces.v1.json
+- [https://martingonzalez.net/es-municipalities.v1.json](https://martingonzalez.net/es-municipalities.v1.json)
+- [https://martingonzalez.net/es-provinces.v1.json](https://martingonzalez.net/es-provinces.v1.json)
