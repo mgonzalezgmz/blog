@@ -3,7 +3,7 @@ layout: post
 title: "Spanish maps, D3 ready"
 date: 2016-12-06
 permalink: es-atlas-spain-topojson
-categories: draft
+categories: notes
 image: /images/posts/es-atlas/es-atlas.png
 ---
 One of the biggest pain points while making maps with D3 is obtaining the underlying data. Normally this involves outdated government websites and a long, obscure transformation process from Shapefiles to [TopoJSON](https://github.com/topojson/topojson).
@@ -31,5 +31,5 @@ The script is written with the latest TopoJSON, which is a bit confusing. To und
 
 Bonus: I am also maintaining two URLs with the files:
 
-- [https://martingonzalez.net/es-municipalities.v1.json](https://martingonzalez.net/es-municipalities.v1.json)
-- [https://martingonzalez.net/es-provinces.v1.json](https://martingonzalez.net/es-provinces.v1.json)
+- [https://wwww.martingonzalez.net/es-municipalities.v1.json](https://martingonzalez.net/es-municipalities.v1.json)
+- [https://wwww.martingonzalez.net/es-provinces.v1.json](https://martingonzalez.net/es-provinces.v1.json)
