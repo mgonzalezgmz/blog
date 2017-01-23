@@ -1,6 +1,20 @@
 @import "variables";
 @import "colors";
 
+.webring {
+  display: flex;
+  justify-content: space-between;
+  font-family: $sans;
+}
+.webring a {
+  margin: 0.5rem;
+  font-weight: 400;
+  transition: 0.2s all;
+}
+.webring a:hover {
+  background: $yellow-t;
+}
+
 .header,
 .headerPages {
     padding-left: 2rem;
@@ -34,6 +48,13 @@
 .introText-social {
     font-size: 1.7rem;
     margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .webring {
+    width: 100%;
+    position: absolute;
+  }
 }
 
 @media (min-width: 1188px) {
