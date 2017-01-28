@@ -30,6 +30,7 @@ I am also maintaining two URLs with the files:
 
 ---
 #### ¿Open data? Not in Barcelona
+
 The Barcelona City Council has a platform that hosts all the geographic data of the city, [CartoBCN](http://w20.bcn.cat/cartobcn/). This shouldn't be a problem if they provided public URLs, of at least the basic administrative divisions. Instead, they only let you download the datasets after registering in a marketplace-like interface.
 
 This is hostile and disallows automatic retrieval of the data. In places like [Madrid](https://github.com/martgnz/madrid-atlas/blob/master/prepublish#L9), [Spain](https://github.com/martgnz/es-atlas/blob/master/prepublish#L12), or the [US](https://github.com/topojson/us-atlas/blob/master/prepublish#L7), the administration serves this information in the open.
