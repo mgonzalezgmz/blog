@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/martgnz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://martingonzalez.net
+  * I am martgnz (https://keybase.io/martgnz) on keybase.
+  * I have a public key ASC8h2i5K7I9qxejcyk0tm_Gi_JjhSNlW-SQi2YkBbl-WQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120bc8768b92bb23dab17a3732934b66fc68bf2638523655be4908b662405b97e590a",
+            "host": "keybase.io",
+            "kid": "0120bc8768b92bb23dab17a3732934b66fc68bf2638523655be4908b662405b97e590a",
+            "uid": "a1b62439d26c52a0b5a503da6f2f8019",
+            "username": "martgnz"
+        },
+        "service": {
+            "hostname": "martingonzalez.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.20"
+    },
+    "ctime": 1491847747,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1491847740,
+        "hash": "118db7ea755b2c67717b16c5cf3f42830c9e9d6ef760fc0badd46cc19ac644b77e93d798b7df58ef1b41869c67037d3c25d123a4c756e900006da171d2095ffc",
+        "seqno": 1010663
+    },
+    "prev": "86cad7d3a738243b9d32203a6d5a047411e3a86fec229d65e91c94374433d4cb",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvIdouSuyPasXo3MpNLZvxovyY4UjZVvkkItmJAW5flkKp3BheWxvYWTFAvp7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwidWlkIjoiYTFiNjI0MzlkMjZjNTJhMGI1YTUwM2RhNmYyZjgwMTkiLCJ1c2VybmFtZSI6Im1hcnRnbnoifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1hcnRpbmdvbnphbGV6Lm5ldCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIwIn0sImN0aW1lIjoxNDkxODQ3NzQ3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTE4NDc3NDAsImhhc2giOiIxMThkYjdlYTc1NWIyYzY3NzE3YjE2YzVjZjNmNDI4MzBjOWU5ZDZlZjc2MGZjMGJhZGQ0NmNjMTlhYzY0NGI3N2U5M2Q3OThiN2RmNThlZjFiNDE4NjljNjcwMzdkM2MyNWQxMjNhNGM3NTZlOTAwMDA2ZGExNzFkMjA5NWZmYyIsInNlcW5vIjoxMDEwNjYzfSwicHJldiI6Ijg2Y2FkN2QzYTczODI0M2I5ZDMyMjAzYTZkNWEwNDc0MTFlM2E4NmZlYzIyOWQ2NWU5MWM5NDM3NDQzM2Q0Y2IiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC88/uhAwiZeJu5hi8a5m5oxTk4jjuSa0xKupAjiWPhXg3PSy+vmsCje/N/6v0mj5G3Ba9aiIayj/JbgpAoc08IqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgZrtqXoMb5Qezp2wJHsECR1qfOfJYE/Yszdz9oYeTdDujdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/martgnz
+
+==================================================================
+
