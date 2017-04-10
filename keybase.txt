@@ -30,21 +30,21 @@ To do so, I am signing this object:
         "name": "keybase.io go client",
         "version": "1.0.20"
     },
-    "ctime": 1491847747,
+    "ctime": 1491848293,
     "expire_in": 504576000,
     "merkle_root": {
-        "ctime": 1491847740,
-        "hash": "118db7ea755b2c67717b16c5cf3f42830c9e9d6ef760fc0badd46cc19ac644b77e93d798b7df58ef1b41869c67037d3c25d123a4c756e900006da171d2095ffc",
-        "seqno": 1010663
+        "ctime": 1491848282,
+        "hash": "c8385ce16a7a99f3bc594cc167f8408eb74cbd25bf04b116a6b59409d2fab4813aab5131df69d24929b5b07ae54c4e030b4dd7f23eea522899048ace94e3fb51",
+        "seqno": 1010682
     },
-    "prev": "86cad7d3a738243b9d32203a6d5a047411e3a86fec229d65e91c94374433d4cb",
-    "seqno": 8,
+    "prev": "fef2d7b63041b45440df189ef3f6e0f77e747d98c96e3992697dbb09d471ca57",
+    "seqno": 13,
     "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvIdouSuyPasXo3MpNLZvxovyY4UjZVvkkItmJAW5flkKp3BheWxvYWTFAvp7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwidWlkIjoiYTFiNjI0MzlkMjZjNTJhMGI1YTUwM2RhNmYyZjgwMTkiLCJ1c2VybmFtZSI6Im1hcnRnbnoifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1hcnRpbmdvbnphbGV6Lm5ldCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIwIn0sImN0aW1lIjoxNDkxODQ3NzQ3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTE4NDc3NDAsImhhc2giOiIxMThkYjdlYTc1NWIyYzY3NzE3YjE2YzVjZjNmNDI4MzBjOWU5ZDZlZjc2MGZjMGJhZGQ0NmNjMTlhYzY0NGI3N2U5M2Q3OThiN2RmNThlZjFiNDE4NjljNjcwMzdkM2MyNWQxMjNhNGM3NTZlOTAwMDA2ZGExNzFkMjA5NWZmYyIsInNlcW5vIjoxMDEwNjYzfSwicHJldiI6Ijg2Y2FkN2QzYTczODI0M2I5ZDMyMjAzYTZkNWEwNDc0MTFlM2E4NmZlYzIyOWQ2NWU5MWM5NDM3NDQzM2Q0Y2IiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC88/uhAwiZeJu5hi8a5m5oxTk4jjuSa0xKupAjiWPhXg3PSy+vmsCje/N/6v0mj5G3Ba9aiIayj/JbgpAoc08IqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgZrtqXoMb5Qezp2wJHsECR1qfOfJYE/Yszdz9oYeTdDujdGFnzQICp3ZlcnNpb24B
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvIdouSuyPasXo3MpNLZvxovyY4UjZVvkkItmJAW5flkKp3BheWxvYWTFAvt7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmM4NzY4YjkyYmIyM2RhYjE3YTM3MzI5MzRiNjZmYzY4YmYyNjM4NTIzNjU1YmU0OTA4YjY2MjQwNWI5N2U1OTBhIiwidWlkIjoiYTFiNjI0MzlkMjZjNTJhMGI1YTUwM2RhNmYyZjgwMTkiLCJ1c2VybmFtZSI6Im1hcnRnbnoifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1hcnRpbmdvbnphbGV6Lm5ldCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIwIn0sImN0aW1lIjoxNDkxODQ4MjkzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTE4NDgyODIsImhhc2giOiJjODM4NWNlMTZhN2E5OWYzYmM1OTRjYzE2N2Y4NDA4ZWI3NGNiZDI1YmYwNGIxMTZhNmI1OTQwOWQyZmFiNDgxM2FhYjUxMzFkZjY5ZDI0OTI5YjViMDdhZTU0YzRlMDMwYjRkZDdmMjNlZWE1MjI4OTkwNDhhY2U5NGUzZmI1MSIsInNlcW5vIjoxMDEwNjgyfSwicHJldiI6ImZlZjJkN2I2MzA0MWI0NTQ0MGRmMTg5ZWYzZjZlMGY3N2U3NDdkOThjOTZlMzk5MjY5N2RiYjA5ZDQ3MWNhNTciLCJzZXFubyI6MTMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAL0EiZxcZDlCgIVGa3aeb6PO4k9RTwPXhhP7dOwy5LPsyMGj6Xk3gdQNGFz+qSzqFHH6bqp1czlht8DD8p2dvC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINrd7NqQx9wmxHjNWqpTTWlsHc2Cu9FDXgbfbZYeo5HCo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -52,4 +52,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/martgnz
 
 ==================================================================
-
