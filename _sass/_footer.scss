@@ -11,6 +11,10 @@
     color: $darkgray;
     margin-bottom: 0.5rem;
     line-height: 1.6rem;
+    
+    a {
+      font-weight: 400;
+    }
 }
 .copy a:hover {
     background-color: $yellow-t;
