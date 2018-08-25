@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Book.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Book.woff') format('woff'),
+       url('/fonts/NewzaldWeb-Book.eot');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-style: italic;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-BookItalic.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-BookItalic.woff') format('woff'),
+       url('/fonts/NewzaldWeb-BookItalic.eot');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 700;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Bold.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Bold.woff') format('woff'),
+       url('/fonts/NewzaldWeb-Bold.eot');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+em {
+  font-style: italic;
+}
+
+/* project style */
+:root {
+  --serif: 'Newzald', 'Georgia', 'serif';
+  --base: 1.188rem;
+  --jumbo: 1.80225rem;
+  --h1: 1.602rem;
+  --h2: 1.424rem;
+  --h3: 1.266rem;
+  --h4: 1.125rem;
+  --small: 0.889em;
+  --link: #1083CF;
+  --light-orange: #fff0e7;
+  --light-yellow: #fffff7;
+  --light-grey: #e2e2e2;
+}
+
+html {
+  font-size: var(--base);
+}
+body {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  margin-bottom: 1.3rem;
+}
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.1;
+}
+h1 {
+  margin-top: 0;
+  font-size: var(--jumbo);
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+h2 {
+  font-size: var(--h4);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+small {
+  font-size: var(--small);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  position: relative;
+  padding: 2em 1em;
+  margin-bottom: 1em;
+  background: var(--light-orange);
+}
+footer {
+  font-size: var(--small);
+  font-style: italic;
+}
+article {
+  position: relative;
+}
+article time {
+  text-align: right;
+  font-size: var(--small);
+  font-variant: small-caps;
+}
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+img[data-src]:not(.loaded) {
+  opacity: 0;
+}
+
+.wrap {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1em;
+}
+.wrap-wide {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+.news.wrap {
+  /*background: var(--light-yellow);*/
+  /*border: 1px solid rgba(0,0,0,0.1);*/
+  border-radius: 1px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.project:not(:last-child) {
+  margin-bottom: 4em;
+  padding-bottom: 1em;
+}
+.project img {
+  width: 100%;
+}
+.project h3 {
+  font-weight: 700;
+}
+.project-info .side {
+  flex-basis: 22%;
+}
+.project-info .block {
+  flex-basis: 70%;
+}
+.g-bars {
+  margin-left: 5px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+.p0 {
+  padding: 0;
+}
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+.mb2 {
+  margin-bottom: 1rem;
+}
+.h4 {
+  font-size: var(--h4);
+}
+.lh-solid p {
+  line-height: 1.2;
+  margin-bottom: .1em;
+}
+
+@media (min-width: 860px) {
+  .project-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  article time {
+    /*position: absolute;*/
+    /*left: -75px;*/
+  }
+  figure {
+    min-height: 200px;
+  }
+  .news.wrap {
+    padding: 1em 5em;
+  }
+}
