@@ -72,7 +72,7 @@ html {
 body {
   font-family: var(--serif);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.35;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -119,7 +119,7 @@ header {
   position: relative;
   padding: 2em 1em;
   margin-bottom: 1em;
-  background: var(--light-blue);
+  /* background: var(--light-blue); */
 }
 footer {
   font-size: var(--small);
@@ -133,13 +133,6 @@ article time {
   font-size: var(--small);
   font-variant: small-caps;
 }
-img {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-img[data-src]:not(.loaded) {
-  opacity: 0;
-}
 
 .wrap {
   max-width: 650px;
@@ -147,14 +140,11 @@ img[data-src]:not(.loaded) {
   padding: 1em;
 }
 .wrap-wide {
-  max-width: 960px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 1em;
 }
 .news.wrap {
-  /*background: var(--light-yellow);*/
-  /*border: 1px solid rgba(0,0,0,0.1);*/
-  border-radius: 1px;
   padding: 1em;
   margin-bottom: 1em;
 }
@@ -169,13 +159,10 @@ img[data-src]:not(.loaded) {
   font-weight: 700;
 }
 .project-info .side {
-  flex-basis: 22%;
+  flex-basis: 24%;
 }
 .project-info .block {
   flex-basis: 70%;
-}
-.g-bars {
-  margin-left: 5px;
 }
 
 .mb0 {
@@ -202,13 +189,6 @@ img[data-src]:not(.loaded) {
   .project-info {
     display: flex;
     justify-content: space-between;
-  }
-  article time {
-    /*position: absolute;*/
-    /*left: -75px;*/
-  }
-  figure {
-    min-height: 200px;
   }
   .news.wrap {
     padding: 1em 5em;
