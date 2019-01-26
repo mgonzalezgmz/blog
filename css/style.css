@@ -106,11 +106,11 @@ small {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--link);
 }
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: purple;
 }
 strong {
   font-weight: 700;
