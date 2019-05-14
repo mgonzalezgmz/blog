@@ -3,8 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/2019/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/d3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/ejemplos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/ejercicio-line-chart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/ejercicio-scatterplot/</loc>
   </url>
   
   <url>
@@ -13,8 +34,24 @@
   </url>
   
   <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/r/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/recursos/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/tu-scatterplot/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2019/postgrado-blanquerna-d3/</loc>
   </url>
   
 </urlset>
