@@ -42,7 +42,7 @@ small {
 p {
   font-family: 'Newzald', Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 h3 + p {
@@ -69,7 +69,8 @@ header p {
   text-transform: uppercase;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding-left: 1em;
   margin-bottom: 2em;
