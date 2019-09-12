@@ -65,14 +65,25 @@ body {
   line-height: 16px;
 }
 .tip-title {
-  font-weight: 600;
   border-bottom: 1px solid #d3d3d3;
   padding-bottom: 2px;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.tip-mun {
+  font-weight: 600;
+}
+.tip-sec {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 400;
 }
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #toggle {
@@ -136,11 +147,11 @@ body {
 <div id='toggle'>
 <div>
   <input id='renta-persona' type='radio' name='rtoggle' value='persona' checked='checked'>
-  <label for='persona'>Renta por persona</label>
+  <label for='renta-persona'>Renta por persona</label>
   </div>
   <div>
   <input id='renta-hogar' type='radio' name='rtoggle' value='hogar'>
-  <label for='hogar'>Renta por hogar</label>
+  <label for='renta-hogar'>Renta por hogar</label>
   </div>
 </div>
 <div id='map'></div>
@@ -361,7 +372,8 @@ Promise.all([
         .setHTML(
           `
         <div class="tip-title">
-          ${e.features[0].properties.NMUN}
+          <div class="tip-mun">${e.features[0].properties.NMUN}</div>
+          <div class="tip-sec">S${e.features[0].properties.CSEC}</div>
         </div>
         <div class="flex">
           <div class="tip-name">${selection[active].key}</div>
