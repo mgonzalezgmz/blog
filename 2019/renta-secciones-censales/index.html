@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="twitter:title" content="Martín González">
+<meta name="twitter:description" content="Visual journalist at The Economist">
+<meta name="twitter:site" content="@martgnz">
+<meta name="twitter:creator" content="@martgnz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://martingonzalez.net/images/economic-returns.png">
+<meta property="og:url" content="https://martingonzalez.net">
+<meta property="og:title" content="Martín González">
+<meta property="og:description" content="Visual journalist at The Economist">
+<meta property="og:image" content="https://martingonzalez.net/images/economic-returns.png">
+
+<meta name="Description" content="Visual journalist at The Economist">
+<title>Martín González</title>
+<style type="text/css">
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Book.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-style: italic;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-BookItalic.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-BookItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 700;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Bold.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Bold.woff') format('woff');
+}
+</style>
+</head>
+<body>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' type='text/css' />
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+#key {
+  z-index: 1;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  background:rgba(255,255,255,0.9);
+  padding: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.key-flex {
+  display: flex;
+}
+.swatches {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swatch {
+  width: 18px;
+  height: 14px;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.mapboxgl-popup {
+  width: 200px;
+  font-size: 14px;
+}
+.tip-title {
+  font-weight: 600;
+  border-bottom: 1px solid #d3d3d3;
+  /* padding-bottom: 5px; */
+  margin-bottom: 5px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+
+<div id='key'></div>
+<div id='map'></div>
+
+<script>
+// custom locale
+const es = {
+  "decimal": ",",
+  "thousands": ".",
+  "grouping": [3],
+  "currency": ["", "\u00a0€"]
+};
+
+const scale = d3.scaleThreshold()
+  .range(['#fff7f3', '#fde0dd', '#fcc5c0', '#fa9fb5', '#f768a1', '#dd3497', '#ae017e', '#7a0177', '#49006a'])
+  .domain([4000, 8000, 10000, 12000, 16000, 20000, 24000, 28000]);
+
+ const fillColor = ["match", ["get", "CUSEC"]];
+
+d3.csv('output/web.csv', d => {
+  const color = d3.color(scale(d.value));
+  color.opacity = 1;
+  fillColor.push(d.id, color.formatRgb());
+  d.value = +d.value;
+  return d;
+}).then(data => {
+  fillColor.push("rgba(0,0,0,0)");
+  mapboxgl.accessToken = 'pk.eyJ1Ijoid29uZGVyMiIsImEiOiJjamFmMnV0NWIxMGozMzNsZGNmdmh3aHFoIn0.OwGfCAwpL5D_YhA2X8wGDw';
+
+  const width = d3.select('#map')
+    .node()
+    .getBoundingClientRect().width;
+
+  const isMobile = width < 600;
+  
+  const formatter = d3.formatLocale(es);
+  const ft = formatter.format(',');
+
+  d3.select('#key')
+    .append('div')
+    .attr('class', 'title')
+    .html('Renta media <br/> por hab.');
+
+  const key =  d3.select('#key')
+    .append('div')
+    .attr('class', 'key-flex');
+
+  key
+    .append('div')
+    .attr('class', 'swatches')
+    .selectAll('.swatch')
+    .data(scale.range())
+    .enter()
+    .append('div')
+    .attr('class', 'swatch')
+    .style('background-color', d => d);
+
+  key
+    .append('div')
+    .attr('class', 'labels')
+    .selectAll('.label')
+    .data(scale.domain())
+    .enter()
+    .append('div')
+    .attr('class', 'label')
+    .text((d, i) => i === 0 ? `${ft(d)}€` : ft(d));
+
+  const nav = new mapboxgl.NavigationControl();
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    // style: 'mapbox://styles/wonder2/cjaf41sow6rvn2spoedrf54xw',
+    style: 'mapbox://styles/mapbox/light-v10',
+    center: [-3.975704, 39.940117], // starting position [lng, lat]
+    zoom: isMobile ? 6 : 5.5,
+    minZoom: isMobile ? 6 : 5.5,
+    pitchWitRotate: false,
+    dragRotate: false,
+    attributionControl: false
+    // scrollZoom: false,
+    // maxBounds: [[-1.2583, 40.2252], [4.927, 43.049]],
+    // hash: true
+  });
+
+  map.addControl(nav, 'top-right');
+  map.addControl(new mapboxgl.AttributionControl({
+    customAttribution: 'Estadística experimental INE (2016)'
+  }));
+  map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+    countries: 'es',
+    language: 'es',
+    enableEventLogging: false,
+    marker: false,
+    types: 'region,postcode,district,place,locality,neighborhood'
+    // flyTo: false
+  }), 'top-left');
+  map.dragRotate.disable();
+  map.touchZoomRotate.disableRotation();
+
+  map.on('load', () => {
+    map.addSource('sec_censales', {
+      type: 'vector',
+      url: 'mapbox://wonder2.9bl7pqe9',
+    });
+
+    map.addSource('sec_censales_hover', {
+      type: 'vector',
+      url: 'mapbox://wonder2.9bl7pqe9',
+    });
+
+    map.addLayer(
+      {
+        id: 'sec_censales_fills',
+        type: 'fill',
+        source: 'sec_censales',
+        'source-layer': 'SECC_CE_20180101_01_R_INE',
+        layout: {},
+        paint: {
+          'fill-outline-color': 'transparent',
+          'fill-color': fillColor,
+          'fill-opacity': {
+            "stops": [
+              [5, 0.75],
+              [7, 0.4]
+            ]
+          },
+        },
+      },
+      'waterway-label',
+    );
+
+    map.addLayer(
+      {
+        id: 'sec_censales_fills_hover',
+        type: 'line',
+        source: 'sec_censales_hover',
+        'source-layer': 'SECC_CE_20180101_01_R_INE',
+        layout: {},
+        paint: {
+          'line-color': 'black',
+          'line-width': 1,
+          'line-opacity': 1,
+        },
+        filter: ['==', 'id', ''],
+      },
+      'waterway-label',
+    );
+
+    // Create a popup, but don't add it to the map yet.
+    const popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      offset: 15,
+    });
+
+    map.on('mousemove', 'sec_censales_fills', e => {
+      if (map.getZoom() < 6) return;
+
+      const id = e.features[0].properties.CUSEC;
+      const datum = data.find(d => d.id === id);
+
+      if (!datum) return mouseleave();
+
+      map.getCanvas().style.cursor = 'pointer';
+
+      popup
+        .setLngLat(e.lngLat)
+        .setHTML(
+          `
+        <div class="tip-title">
+          ${e.features[0].properties.NMUN}
+        </div>
+        <div class="flex">
+          <div class="tip-name">Renta media</div>
+          <div>${ft(datum.value)}€</div>
+        </div>
+      `,
+        )
+        .addTo(map);
+
+      map.setFilter('sec_censales_fills_hover', [
+        '==',
+        'CUSEC',
+        e.features[0].properties.CUSEC,
+      ]);
+    });
+
+    map.on('mouseleave', 'sec_censales_fills', () => {
+     mouseleave();
+    });
+
+    function mouseleave() {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+
+      map.setFilter('sec_censales_fills_hover', ['==', 'CUSEC', '']);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
