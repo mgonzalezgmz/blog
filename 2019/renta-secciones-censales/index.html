@@ -54,12 +54,14 @@ body {
 }
 #key {
   z-index: 1;
+  border-radius: 2px;
   position: absolute;
   bottom: 40px;
   left: 10px;
   background:rgba(255,255,255,0.9);
   padding: 10px;
   font-size: 12px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
   font-family: sans-serif;
 }
 .title {
@@ -84,6 +86,22 @@ body {
   height: 14px;
 }
 
+#toggle {
+  font-size: 14px;
+  font-family: sans-serif;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,.1)
+}
+#toggle > div {
+  margin-bottom: 5px;
+}
+
 #map {
   position: absolute;
   top: 0;
@@ -93,6 +111,7 @@ body {
 .mapboxgl-popup {
   width: 200px;
   font-size: 14px;
+  line-height: 16px;
 }
 .tip-title {
   font-weight: 600;
@@ -107,6 +126,16 @@ body {
 </style>
 
 <div id='key'></div>
+<div id='toggle'>
+<div>
+  <input id='renta-persona' type='radio' name='rtoggle' value='persona' checked='checked'>
+  <label for='persona'>Renta por persona</label>
+  </div>
+  <div>
+  <input id='renta-hogar' type='radio' name='rtoggle' value='hogar'>
+  <label for='hogar'>Renta por hogar</label>
+  </div>
+</div>
 <div id='map'></div>
 
 <script>
@@ -122,16 +151,47 @@ const scale = d3.scaleThreshold()
   .range(['#fff7f3', '#fde0dd', '#fcc5c0', '#fa9fb5', '#f768a1', '#dd3497', '#ae017e', '#7a0177', '#49006a'])
   .domain([4000, 8000, 10000, 12000, 16000, 20000, 24000, 28000]);
 
- const fillColor = ["match", ["get", "CUSEC"]];
+const scale2 = d3.scaleThreshold()
+  .range(['#fff7f3', '#fde0dd', '#fcc5c0', '#fa9fb5', '#f768a1', '#dd3497', '#ae017e', '#7a0177', '#49006a'])
+  .domain([6000, 12000, 18000, 24000, 30000, 36000, 42000, 48000]);
 
-d3.csv('output/web.csv', d => {
-  const color = d3.color(scale(d.value));
-  color.opacity = 1;
-  fillColor.push(d.id, color.formatRgb());
-  d.value = +d.value;
-  return d;
-}).then(data => {
+const fillColor = ["match", ["get", "CUSEC"]];
+const fillColor2 = ["match", ["get", "CUSEC"]];
+
+Promise.all([
+  d3.csv('renta_persona.csv', d => {
+    const color = d3.color(scale(d.value));
+    color.opacity = 1;
+    fillColor.push(d.id, color.formatRgb());
+    d.value = +d.value;
+    return d;
+  }),
+  d3.csv('renta_hogar.csv', d => {
+    const color = d3.color(scale2(d.value));
+    color.opacity = 1;
+    fillColor2.push(d.id, color.formatRgb());
+    d.value = +d.value;
+    return d;
+  }),
+]).then(([personas, hogar]) => {
   fillColor.push("rgba(0,0,0,0)");
+  fillColor2.push("rgba(0,0,0,0)");
+
+  const selection = {
+    persona: {
+      data: personas,
+      color: fillColor,
+      key: 'Renta media <br> por persona',
+      scale: scale,
+    },
+    hogar: {
+      data: hogar,
+      color: fillColor2,
+      key: 'Renta media <br> por hogar',
+      scale: scale2,
+    }
+  }
+
   mapboxgl.accessToken = 'pk.eyJ1Ijoid29uZGVyMiIsImEiOiJjamFmMnV0NWIxMGozMzNsZGNmdmh3aHFoIn0.OwGfCAwpL5D_YhA2X8wGDw';
 
   const width = d3.select('#map')
@@ -146,7 +206,7 @@ d3.csv('output/web.csv', d => {
   d3.select('#key')
     .append('div')
     .attr('class', 'title')
-    .html('Renta media <br/> por hab.');
+    .html('Renta media <br/> por persona');
 
   const key =  d3.select('#key')
     .append('div')
@@ -156,7 +216,7 @@ d3.csv('output/web.csv', d => {
     .append('div')
     .attr('class', 'swatches')
     .selectAll('.swatch')
-    .data(scale.range())
+    .data(scale.range(), (d, i) => i)
     .enter()
     .append('div')
     .attr('class', 'swatch')
@@ -203,6 +263,7 @@ d3.csv('output/web.csv', d => {
     types: 'region,postcode,district,place,locality,neighborhood'
     // flyTo: false
   }), 'top-left');
+
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
 
@@ -255,6 +316,20 @@ d3.csv('output/web.csv', d => {
       'waterway-label',
     );
 
+    d3.selectAll('#toggle input').on('change', function() {
+      map.setPaintProperty('sec_censales_fills', 'fill-color', selection[this.value].color);
+
+      d3.select('#key')
+        .select('.title')
+        .html(selection[this.value].key)
+
+      key
+        .select('.labels')
+        .selectAll('.label')
+        .data(selection[this.value].scale.domain(), (d, i) => i)
+        .text((d, i) => i === 0 ? `${ft(d)}€` : ft(d));
+    });
+
     // Create a popup, but don't add it to the map yet.
     const popup = new mapboxgl.Popup({
       closeButton: false,
@@ -265,8 +340,10 @@ d3.csv('output/web.csv', d => {
     map.on('mousemove', 'sec_censales_fills', e => {
       if (map.getZoom() < 6) return;
 
+      const active = d3.select('#toggle input:checked').attr('value');
+
       const id = e.features[0].properties.CUSEC;
-      const datum = data.find(d => d.id === id);
+      const datum = selection[active].data.find(d => d.id === id);
 
       if (!datum) return mouseleave();
 
@@ -280,7 +357,7 @@ d3.csv('output/web.csv', d => {
           ${e.features[0].properties.NMUN}
         </div>
         <div class="flex">
-          <div class="tip-name">Renta media</div>
+          <div class="tip-name">${selection[active].key}</div>
           <div>${ft(datum.value)}€</div>
         </div>
       `,
