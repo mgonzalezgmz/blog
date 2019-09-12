@@ -245,11 +245,12 @@ Promise.all([
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
     center: [-3.975704, 39.940117],
-    zoom: isMobile ? 5 : 5.5,
-    minZoom: isMobile ? 5 : 5.5,
+    zoom: isMobile ? 4.5 : 5.5,
+    minZoom: isMobile ? 4.5 : 5.5,
     pitchWitRotate: false,
     dragRotate: false,
-    attributionControl: false
+    attributionControl: false,
+    hash: true
     // scrollZoom: false,
     // maxBounds: [[-1.2583, 40.2252], [4.927, 43.049]],
     // hash: true
@@ -276,12 +277,12 @@ Promise.all([
   map.on('load', () => {
     map.addSource('sec_censales', {
       type: 'vector',
-      url: 'mapbox://wonder2.9bl7pqe9',
+      url: 'mapbox://wonder2.3i3781o4',
     });
 
     map.addSource('sec_censales_hover', {
       type: 'vector',
-      url: 'mapbox://wonder2.9bl7pqe9',
+      url: 'mapbox://wonder2.3i3781o4',
     });
 
     map.addLayer(
