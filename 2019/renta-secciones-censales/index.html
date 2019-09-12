@@ -166,11 +166,11 @@ const es = {
 };
 
 const scale = d3.scaleThreshold()
-  .range(['#fff7f3', '#fde0dd', '#fcc5c0', '#fa9fb5', '#f768a1', '#dd3497', '#ae017e', '#7a0177', '#49006a'])
+  .range(['#fff7f3','#fde0dd','#fcc5c0','#fa9fb5','#f768a1','#dd3497','#ae017e','#7a0177','#49006a'])
   .domain([4000, 8000, 10000, 12000, 16000, 20000, 24000, 28000]);
 
 const scale2 = d3.scaleThreshold()
-  .range(['#fff7f3', '#fde0dd', '#fcc5c0', '#fa9fb5', '#f768a1', '#dd3497', '#ae017e', '#7a0177', '#49006a'])
+  .range(['#fff7f3','#fde0dd','#fcc5c0','#fa9fb5','#f768a1','#dd3497','#ae017e','#7a0177','#49006a'])
   .domain([6000, 12000, 18000, 24000, 30000, 36000, 42000, 48000]);
 
 const fillColor = ["match", ["get", "CUSEC"]];
@@ -278,7 +278,8 @@ Promise.all([
     language: 'es',
     enableEventLogging: false,
     marker: false,
-    types: 'region,postcode,district,place,locality,neighborhood'
+    types: 'region,postcode,district,place,locality,neighborhood',
+    placeholder: 'Busca',
     // flyTo: false
   }), 'top-left');
 
@@ -288,12 +289,12 @@ Promise.all([
   map.on('load', () => {
     map.addSource('sec_censales', {
       type: 'vector',
-      url: 'mapbox://wonder2.3i3781o4',
+      url: 'mapbox://wonder2.2x99dutc',
     });
 
     map.addSource('sec_censales_hover', {
       type: 'vector',
-      url: 'mapbox://wonder2.3i3781o4',
+      url: 'mapbox://wonder2.2x99dutc',
     });
 
     map.addLayer(
