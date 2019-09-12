@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Martín González</title>
+<style type="text/css">
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Book.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 400;
+  font-style: italic;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-BookItalic.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-BookItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Newzald';
+  font-weight: 700;
+  font-display: 'swap';
+  src: url('/fonts/NewzaldWeb-Bold.woff2') format('woff2'),
+       url('/fonts/NewzaldWeb-Bold.woff') format('woff');
+}
+</style>
+<link rel="stylesheet" href="/postgrado-blanquerna-d3/css/style.css" />
+<script src="/postgrado-blanquerna-d3/javascript/d3.v4.min.js"></script>
+
+</head>
+<body>
+  
+<main>
+<header>
+  <h1>Visualizando elecciones</h1>
+  <h2><a href="/2019/postgrado-blanquerna-d3/">Una introducción práctica a R y D3</a></h2>
+
+  <p><em>Diploma d'Especialització Universitària en Periodisme de Dades i Visualització, Blanquerna</em><p>
+
+  <div class="byline-and-date">
+  <p>Martín González Gómez</p>
+  <p><time>Barcelona, 3 y 4 de mayo, 2019</time></p>
+  </div>
+</header>
+
+
+
+<p>D3 está tan aceptado como R, pero para gráficos. Ciertamente hay mucha más
+libertad en visualización porque simplemente hay muchas herramientas. Pero no
+hay nada tan flexible como D3.</p>
+
+<p>Ya habéis hecho un taller introductorio, pero vamos a refrescar un poco los
+fundamentos básicos.</p>
+
+<h3 id="d3-juntar-datos-en-páginas-web">D3 = juntar datos en páginas web</h3>
+
+<p>Esto es todo lo que tenéis que saber. Lo principal que hace D3 es juntar datos
+con una página web. Si abrís la consola veréis cómo está programada esta web,
+bien, con D3 podemos añadir elementos a la página apoyándonos en datos.</p>
+
+<hr />
+
+<h3 id="the-beatles">The Beatles</h3>
+
+<div class="beatles"></div>
+
+<script>
+const beatles = ['Ringo', 'Lennon', 'Starr', 'McCartney'];
+
+d3.select('.beatles')
+.selectAll('p')
+.data(beatles)
+.enter()
+.append('p')
+.text(d => d)
+</script>
+
+<p><strong>¡Mira la consola!</strong></p>
+
+<hr />
+
+<h3 id="círculos">Círculos</h3>
+
+<div class="dots"></div>
+
+<script>
+!function dots() {
+    const dots = [1, 2, 5, 8.123];
+
+    const width = 600;
+    const height = 80;
+
+    const x = d3.scaleLinear()
+      .range([0, width])
+      .domain([0, 10]);
+
+    const svg = d3.select('.dots')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    svg
+      .selectAll('circle')
+      .data(dots)
+      .enter()
+      .append('circle')
+      .attr('cx', d => x(d))
+      .attr('cy', height / 2)
+      .attr('r', 10);
+}()
+</script>
+
+<p><strong>¡Mira la consola!</strong></p>
+
+<hr />
+
+<p>Ahora, vamos a hacer un gráfico de verdad.</p>
+
+<script type="text/javascript">
+!function bars() {
+    // bars
+
+    // Selectores
+    // Esto lo vamos a usar contínuamente. Tenemos que seleccionar un elemento de la página
+    // Estamos usando clases, '.mi-clase', pero también podemos usar id's '#mi-id'
+    // Hay más selectores, pero estos son los principales
+    const container = d3.select('.bars');
+
+    // Nuestros datos
+    // Esto es un array con objetos, es lo que se suele usar con D3
+    // Array [1, 2, 3]
+    // Objecto {partido: 'PP'}
+    const data = [
+      {
+        party: 'UP',
+        seats: 42
+      },
+      {
+        party: 'PSOE',
+        seats: 123
+      },
+      {
+        party: 'Others',
+        seats: 38
+      },
+      {
+        party: 'Ciudadanos',
+        seats: 57
+      },
+      {
+        party: 'PP',
+        seats: 66
+      },
+      {
+        party: 'Vox',
+        seats: 24
+      }
+    ];
+
+    // Esto es lo que MÁS vamos a usar, y lo que más usaréis cuando escribáis 
+    // JavaScript por vuestra cuenta
+    console.log(data);
+
+    // Escalas
+
+    // Escalas lineales
+    // El concepto de escalas ya os lo han explicado, pero vamos a repasarlo
+    // Tenemos unas variables que tenemos que trasladar a la pantalla
+    // En programación web usamos los píxeles
+    // 
+
+    // const x = .
+
+    // Escalas ordinales
+    // Estas son las mejores amigas de las lineales, y junto a esas, las que más váis a usar
+    // Nos sirven para mapear datos discretos a variables concretas
+
+    // const colour = d3.scaleOrdinal()
+    // .range(['#9970ab', '#ef7670', '#a4bdc9', '#feb24c', '#6baed6', '#a6d96a'])
+    // .domain(...)
+
+    // ¡A pintar!
+    container
+      .selectAll('div')
+      .data(data)
+      .enter()
+      .append('div')
+    // .style('width', ...)
+    // .style('background', ...);
+}()
+</script>
+
+<p>¡Fuf! Ha sido un poco raro, pero ahí están nuestras barras. Esta visualización
+es un poco diferente porque hemos usado HTML y CSS para hacerla funcionar.
+Aunque SVG es el estándar, hay veces que es más sencillo usar elementos
+normales del DOM, como los <code>&lt;div&gt;</code> (muchas veces en bar charts como éste). La
+lógica es la misma. Seleccionamos el contenedor, ajustamos las escalas y
+pintamos nuestros datos.</p>
+
+<p>Así es como hice un gráfico con los resultados del 28A la semana pasada.</p>
+
+
+<footer class="wrap">
+  <div>Martín González · Última actualización el <time>12/09/2019</time>.</div>
+
+  <div><a href="mailto:m@martingonzalez.net">m@martingonzalez.net</a></div>
+</footer>
+
+</main>
+
+</body>
+</html>
+
