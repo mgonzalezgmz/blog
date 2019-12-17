@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Martín González</title>
@@ -37,9 +37,9 @@ Aquí una pequeña muestra de cosas que han hecho otras redacciones, y ejem, alg
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/2019/postgrado-blanquerna-d3/ejercicio-line-chart/</guid>
-      <description> Ahora vamos a hacer un line chart con la situación política según datos del CIS. Abramos js/line_chart_ejercicio.js.
+      <description>Ahora vamos a hacer un line chart con la situación política según datos del CIS. Abramos js/line_chart_ejercicio.js.
 Este puede ser un poco más complicado, pero vamos a ver si conseguimos sacarlo.
-Situación política en España según el CIS   </description>
+ Situación política en España según el CIS </description>
     </item>
     
     <item>
@@ -48,9 +48,9 @@ Situación política en España según el CIS   </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/2019/postgrado-blanquerna-d3/ejercicio-scatterplot/</guid>
-      <description> Ahora vamos a hacer un scatterplot como el que está en la home. Abramos js/scatterplot_ejercicio.js.
+      <description>Ahora vamos a hacer un scatterplot como el que está en la home. Abramos js/scatterplot_ejercicio.js.
 Si nos da tiempo podremos añadir un tooltip…
-Voto a PSOE vs población nacida en Catalunya    </description>
+ Voto a PSOE vs población nacida en Catalunya </description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@ Lo primero de todo es saber de dónde sacamos los datos.</description>
       
       <guid>http://example.org/2019/postgrado-blanquerna-d3/recursos/</guid>
       <description>Estas son las referencias que más me han ayudado a aprender. Son libros (los dos primeros son gratis, el tercero seguro lo podéis encontrar en la biblioteca), páginas con tutoriales, portfolios, y charlas.
-Libros  R for Data Science Interactive Data Visualization for the Web (AKA el libro de D3) The Visual Display of Quantitative Information  Páginas  bl.ocks.org Flowing Data Learn JS Data  Tutoriales  Three Little Circles Let&amp;rsquo;s make a map Scrollytelling with position sticky  Portfolios  bost.</description>
+Libros  R for Data Science Interactive Data Visualization for the Web (AKA el libro de D3) The Visual Display of Quantitative Information  Páginas  bl.ocks.org Flowing Data Learn JS Data  Tutoriales  Three Little Circles Let&#39;s make a map Scrollytelling with position sticky  Portfolios  bost.</description>
     </item>
     
     <item>
@@ -80,8 +80,8 @@ Libros  R for Data Science Interactive Data Visualization for the Web (AKA el li
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/2019/postgrado-blanquerna-d3/tu-scatterplot/</guid>
-      <description> ¡Libertad! Ahora vais a tener un rato para jugar y cambiar variables, haciendo vuestra propia variación del gráfico.
-TKTK   </description>
+      <description>¡Libertad! Ahora vais a tener un rato para jugar y cambiar variables, haciendo vuestra propia variación del gráfico.
+ TKTK </description>
     </item>
     
   </channel>

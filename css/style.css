@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,22 +91,35 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
@@ -51,7 +132,7 @@ em {
 
 /* project style */
 :root {
-  --serif: 'Newzald', 'Georgia', 'serif';
+  --serif: "Newzald", "Georgia", "serif";
   --base: 1.188rem;
   --jumbo: 1.80225rem;
   --h1: 1.602rem;
@@ -59,7 +140,7 @@ em {
   --h3: 1.266rem;
   --h4: 1.125rem;
   --small: 0.889em;
-  --link: #1083CF;
+  --link: #1083cf;
   --light-blue: #eaf5ff;
   --light-orange: #fff0e7;
   --light-yellow: #fffff7;
@@ -80,7 +161,10 @@ body {
 p {
   margin-bottom: 1.3rem;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: inherit;
   line-height: 1.1;
 }
@@ -164,6 +248,10 @@ article time {
 .project-info .block {
   flex-basis: 70%;
 }
+.project video {
+  width: 100%;
+  height: 100%;
+}
 
 .mb0 {
   margin-bottom: 0;
@@ -182,7 +270,7 @@ article time {
 }
 .lh-solid p {
   line-height: 1.2;
-  margin-bottom: .1em;
+  margin-bottom: 0.1em;
 }
 
 @media (min-width: 860px) {
