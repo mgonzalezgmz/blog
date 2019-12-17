@@ -249,14 +249,14 @@ article {
   width: 100%;
   height: 100%;
 }
-.project a {
+.project .side a {
   color: var(--black);
   text-decoration: none;
 }
-.project a:hover {
+.project .side a:hover {
   text-decoration: underline;
 }
-.project a:visited {
+.project .side a:visited {
   color: var(--black);
 }
 .project .publisher {
