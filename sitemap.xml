@@ -1,57 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <url>
-    <loc>https://martingonzalez.net/2019/</loc>
-  </url>
+   
   
-  <url>
-    <loc>https://martingonzalez.net/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/d3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/ejemplos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/ejercicio-line-chart/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/ejercicio-scatterplot/</loc>
-  </url>
-  
+   
   <url>
     <loc>https://martingonzalez.net/</loc>
   </url>
   
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/r/</loc>
-  </url>
   
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/recursos/</loc>
-  </url>
+   
   
-  <url>
-    <loc>https://martingonzalez.net/2019/renta-secciones-censales/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/tu-scatterplot/</loc>
-  </url>
-  
-  <url>
-    <loc>https://martingonzalez.net/2019/postgrado-blanquerna-d3/</loc>
-  </url>
+   
   
 </urlset>
