@@ -1,5 +1,8 @@
 ---
 title: Martín González
+description: >
+  I am a visual journalist at The Economist, where I make graphics and interactives. I am also one of the co-founders of Politibot, a chatbot about Spanish and European politics
+image: assets/images/uk-election.png
 layout: home
 ---
 
