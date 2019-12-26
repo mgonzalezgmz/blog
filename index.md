@@ -10,4 +10,4 @@ a chatbot about Spanish and European politics. Previously, I worked in
 Madrid at [Populate](https://populate.tools/), a civic tech
 studio.
 
-Recently, I did a [Reddit AMA](https://old.reddit.com/r/dataisbeautiful/comments/cptmcw/were_evan_hensleigh_and_mart%C3%ADn_gonz%C3%A1lez/) about interactive graphics with my colleague Evan Hensleigh, gave a workshop about tooltips at the [visfest unconf](http://visfest.com/unconf2019/) in Chicago, and [taught D3](https://twitter.com/DataJournalism1/status/1124601499772956677) to data journalism students in Barcelona.
+Recently, I did a [Reddit AMA](https://old.reddit.com/r/dataisbeautiful/comments/cptmcw/were_evan_hensleigh_and_mart%C3%ADn_gonz%C3%A1lez/) about interactive graphics with my colleague Evan Hensleigh, gave a workshop about tooltips at [visfest unconf](http://visfest.com/unconf2019/) in Chicago, and [taught D3](https://twitter.com/DataJournalism1/status/1124601499772956677) to data journalism students in Barcelona.
