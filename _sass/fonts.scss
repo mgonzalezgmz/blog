@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Newzald";
+  font-weight: 400;
+  font-display: "swap";
+  src: url("/assets/fonts/NewzaldWeb-Book.woff2") format("woff2"),
+    url("/assets/fonts/NewzaldWeb-Book.woff") format("woff");
+}
+@font-face {
+  font-family: "Newzald";
+  font-weight: 400;
+  font-style: italic;
+  font-display: "swap";
+  src: url("/assets/fonts/NewzaldWeb-BookItalic.woff2") format("woff2"),
+    url("/assets/fonts/NewzaldWeb-BookItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Newzald";
+  font-weight: 700;
+  font-display: "swap";
+  src: url("/assets/fonts/NewzaldWeb-Bold.woff2") format("woff2"),
+    url("/assets/fonts/NewzaldWeb-Bold.woff") format("woff");
+}
