@@ -50,7 +50,7 @@
 <p>En este taller preparemos una visualización de datos usando R y D3, paso a paso. Si nos da tiempo daremos el salto a tooltips, transiciones, y diseño móvil.</p>
 <p>Para poder trabajar en nuestro ordenador primero hay que descargar esta web. Ve a la carpeta compartida del postgrado, y descarga la carpeta que hay en <code>SLIDES/D3-Martin</code>.</p>
 <p>Ahora, hay que instalar el servidor. Si no te funcionó <code>node</code> en el taller podemos seguir <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/set_up_a_local_testing_server#Ejecutando_un_servidor_HTTP_local_simple">estas instrucciones</a> que utilizan Python, e iniciar el servidor local.</p>
-<p>Si <code>node</code> te funcionó sólo tienes que navegar de nuevo a la carpeta usando <code>cd</code>, por ejemplo <code>cd Descargas/posgrau-d3</code>, ejecutar <code>http-server</code> e ir a <!-- raw HTML omitted -->localhost:8080<!-- raw HTML omitted -->.</p>
+<p>Si <code>node</code> te funcionó sólo tienes que navegar de nuevo a la carpeta usando <code>cd</code>, por ejemplo <code>cd Descargas/posgrau-d3</code>, ejecutar <code>http-server</code> e ir a <a href="localhost:8080">localhost:8080</a>.</p>
 <h3 id="el-plan">El plan</h3>
 <ol>
 <li><a href="ejemplos">Algunos ejemplos</a></li>
@@ -63,18 +63,39 @@
 </ol>
 <hr>
 <h3 id="una-muestra-de-lo-que-haremos">Una muestra de lo que haremos</h3>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<blockquote>
-</blockquote>
+<div class="scatters">
+<div class="row">
+  <h4>Voto a PSOE vs población nacida en Catalunya</h4>
+  <div class="scatter-cat" data-party="psoe" data-variable="pct_cat" data-ymin="0.4" data-ymax="1"></div>
+</div>
+<div class="row">
+  <h4>Voto a PSOE vs población nacida fuera de Catalunya</h4>
+  <div class="scatter-es" data-party="psoe" data-variable="pct_es" data-ymin="0" data-ymax="0.35"></div>
+</div>
+<div class="row">
+  <h4>Voto a Cs vs población nacida en Catalunya</h4>
+  <div class="scatter-cs-cat" data-party="cs" data-variable="pct_cat" data-ymin="0.4" data-ymax="1" data-xmax="25"></div>
+</div>
+<div class="row">
+  <h4>Voto a Cs vs población nacida fuera de Catalunya</h4>
+  <div class="scatter-cs-es" data-party="cs" data-variable="pct_es" data-ymin="0" data-ymax="0.35" data-xmax="25"></div>
+</div>
+</div>
+<div>
+  <h4>Situación política en España según el CIS</h4>
+  <div class="line-chart"></div>
+</div>
+<script src="/postgrado-blanquerna-d3/javascript/scatterplot_final.js"></script>
+<script src="/postgrado-blanquerna-d3/javascript/line_chart_final.js"></script>
+<script>
+scatter('.scatter-cat');
+scatter('.scatter-es');
+
+scatter('.scatter-cs-cat');
+scatter('.scatter-cs-es');
+
+lineChart('.line-chart');
+</script>
 
 
 <footer class="wrap">
