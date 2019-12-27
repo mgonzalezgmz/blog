@@ -1,5 +1,5 @@
 ---
-title: "Democratic Primaries 2020"
+title: Democratic primaries 2020
 link: https://projects.economist.com/democratic-primaries-2020/
 date: 2019-08-20
 publisher: The Economist
