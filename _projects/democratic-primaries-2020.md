@@ -3,7 +3,7 @@ title: "Democratic Primaries 2020"
 link: https://projects.economist.com/democratic-primaries-2020/
 date: 2019-08-20
 publisher: The Economist
-video: assets/clips/dem-primaries.mp4
+image: assets/images/dem-primaries.png
 coauthors: "[G. Elliot Morris](https://twitter.com/gelliottmorris) and [Evan Hensleigh](https://twitter.com/futuraprime)"
 role: Design, graphics
 ---
