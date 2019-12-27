@@ -5,7 +5,7 @@ date: 2018-11-03
 publisher: The Economist
 video: assets/clips/american-voter.mp4
 coauthors: "[Dan Rosenheck](https://twitter.com/danrosenheck), [Evan Hensleigh](https://twitter.com/futuraprime) and [Matt McLean](https://twitter.com/MatterofMatt)"
-role: Programming
+role: Graphics
 ---
 
 This little widget accompanied a piece about identity politics written by Dan. The idea was simple: choose a set of demographic traits and see the projected political orientation. At the beginning we wanted to do something bigger, there are some sketches where you could see every demographic combination in a tree layout. It was a bit messy and the deadline was getting closer so we simplified the concept as much as we could and put this together in two days.
