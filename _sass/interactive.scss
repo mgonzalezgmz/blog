@@ -54,6 +54,9 @@ footer.wrap-wide {
   .side a:visited {
     color: var(--black);
   }
+  & > a:hover + .project-info .side h3 a {
+    text-decoration: underline;
+  }
   .publisher {
     line-height: 18px;
   }
