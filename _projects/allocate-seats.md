@@ -4,7 +4,7 @@ link: https://politibot.io/juega-a-repartir-escanos-asi-se-asignaran-segun-el-vo
 date: 2019-04-08
 publisher: Politibot
 video: assets/clips/seats.mp4
-coauthors: "[Héctor Meleiro](https) and [Eduardo Suárez]()"
+coauthors: "[Héctor Meleiro](https://twitter.com/meleiro) and [Eduardo Suárez](https://twitter.com/eduardosuarez)"
 role: Design, graphics
 ---
 

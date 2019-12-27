@@ -1,5 +1,5 @@
 ---
-title: "Build a British Voter"
+title: "Build a British voter"
 link: https://www.economist.com/graphic-detail/2019/02/22/profiles-of-a-divided-country
 date: 2019-02-22
 publisher: The Economist

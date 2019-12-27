@@ -1,5 +1,5 @@
 ---
-title: "How to Forecast an American’s Vote"
+title: How to forecast an American’s vote
 link: https://www.economist.com/graphic-detail/2018/11/03/how-to-forecast-an-americans-vote
 date: 2018-11-03
 publisher: The Economist
