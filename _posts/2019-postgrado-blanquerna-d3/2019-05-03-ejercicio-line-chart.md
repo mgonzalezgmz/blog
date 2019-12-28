@@ -1,5 +1,6 @@
 ---
 title: Ejercicio line chart
+categories: [postgrado-blanquerna-d3]
 layout: postgrado-blanquerna-d3
 ---
 
