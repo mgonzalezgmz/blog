@@ -1,5 +1,6 @@
 ---
 title: Tu scatterplot
+categories: [postgrado-blanquerna-d3]
 layout: postgrado-blanquerna-d3
 ---
 
