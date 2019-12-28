@@ -25,12 +25,9 @@ handle: martgnz
 # Build settings
 markdown: kramdown
 collections:
-  projects:
-  postgrado-blanquerna-d3:
-    output: true
-    permalink: 2019/postgrado-blanquerna-d3/:title
+  - projects
 
-permalink: /:year/:title
+permalink: /:year/:categories/:title
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
