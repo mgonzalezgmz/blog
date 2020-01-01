@@ -1,7 +1,7 @@
 ---
 title: Renta media por sección censal
 description: Mapas con los nuevos datos del INE de renta media por habitante y hogar
-image: https://martingonzalez.net/2019/renta-secciones-censales/promo.png
+image: assets/renta-secciones-censales/promo.png
 layout: blank
 ---
 
