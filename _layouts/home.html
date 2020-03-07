@@ -11,13 +11,23 @@ layout: default
     {% for project in site.projects reversed %}
     <article class="project">
       <a href="{{ project.link }}">
-        <figure class="mb1">
-          {% if project.video %}
-          <video autoplay loop muted alt="{{ project.title }}" src="{{ project.video | relative_url }}"></video>
+        {% if project.video %}
+          <figure class="mb1">
+            <video autoplay loop muted alt="{{ project.title }}" src="{{ project.video | relative_url }}"></video>
+          </figure>
           {% else %}
-          <img alt=" {{ project.title }}" src="{{ project.image | relative_url }}" />
+            {% if project.image.first %}
+              <div class="image-grid">
+                {% for image in project.image %}
+                  <img alt=" {{ project.title }}" src="{{ image | relative_url }}" />
+                {% endfor %}
+              </div>
+            {% else %}
+            <figure class="mb1">
+              <img alt=" {{ project.title }}" src="{{ project.image | relative_url }}" />
+            </figure>
+            {% endif %}
           {% endif %}
-        </figure>
       </a>
 
       <div class="project-info">

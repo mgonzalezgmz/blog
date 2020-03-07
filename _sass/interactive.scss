@@ -84,6 +84,12 @@ footer.wrap-wide {
   .project-info img + em {
     font-size: 16px;
   }
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
   ul {
     list-style: disc;
     padding-left: 1em;
