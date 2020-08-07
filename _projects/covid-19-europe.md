@@ -10,4 +10,4 @@ role: Graphics
 
 A detailed view at covid-19 cases and deaths by region in Europe. We decided to show data for the last seven days to highlight new outbreaks. 
 
-I designed and programmed the map and the table, my colleague James Fransham collected the data, and Rosamund Pearce plotted the small multiples.
+I designed and programmed the map and the table, my colleague James Fransham collected the data and Rosamund Pearce plotted the small multiples.
