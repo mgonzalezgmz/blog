@@ -3,8 +3,8 @@ title: US 2020 Presidential Forecast
 link: https://projects.economist.com/us-2020-forecast/president
 date: 2020-06-11
 publisher: The Economist
-video: assets/clips/us-2020-forecast.mp4
-coauthors: "[G. Elliot Morris](https://twitter.com/gelliotmorris), [Evan Hensleigh](https://twitter.com/futuraprime) and [Mark Mitchell](https://twitter.com/)"
+image: assets/images/us-forecast.png
+coauthors: "[G. Elliot Morris](https://twitter.com/gelliotmorris), [Evan Hensleigh](https://twitter.com/futuraprime) and [Mark Mitchell](https://twitter.com/withoutnations)"
 role: Design, frontend, graphics
 ---
 
