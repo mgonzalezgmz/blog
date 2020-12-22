@@ -10,7 +10,9 @@ layout: default
   <section class="projects wrap-wide mb2">
     {% for project in site.projects reversed %}
     <article class="project">
-      <a href="{{ project.link }}">
+      {% if project.link %}
+        <a href="{{ project.link }}">
+      {% endif %}
         {% if project.video %}
           <figure class="mb1">
             <video autoplay loop muted alt="{{ project.title }}" src="{{ project.video | relative_url }}"></video>
@@ -28,11 +30,19 @@ layout: default
             </figure>
             {% endif %}
           {% endif %}
-      </a>
+      {% if project.link %}
+        </a>
+      {% endif %}
 
       <div class="project-info">
         <div class="side">
-          <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
+          <h3>
+            {% if project.link %}
+            <a href="{{ project.link }}">{{ project.title }}</a>
+            {% else %}
+              {{ project.title }}
+            {% endif %}
+          </h3>
           <p class="publisher grey mb0"><em>{{ project.publisher }}</em></p>
           <p class="time grey">
             <time>{{ project.date | date: "%b %d, %Y" }}</time>
