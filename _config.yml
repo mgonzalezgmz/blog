@@ -27,7 +27,6 @@ markdown: kramdown
 collections:
   - projects
 
-relative_permalinks: false
 permalink: /:year/:categories/:title
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
