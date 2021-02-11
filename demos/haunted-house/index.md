@@ -1,6 +1,6 @@
 ---
 title: Haunted House
-permalink: /demos/haunted-house
+permalink: /demos/haunted-house/
 layout: blank
 ---
 <link href="main.css" rel="stylesheet">
