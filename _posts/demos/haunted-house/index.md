@@ -1,5 +1,6 @@
 ---
 title: Haunted House
+permalink: /demos/haunted-house
 categories: [demos]
 layout: blank
 ---
