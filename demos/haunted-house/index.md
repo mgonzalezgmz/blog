@@ -1,7 +1,6 @@
 ---
 title: Haunted House
 permalink: /demos/haunted-house
-categories: [demos]
 layout: blank
 ---
 <link href="main.css" rel="stylesheet">
