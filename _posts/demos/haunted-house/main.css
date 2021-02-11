@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+center {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	cursor: pointer;
+	background: #111;
+	color: #fff;
+	font-family: "Comic Sans MS";
+	font-size: 70px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 300px;
+	z-index: 1;
+	position: relative;;
+}
+button:hover {
+	background: #ccc;
+	color: #111;
+}
+
+/*# sourceMappingURL=main.css.map*/
