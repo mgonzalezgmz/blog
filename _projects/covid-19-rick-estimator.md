@@ -8,4 +8,4 @@ coauthors: "[Sondre Solstad](https://twitter.com/Sondreus), [Ross Greenhalf](htt
 role: Graphics, design
 ---
 
-An estimation of the risk of dying or being hospitalised from the coronavirus based on sex, age and underlying medical conditions. The model [is based on millions of medical claims](https://www.economist.com/graphic-detail/2021/03/11/how-we-built-our-covid-19-risk-estimator) and was built in collaboration with medical and machine-learning researchers.
+An estimation of the risk of dying and being hospitalised from the coronavirus based on sex, age and underlying medical conditions. The model [is based on millions of medical claims](https://www.economist.com/graphic-detail/2021/03/11/how-we-built-our-covid-19-risk-estimator) and was built in collaboration with medical and machine-learning researchers.
