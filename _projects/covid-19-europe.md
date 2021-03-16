@@ -1,6 +1,6 @@
 ---
 title: Tracking the coronavirus across Europe
-link: https://www.economist.com/graphic-detail/2020/07/15/tracking-covid-19-excess-deaths-across-countries
+link: https://www.economist.com/graphic-detail/tracking-coronavirus-across-europe
 date: 2020-07-03
 publisher: The Economist
 video: assets/clips/covid-19-europe.mp4
