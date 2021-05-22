@@ -1,6 +1,6 @@
 ---
 title: Tracking covid-19 excess deaths
-link: https://www.economist.com/graphic-detail/2020/07/15/tracking-covid-19-excess-deaths-across-countries
+link: https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker
 date: 2020-04-16
 publisher: The Economist
 video: assets/clips/covid-19-excess-deaths.mp4
